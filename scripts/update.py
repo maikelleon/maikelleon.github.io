@@ -82,7 +82,7 @@ def fetch_openalex(dois):
     for i in range(0, len(dois), 40):
         chunk = "|".join(dois[i:i + 40])
         url = ("https://api.openalex.org/works?per-page=50&select=doi,title,publication_year,"
-               "publication_date,type,primary_location,biblio,authorships,open_access,best_oa_location&filter=doi:"
+               "publication_date,type,primary_location,biblio,authorships,open_access,best_oa_location,is_retracted&filter=doi:"
                + urllib.parse.quote(chunk, safe="|:/"))
         data = json.loads(get(url))
         for w in data.get("results", []):
@@ -106,6 +106,7 @@ def fetch_openalex(dois):
                 "pdf": (w.get("best_oa_location") or {}).get("pdf_url") or "",
                 "oa_url": (oa.get("oa_url") or "") if oa.get("is_oa") else "",
                 "publisher": src.get("host_organization_name") or "",
+                "retracted": bool(w.get("is_retracted")),
             }
         time.sleep(0.5)
     return out
@@ -274,6 +275,8 @@ def build(orcid_works, oa, cfg):
         if not best:
             best = next((d for d in w["dois"] if d in oa), w["dois"][0] if w["dois"] else None)
         info = oa.get(best, {}) if best else {}
+        if info.get("retracted") or re.match(r"\s*(retracted\b|retraction\b)", info.get("title") or w["title"], re.I):
+            continue  # retracted papers and retraction notices stay off the site
         key = best or w["title"].lower()
         if key in seen:
             continue
@@ -393,7 +396,8 @@ def paper_tools(e):
     elif e.get("oa_url") and e["oa_url"].lower().rstrip("/") != doi_url:
         out += (f'<a class="tool" href="{E(e["oa_url"])}" target="_blank" rel="noopener">'
                 '<span class="en">Open access</span><span class="es">Acceso abierto</span></a>')
-    out += f'<button type="button" class="tool bib" data-key="{E(bib_key(e))}" data-bib="{E(bibtex(e))}">BibTeX</button>'
+    if e.get("authors_full"):  # no BibTeX without authors; it would be incomplete
+        out += f'<button type="button" class="tool bib" data-key="{E(bib_key(e))}" data-bib="{E(bibtex(e))}">BibTeX</button>'
     return out
 
 

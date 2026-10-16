@@ -45,6 +45,7 @@ Each run shows a short report: open the **Actions** tab and click the latest run
 
 - **Featured list:** a paper in your ORCID record is featured only if it appears in a journal listed in `data/config.json` under `journals`. That list holds the 14 journals from the CV, with their impact factors. Papers are listed newest first. To feature a new journal, add one line there, for example `"journal name in lowercase": {"name": "Journal Name", "if": 3.2}`.
 - **All works:** every item in ORCID appears in a collapsible list under the featured papers.
+- **Retracted papers:** papers that OpenAlex flags as retracted, and retraction notices, are left out of every list.
 - **Corrections:** when a database has a wrong year, page range, or title, add it under `overrides` in `data/config.json`, keyed by DOI. The featured papers' titles are kept there in sentence case; a new paper shows the publisher's capitalization until you add its title there.
 - **Links on each paper:** the DOI; **PDF** when OpenAlex finds an open-access copy (**Open access** when the free copy is a repository page); and **BibTeX**, which copies a complete citation, or downloads it as a .bib file when the browser blocks copying. To link a free copy of your own, add `"pdf": "https://..."` under the paper's DOI in `overrides`.
 - **Your name** always prints as "Leon, M.", never "León".

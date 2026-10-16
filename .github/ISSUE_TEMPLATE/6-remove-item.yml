@@ -1,0 +1,21 @@
+name: Remove an item
+description: Remove a media card, award, or talk.
+title: "[Remove] "
+body:
+  - type: dropdown
+    id: where
+    attributes:
+      label: Section
+      options:
+        - Media
+        - Honors
+        - Talks
+    validations:
+      required: true
+  - type: input
+    id: match
+    attributes:
+      label: A few words from its title or text
+      description: Must match exactly one item. If it matches none or several, nothing changes and the reply says why.
+    validations:
+      required: true

@@ -1,0 +1,611 @@
+{
+  "_help": "Site content managed by the admin forms. You can also edit it by hand; run the 'Rebuild site' step or any update afterwards.",
+  "announcement": {
+    "show": false,
+    "en": "",
+    "es": "",
+    "link": ""
+  },
+  "sections": {
+    "consulting": true,
+    "talks": true
+  },
+  "media": [
+    {
+      "type": "news",
+      "outlet": "News@TheU · University of Miami",
+      "title": "Undergraduate AI researchers at Miami Herbert present work on national stage",
+      "year": 2026,
+      "links": [
+        {
+          "url": "https://news.miami.edu/mbs/stories/2026/06/undergraduate-ai-researchers-at-miami-herbert-present-work-on-national-stage.html"
+        }
+      ]
+    },
+    {
+      "type": "tv",
+      "outlet": "Univision · Despierta América",
+      "title": "Inteligencia artificial: ¿debemos preocuparnos?",
+      "year": 2023,
+      "links": [
+        {
+          "url": "https://www.instagram.com/p/CtJoL04M7G8/"
+        }
+      ]
+    },
+    {
+      "type": "tv",
+      "outlet": "CNN en Español · CNN Dinero",
+      "title": "Deepfakes: cómo funcionan los videos falsos y sus aplicaciones",
+      "year": 2021,
+      "links": [
+        {
+          "label": "Así funciona la creación de videos e imágenes falsas",
+          "url": "https://cnnespanol.cnn.com/video/deepfake-imagenes-videos-falsos-algoritmo-como-funciona-intv-cnn-dinero/"
+        },
+        {
+          "label": "Beneficios y aplicaciones de los deepfakes",
+          "url": "https://cnnespanol.cnn.com/video/deepfake-videos-falsos-beneficios-aplicaciones-algoritmos-intv-cnn-dinero/"
+        }
+      ]
+    },
+    {
+      "type": "tv",
+      "outlet": "CNN en Español · CNN Dinero",
+      "title": "Huawei y el veto de Estados Unidos",
+      "year": 2019,
+      "links": [
+        {
+          "label": "¿Es cierto que Huawei nos puede espiar?",
+          "url": "https://www.cnn.com/videos/spanish/2019/05/24/es-cierto-que-huawei-nos-puede-espiar-jose-sevilla-enrique-carrier-maikel-leon-espinosa-entrevista-rodriguez-dinero.cnn"
+        },
+        {
+          "label": "Dominio tecnológico: ¿si no es Huawei, quién?",
+          "url": "https://www.cnn.com/videos/spanish/2019/05/24/dominio-tecnologico-si-no-huawei-quien-jose-sevilla-enrique-carrier-maikel-leon-espinosa-entrevista-rodriguez-dinero.cnn"
+        },
+        {
+          "label": "¿A quién afecta más el veto de EE. UU. a Huawei?",
+          "url": "https://www.cnn.com/videos/spanish/2019/05/24/a-quien-afecta-mas-el-veto-de-eeuu-google-huawei-jose-sevilla-enrique-carrier-maikel-leon-espinosa-entrevista-rodriguez-dinero.cnn"
+        },
+        {
+          "label": "Prohibición de Huawei: cómo afectaría a las empresas estadounidenses",
+          "url": "https://www.cnn.com/videos/spanish/2019/05/24/prohibicion-de-huawei-como-afectaria-empresas-estadounidenses-sevilla-carrier-espinosa-entrevista-rodriguez-dinero.cnn"
+        },
+        {
+          "label": "¿Huawei fue solo una herramienta de negociación?",
+          "url": "https://www.cnn.com/videos/spanish/2019/05/24/huawei-fue-solo-una-herramienta-de-negociacion-para-trump-sevilla-carrier-espinosa-entrevista-rodriguez-dinero.cnn"
+        }
+      ]
+    },
+    {
+      "type": "tv",
+      "outlet": "CNN en Español · Oppenheimer Presenta",
+      "title": "Los autos del futuro",
+      "year": 2018,
+      "links": [
+        {
+          "url": "https://www.youtube.com/watch?v=sytB9cVUiBg"
+        }
+      ]
+    },
+    {
+      "type": "tv",
+      "outlet": "CNN en Español · CNN Dinero",
+      "title": "¿Cómo hacen estos ingenieros en Silicon Valley para ganar millones sin trabajar?",
+      "year": 2018,
+      "links": [
+        {
+          "url": "https://cnnespanol.cnn.com/video/ganancias-ingenieros-silicon-valley-maikel-leon-entrevista-serbia-dinero/"
+        }
+      ]
+    },
+    {
+      "type": "tv",
+      "outlet": "CNN en Español · Oppenheimer Presenta",
+      "title": "¿Nos van a reemplazar los robots?",
+      "year": 2017,
+      "links": [
+        {
+          "url": "https://www.youtube.com/watch?v=jC-nS79vb_o"
+        }
+      ]
+    },
+    {
+      "type": "tv",
+      "outlet": "CNN en Español",
+      "title": "La inteligencia artificial según Elon Musk y Mark Zuckerberg",
+      "year": 2017,
+      "links": [
+        {
+          "url": "https://cnnespanol.cnn.com/video/cnnee-quik-melissa-velasquez-ai-elon-musk-y-mark-zuckerberg/"
+        }
+      ]
+    },
+    {
+      "type": "tv",
+      "outlet": "CNN en Español · Oppenheimer Presenta",
+      "title": "¿Ocuparán los robots nuestro empleo?",
+      "year": 2016,
+      "links": [
+        {
+          "url": "https://www.youtube.com/watch?v=6cKsau_IwB4"
+        }
+      ]
+    },
+    {
+      "type": "tv",
+      "outlet": "CNN en Español · CNN Dinero",
+      "title": "Estados Unidos y China: la guerra tecnológica",
+      "year": null,
+      "links": [
+        {
+          "url": "https://cnnespanol.cnn.com/video/eeuu-china-guerra-tecnologica-maikel-leon-entrevista-romo-dinero/"
+        }
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "kind": "award",
+      "year": "2026",
+      "en": "Best Poster Award (with Charlie Tucker), 39th International Florida Artificial Intelligence Research Society Conference (FLAIRS), Marco Island, Florida",
+      "es": "Premio al Mejor Póster (con Charlie Tucker), 39.ª Conferencia Internacional de la Florida Artificial Intelligence Research Society (FLAIRS), Marco Island, Florida"
+    },
+    {
+      "kind": "award",
+      "year": "2017",
+      "en": "Best Paper Award (with Gonzalo Nápoles, Isel Grau, and Koen Vanhoof), 29th IEEE International Conference on Tools with Artificial Intelligence (ICTAI), Boston",
+      "es": "Premio al Mejor Artículo (con Gonzalo Nápoles, Isel Grau y Koen Vanhoof), 29.ª Conferencia Internacional IEEE sobre Herramientas con Inteligencia Artificial (ICTAI), Boston"
+    },
+    {
+      "kind": "award",
+      "year": "2015",
+      "en": "Award for the Most Relevant Research in Computer Science, Cuban National Academy of Sciences",
+      "es": "Premio a la investigación más relevante en Ciencias de la Computación, Academia de Ciencias de Cuba"
+    },
+    {
+      "kind": "certification",
+      "year": "2026",
+      "en": "Teaching with AI, Harvard Business Impact Certificate",
+      "es": "Teaching with AI, certificado de Harvard Business Impact"
+    },
+    {
+      "kind": "certification",
+      "year": "2024",
+      "en": "Oracle Cloud Infrastructure Generative AI Certified Professional",
+      "es": ""
+    },
+    {
+      "kind": "certification",
+      "year": "2024",
+      "en": "Fundamentals of Case Teaching, Harvard Business Publishing Certificate",
+      "es": "Fundamentals of Case Teaching, certificado de Harvard Business Publishing"
+    },
+    {
+      "kind": "certification",
+      "year": "2022–23",
+      "en": "UM QEP Faculty Fellow, Problem-Based Learning and Collaborative Online International Learning tracks",
+      "es": "UM QEP Faculty Fellow, programas de aprendizaje basado en problemas y aprendizaje internacional colaborativo en línea"
+    },
+    {
+      "kind": "certification",
+      "year": "2021",
+      "en": "AWS Academy Educator Certified Professional",
+      "es": ""
+    }
+  ],
+  "talks": [
+    {
+      "year": "2022–26",
+      "en": "Instructor, \"Digital Transformation for Community Development,\" UStart@Miami",
+      "es": "",
+      "url": ""
+    },
+    {
+      "year": "2024",
+      "en": "Chair, University of Miami Student Research Symposium",
+      "es": "Presidente, Simposio de Investigación Estudiantil de la Universidad de Miami",
+      "url": ""
+    },
+    {
+      "year": "2023",
+      "en": "Session chair, \"Learning/Teaching Methodologies and Assessment,\" 13th Canada International Conference on Education (CICE 2023)",
+      "es": "Presidente de sesión, \"Learning/Teaching Methodologies and Assessment,\" 13.ª Conferencia Internacional de Educación de Canadá (CICE 2023)",
+      "url": ""
+    },
+    {
+      "year": "2023",
+      "en": "Chair, TECHXPLORER 2023, Ecuadorian Chamber of Innovation and Technology and Ecuadorian Federation of Exporters, Miami",
+      "es": "Presidente, TECHXPLORER 2023, Cámara Ecuatoriana de Innovación y Tecnología y Federación Ecuatoriana de Exportadores, Miami",
+      "url": ""
+    }
+  ],
+  "reviewed_for": [
+    {
+      "journal": "Algorithms",
+      "publisher": "MDPI"
+    },
+    {
+      "journal": "Applied Sciences",
+      "publisher": "MDPI"
+    },
+    {
+      "journal": "Applied Soft Computing",
+      "publisher": "Elsevier"
+    },
+    {
+      "journal": "Applied System Innovation",
+      "publisher": "MDPI"
+    },
+    {
+      "journal": "Behavioral Sciences",
+      "publisher": "MDPI"
+    },
+    {
+      "journal": "Big Data and Cognitive Computing",
+      "publisher": "MDPI"
+    },
+    {
+      "journal": "Bioengineering",
+      "publisher": "MDPI"
+    },
+    {
+      "journal": "Biomimetics",
+      "publisher": "MDPI"
+    },
+    {
+      "journal": "BMC Public Health",
+      "publisher": "Springer Nature"
+    },
+    {
+      "journal": "Computers",
+      "publisher": "MDPI"
+    },
+    {
+      "journal": "IEEE Transactions on Computational Social Systems",
+      "publisher": "IEEE"
+    },
+    {
+      "journal": "IEEE Transactions on Fuzzy Systems",
+      "publisher": "IEEE"
+    },
+    {
+      "journal": "IEEE Transactions on Neural Networks and Learning Systems",
+      "publisher": "IEEE"
+    },
+    {
+      "journal": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "publisher": "IEEE"
+    },
+    {
+      "journal": "Information",
+      "publisher": "MDPI"
+    },
+    {
+      "journal": "Information Sciences",
+      "publisher": "Elsevier"
+    },
+    {
+      "journal": "Intelligent Systems with Applications",
+      "publisher": "Elsevier"
+    },
+    {
+      "journal": "Journal of Experimental & Theoretical Artificial Intelligence",
+      "publisher": "Taylor & Francis"
+    },
+    {
+      "journal": "Journal of Risk and Financial Management",
+      "publisher": "MDPI"
+    },
+    {
+      "journal": "Knowledge and Information Systems",
+      "publisher": "Springer Nature"
+    },
+    {
+      "journal": "Machine Learning and Knowledge Extraction",
+      "publisher": "MDPI"
+    },
+    {
+      "journal": "Mathematical and Computational Applications",
+      "publisher": "MDPI"
+    },
+    {
+      "journal": "Prosthesis",
+      "publisher": "MDPI"
+    },
+    {
+      "journal": "Sensors",
+      "publisher": "MDPI"
+    },
+    {
+      "journal": "Soft Computing",
+      "publisher": "Springer Nature"
+    },
+    {
+      "journal": "Sustainability",
+      "publisher": "MDPI"
+    },
+    {
+      "journal": "Systems",
+      "publisher": "MDPI"
+    },
+    {
+      "journal": "Technological Forecasting and Social Change",
+      "publisher": "Elsevier"
+    },
+    {
+      "journal": "Technologies",
+      "publisher": "MDPI"
+    },
+    {
+      "journal": "World Development Sustainability",
+      "publisher": "Elsevier"
+    }
+  ],
+  "skills": [
+    {
+      "en": "AI and machine learning",
+      "es": "IA y aprendizaje automático",
+      "items": [
+        {
+          "en": "Machine learning",
+          "es": "Aprendizaje automático"
+        },
+        {
+          "en": "Deep learning",
+          "es": "Aprendizaje profundo"
+        },
+        {
+          "en": "Neural networks",
+          "es": "Redes neuronales"
+        },
+        {
+          "en": "Reinforcement learning",
+          "es": "Aprendizaje por refuerzo"
+        },
+        {
+          "en": "Optimization algorithms",
+          "es": "Algoritmos de optimización"
+        },
+        {
+          "en": "Swarm intelligence",
+          "es": "Inteligencia de enjambre"
+        },
+        {
+          "en": "Pattern classification",
+          "es": "Clasificación de patrones"
+        },
+        {
+          "en": "Clustering",
+          "es": "Agrupamiento"
+        }
+      ]
+    },
+    {
+      "en": "Fuzzy and knowledge-based systems",
+      "es": "Sistemas difusos y basados en conocimiento",
+      "items": [
+        {
+          "en": "Fuzzy cognitive maps",
+          "es": "Mapas cognitivos difusos"
+        },
+        {
+          "en": "Fuzzy logic",
+          "es": "Lógica difusa"
+        },
+        {
+          "en": "Complex systems modeling",
+          "es": "Modelado de sistemas complejos"
+        },
+        {
+          "en": "Scenario analysis",
+          "es": "Análisis de escenarios"
+        },
+        {
+          "en": "Travel behavior modeling",
+          "es": "Modelado del comportamiento de viaje"
+        },
+        {
+          "en": "Knowledge representation",
+          "es": "Representación del conocimiento"
+        },
+        {
+          "en": "Knowledge engineering",
+          "es": "Ingeniería del conocimiento"
+        },
+        {
+          "en": "Case-based reasoning",
+          "es": "Razonamiento basado en casos"
+        },
+        {
+          "en": "Neuro-symbolic AI",
+          "es": "IA neurosimbólica"
+        },
+        {
+          "en": "Prolog",
+          "es": "Prolog"
+        }
+      ]
+    },
+    {
+      "en": "Generative AI and language models",
+      "es": "IA generativa y modelos de lenguaje",
+      "items": [
+        {
+          "en": "Generative AI",
+          "es": "IA generativa"
+        },
+        {
+          "en": "Large language models",
+          "es": "Grandes modelos de lenguaje"
+        },
+        {
+          "en": "Agentic AI",
+          "es": "IA agéntica"
+        },
+        {
+          "en": "Prompt engineering",
+          "es": "Ingeniería de prompts"
+        },
+        {
+          "en": "LLM evaluation and benchmarking",
+          "es": "Evaluación comparativa de LLM"
+        },
+        {
+          "en": "Natural language processing",
+          "es": "Procesamiento del lenguaje natural"
+        },
+        {
+          "en": "Sentiment analysis",
+          "es": "Análisis de sentimiento"
+        }
+      ]
+    },
+    {
+      "en": "Responsible AI",
+      "es": "IA responsable",
+      "items": [
+        {
+          "en": "Explainable AI",
+          "es": "IA explicable"
+        },
+        {
+          "en": "Model interpretability",
+          "es": "Interpretabilidad de modelos"
+        },
+        {
+          "en": "AI governance",
+          "es": "Gobernanza de la IA"
+        },
+        {
+          "en": "AI regulation and policy",
+          "es": "Regulación y políticas de IA"
+        },
+        {
+          "en": "AI safety",
+          "es": "Seguridad de la IA"
+        },
+        {
+          "en": "AI ethics and fairness",
+          "es": "Ética y equidad en IA"
+        },
+        {
+          "en": "Sustainable AI",
+          "es": "IA sostenible"
+        }
+      ]
+    },
+    {
+      "en": "Data and programming",
+      "es": "Datos y programación",
+      "items": [
+        {
+          "en": "Python programming",
+          "es": "Programación en Python"
+        },
+        {
+          "en": "Algorithms",
+          "es": "Algoritmos"
+        },
+        {
+          "en": "Scientific software development",
+          "es": "Desarrollo de software científico"
+        },
+        {
+          "en": "Database management",
+          "es": "Gestión de bases de datos"
+        },
+        {
+          "en": "SQL",
+          "es": "SQL"
+        },
+        {
+          "en": "Data mining",
+          "es": "Minería de datos"
+        },
+        {
+          "en": "Business analytics",
+          "es": "Analítica de negocios"
+        },
+        {
+          "en": "Business intelligence",
+          "es": "Inteligencia de negocios"
+        }
+      ]
+    },
+    {
+      "en": "Business and strategy",
+      "es": "Negocios y estrategia",
+      "items": [
+        {
+          "en": "Decision support systems",
+          "es": "Sistemas de apoyo a la decisión"
+        },
+        {
+          "en": "Management information systems",
+          "es": "Sistemas de información gerencial"
+        },
+        {
+          "en": "Digital transformation",
+          "es": "Transformación digital"
+        },
+        {
+          "en": "AI strategy and adoption",
+          "es": "Estrategia y adopción de IA"
+        },
+        {
+          "en": "AI and the future of work",
+          "es": "IA y el futuro del trabajo"
+        },
+        {
+          "en": "Innovation and entrepreneurship",
+          "es": "Innovación y emprendimiento"
+        }
+      ]
+    },
+    {
+      "en": "Education",
+      "es": "Educación",
+      "items": [
+        {
+          "en": "AI in education",
+          "es": "IA en la educación"
+        },
+        {
+          "en": "Intelligent tutoring systems",
+          "es": "Sistemas de tutoría inteligentes"
+        },
+        {
+          "en": "Concept maps",
+          "es": "Mapas conceptuales"
+        },
+        {
+          "en": "Personalized learning",
+          "es": "Aprendizaje personalizado"
+        },
+        {
+          "en": "Problem-based learning",
+          "es": "Aprendizaje basado en problemas"
+        },
+        {
+          "en": "Course design",
+          "es": "Diseño de cursos"
+        }
+      ]
+    },
+    {
+      "en": "Research and communication",
+      "es": "Investigación y comunicación",
+      "items": [
+        {
+          "en": "Systematic reviews",
+          "es": "Revisiones sistemáticas"
+        },
+        {
+          "en": "Science communication",
+          "es": "Divulgación científica"
+        }
+      ]
+    }
+  ]
+}

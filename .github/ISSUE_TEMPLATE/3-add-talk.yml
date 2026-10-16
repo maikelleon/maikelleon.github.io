@@ -1,0 +1,27 @@
+name: Add a talk or session
+description: Keynote, invited talk, panel, or session chaired. Appears under Talks in the Media section.
+title: "[Talk] "
+body:
+  - type: input
+    id: year
+    attributes:
+      label: Year
+      placeholder: "2026"
+    validations:
+      required: true
+  - type: textarea
+    id: en
+    attributes:
+      label: Text in English
+      placeholder: Keynote, "AI Agents in Business," Miami Tech Summit
+    validations:
+      required: true
+  - type: textarea
+    id: es
+    attributes:
+      label: Text in Spanish (optional)
+  - type: input
+    id: url
+    attributes:
+      label: Link (optional)
+      placeholder: https://...

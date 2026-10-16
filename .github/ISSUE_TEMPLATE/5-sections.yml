@@ -1,0 +1,12 @@
+name: Show or hide sections
+description: Turn optional parts of the site on or off. Nothing is deleted.
+title: "[Sections] "
+body:
+  - type: checkboxes
+    id: show
+    attributes:
+      label: Sections to show
+      description: Checked parts are shown; unchecked parts are hidden.
+      options:
+        - label: Consulting (ML Education & Consulting LLC)
+        - label: Talks and sessions chaired

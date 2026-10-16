@@ -1,0 +1,726 @@
+{
+ "orcid": [
+  {
+   "title": "Cognitive mapping variants and their training algorithms",
+   "type": "journal-article",
+   "year": 2026,
+   "journal": "",
+   "dois": [
+    "10.1016/j.cosrev.2025.100862"
+   ]
+  },
+  {
+   "title": "Fuzzy Cognitive Maps: A Comprehensive Survey and Comparative Analysis",
+   "type": "journal-article",
+   "year": 2026,
+   "journal": "",
+   "dois": [
+    "10.32604/cmc.2026.087930"
+   ]
+  },
+  {
+   "title": "Governing generative AI in organizations: a design theory and quasi-experimental field study of sociotechnical guardrails",
+   "type": "journal-article",
+   "year": 2026,
+   "journal": "",
+   "dois": [
+    "10.1007/s11227-026-08760-7"
+   ]
+  },
+  {
+   "title": "Layerwise Conditioned Backpropagation: A Curvature-Aware Reparameterization of the Backward Pass with Convergence Guarantees",
+   "type": "journal-article",
+   "year": 2026,
+   "journal": "",
+   "dois": [
+    "10.3390/bdcc10080272"
+   ]
+  },
+  {
+   "title": "Agentic AI and labor disruption: A comprehensive review, measurement, and policy framework",
+   "type": "journal-article",
+   "year": 2026,
+   "journal": "",
+   "dois": [
+    "10.1016/j.jengtecman.2026.101993"
+   ]
+  },
+  {
+   "title": "Publisher-Built Generative AI Assistants in U.S. Higher Education",
+   "type": "journal-article",
+   "year": 2026,
+   "journal": "",
+   "dois": [
+    "10.3390/a19060492"
+   ]
+  },
+  {
+   "title": "Generative AI as a General-Purpose Technology",
+   "type": "journal-article",
+   "year": 2026,
+   "journal": "",
+   "dois": [
+    "10.3390/bdcc10030069"
+   ]
+  },
+  {
+   "title": "GPT-5 and open-weight large language models",
+   "type": "journal-article",
+   "year": 2026,
+   "journal": "",
+   "dois": [
+    "10.1016/j.is.2025.102620"
+   ]
+  },
+  {
+   "title": "Lifecycle-Based Governance to Build Reliable Ethical AI Systems",
+   "type": "journal-article",
+   "year": 2026,
+   "journal": "",
+   "dois": [
+    "10.1002/sres.70014"
+   ]
+  },
+  {
+   "title": "Investing in AI Interpretability, Control, and Robustness",
+   "type": "journal-article",
+   "year": 2026,
+   "journal": "",
+   "dois": [
+    "10.3390/a19020136"
+   ]
+  },
+  {
+   "title": "A Review on Fuzzy Cognitive Mapping",
+   "type": "journal-article",
+   "year": 2026,
+   "journal": "",
+   "dois": [
+    "10.3390/bdcc10010022"
+   ]
+  },
+  {
+   "title": "Prolog-based agnostic explanation module",
+   "type": "journal-article",
+   "year": 2023,
+   "journal": "",
+   "dois": [
+    "10.1016/j.ins.2022.12.012"
+   ]
+  },
+  {
+   "title": "Recurrence-Aware Long-Term Cognitive Network",
+   "type": "journal-article",
+   "year": 2022,
+   "journal": "",
+   "dois": [
+    "10.48550/arxiv.2107.03423",
+    "10.1109/tcyb.2022.3165104"
+   ]
+  },
+  {
+   "title": "FCM Expert",
+   "type": "journal-article",
+   "year": 2018,
+   "journal": "",
+   "dois": [
+    "10.1142/s0218213018600102"
+   ]
+  },
+  {
+   "title": "Learning and clustering of fuzzy cognitive maps",
+   "type": "journal-article",
+   "year": 2014,
+   "journal": "",
+   "dois": [
+    "10.1007/s10115-013-0616-z"
+   ]
+  },
+  {
+   "title": "Tackling Travel Behaviour",
+   "type": "journal-article",
+   "year": 2013,
+   "journal": "",
+   "dois": [
+    "10.1080/18756891.2013.816025"
+   ]
+  },
+  {
+   "title": "Mental maps and travel behaviour",
+   "type": "journal-article",
+   "year": 2010,
+   "journal": "",
+   "dois": [
+    "10.1007/s10109-010-0144-2"
+   ]
+  },
+  {
+   "title": "The Escalating AI's Energy Demands",
+   "type": "journal-article",
+   "year": 2024,
+   "journal": "",
+   "dois": [
+    "10.37394/23202.2024.23.46"
+   ]
+  },
+  {
+   "title": "Editor de preguntas con evaluación difusa",
+   "type": "journal-article",
+   "year": 2019,
+   "journal": "",
+   "dois": []
+  },
+  {
+   "title": "Domain-Specificity of Refusal Representations in Large Language Models",
+   "type": "journal-article",
+   "year": 2026,
+   "journal": "",
+   "dois": [
+    "10.32473/flairs.39.1.141620"
+   ]
+  },
+  {
+   "title": "Auditing Abliteration: Normalization Placement, Edit Budget, and Transfer in Single-Direction Refusal Removal",
+   "type": "conference-paper",
+   "year": 2026,
+   "journal": "",
+   "dois": [
+    "10.1109/orss71174.2026.11684276"
+   ]
+  },
+  {
+   "title": "Non-Stationary Spectral Decomposition Network: Adaptive Spectral Emission Heads and Frequency Modulation",
+   "type": "conference-paper",
+   "year": 2026,
+   "journal": "",
+   "dois": [
+    "10.1109/orss71174.2026.11684282"
+   ]
+  },
+  {
+   "title": "Machine Learning Detection of IPKVM Exploitation in Online Exam Environments",
+   "type": "conference-paper",
+   "year": 2025,
+   "journal": "",
+   "dois": [
+    "10.1109/orss66051.2025.11121637"
+   ]
+  },
+  {
+   "title": "Advancements in Explainable Artificial Intelligence for Enhanced Trans- parency and Interpretability across Business Applications",
+   "type": "journal-article",
+   "year": 2024,
+   "journal": "",
+   "dois": [
+    "10.25046/aj090502"
+   ]
+  },
+  {
+   "title": "Explainable AI: The Quest for Transparency in Business and Beyond",
+   "type": "book-chapter",
+   "year": 2024,
+   "journal": "",
+   "dois": [
+    "10.1109/icict62343.2024.00093"
+   ]
+  },
+  {
+   "title": "Leveraging Explainable AI in Business and Further",
+   "type": "conference-paper",
+   "year": 2024,
+   "journal": "",
+   "dois": [
+    "10.1109/orss62274.2024.10697961"
+   ]
+  },
+  {
+   "title": "Intelligent Prevention of DDoS Attacks using Reinforcement Learning and Smart Contracts",
+   "type": "journal-article",
+   "year": 2024,
+   "journal": "",
+   "dois": [
+    "10.32473/flairs.37.1.135349"
+   ]
+  }
+ ],
+ "openalex": {
+  "10.1016/j.cosrev.2025.100862": {
+   "title": "Cognitive mapping variants and their training algorithms",
+   "year": 2025,
+   "date": "2025-11-26",
+   "type": "article",
+   "journal": "Computer Science Review",
+   "volume": "59",
+   "issue": "",
+   "first_page": "100862",
+   "last_page": "100862",
+   "authors": [
+    "Maikel León"
+   ],
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Elsevier BV"
+  },
+  "10.32604/cmc.2026.087930": {
+   "title": "Fuzzy Cognitive Maps: A Comprehensive Survey and Comparative Analysis",
+   "year": 2026,
+   "date": "2026-01-01",
+   "type": "article",
+   "journal": "Computers, materials & continua/Computers, materials & continua (Print)",
+   "volume": "0",
+   "issue": "0",
+   "first_page": "1",
+   "last_page": "10",
+   "authors": [
+    "Maikel León"
+   ],
+   "pdf": "https://www.techscience.com/files/onlinefirst/2026/9.23/TSP_CMC_87930/TSP_CMC_87930.pdf",
+   "oa_url": "https://www.techscience.com/files/onlinefirst/2026/9.23/TSP_CMC_87930/TSP_CMC_87930.pdf",
+   "publisher": ""
+  },
+  "10.1007/s11227-026-08760-7": {
+   "title": "Governing generative AI in organizations: a design theory and quasi-experimental field study of sociotechnical guardrails",
+   "year": 2026,
+   "date": "2026-08-16",
+   "type": "article",
+   "journal": "The Journal of Supercomputing",
+   "volume": "82",
+   "issue": "12",
+   "first_page": "",
+   "last_page": "",
+   "authors": [
+    "Maikel León"
+   ],
+   "pdf": "https://link.springer.com/content/pdf/10.1007/s11227-026-08760-7.pdf",
+   "oa_url": "https://link.springer.com/content/pdf/10.1007/s11227-026-08760-7.pdf",
+   "publisher": "Springer Science+Business Media"
+  },
+  "10.3390/bdcc10080272": {
+   "title": "Layerwise Conditioned Backpropagation: A Curvature-Aware Reparameterization of the Backward Pass with Convergence Guarantees",
+   "year": 2026,
+   "date": "2026-08-13",
+   "type": "article",
+   "journal": "Big Data and Cognitive Computing",
+   "volume": "10",
+   "issue": "8",
+   "first_page": "272",
+   "last_page": "272",
+   "authors": [
+    "Maikel León"
+   ],
+   "pdf": "",
+   "oa_url": "https://doi.org/10.3390/bdcc10080272",
+   "publisher": "Multidisciplinary Digital Publishing Institute"
+  },
+  "10.1016/j.jengtecman.2026.101993": {
+   "title": "Agentic AI and labor disruption: A comprehensive review, measurement, and policy framework",
+   "year": 2026,
+   "date": "2026-07-01",
+   "type": "article",
+   "journal": "Journal of Engineering and Technology Management",
+   "volume": "81",
+   "issue": "",
+   "first_page": "101993",
+   "last_page": "101993",
+   "authors": [
+    "Maikel León"
+   ],
+   "pdf": "",
+   "oa_url": "https://doi.org/10.1016/j.jengtecman.2026.101993",
+   "publisher": "Elsevier BV"
+  },
+  "10.3390/a19060492": {
+   "title": "Publisher-Built Generative AI Assistants in U.S. Higher Education",
+   "year": 2026,
+   "date": "2026-06-19",
+   "type": "article",
+   "journal": "Algorithms",
+   "volume": "19",
+   "issue": "6",
+   "first_page": "492",
+   "last_page": "492",
+   "authors": [
+    "Maikel León"
+   ],
+   "pdf": "https://www.mdpi.com/1999-4893/19/6/492/pdf?version=1781853344",
+   "oa_url": "https://www.mdpi.com/1999-4893/19/6/492/pdf?version=1781853344",
+   "publisher": "Multidisciplinary Digital Publishing Institute"
+  },
+  "10.3390/bdcc10030069": {
+   "title": "Generative AI as a General-Purpose Technology",
+   "year": 2026,
+   "date": "2026-02-27",
+   "type": "article",
+   "journal": "Big Data and Cognitive Computing",
+   "volume": "10",
+   "issue": "3",
+   "first_page": "69",
+   "last_page": "69",
+   "authors": [
+    "Maikel León"
+   ],
+   "pdf": "https://www.mdpi.com/2504-2289/10/3/69/pdf?version=1772176949",
+   "oa_url": "https://www.mdpi.com/2504-2289/10/3/69/pdf?version=1772176949",
+   "publisher": "Multidisciplinary Digital Publishing Institute"
+  },
+  "10.1016/j.is.2025.102620": {
+   "title": "GPT-5 and open-weight large language models",
+   "year": 2025,
+   "date": "2025-09-22",
+   "type": "article",
+   "journal": "Information Systems",
+   "volume": "136",
+   "issue": "",
+   "first_page": "102620",
+   "last_page": "102620",
+   "authors": [
+    "Maikel León"
+   ],
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Elsevier BV"
+  },
+  "10.1002/sres.70014": {
+   "title": "Lifecycle-Based Governance to Build Reliable Ethical AI Systems",
+   "year": 2026,
+   "date": "2026-01-30",
+   "type": "article",
+   "journal": "Systems Research and Behavioral Science",
+   "volume": "43",
+   "issue": "3",
+   "first_page": "1116",
+   "last_page": "1132",
+   "authors": [
+    "Maikel León"
+   ],
+   "pdf": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/sres.70014",
+   "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/sres.70014",
+   "publisher": "Wiley"
+  },
+  "10.3390/a19020136": {
+   "title": "Investing in AI Interpretability, Control, and Robustness",
+   "year": 2026,
+   "date": "2026-02-09",
+   "type": "article",
+   "journal": "Algorithms",
+   "volume": "19",
+   "issue": "2",
+   "first_page": "136",
+   "last_page": "136",
+   "authors": [
+    "Maikel León"
+   ],
+   "pdf": "https://www.mdpi.com/1999-4893/19/2/136/pdf",
+   "oa_url": "https://www.mdpi.com/1999-4893/19/2/136/pdf",
+   "publisher": "Multidisciplinary Digital Publishing Institute"
+  },
+  "10.3390/bdcc10010022": {
+   "title": "A Review on Fuzzy Cognitive Mapping",
+   "year": 2026,
+   "date": "2026-01-06",
+   "type": "article",
+   "journal": "Big Data and Cognitive Computing",
+   "volume": "10",
+   "issue": "1",
+   "first_page": "22",
+   "last_page": "22",
+   "authors": [
+    "Gonzalo Nápoles",
+    "Agnieszka Jastrzębska",
+    "Isel Grau",
+    "Yamisleydi Salgueiro",
+    "Maikel León"
+   ],
+   "pdf": "https://www.mdpi.com/2504-2289/10/1/22/pdf?version=1767710381",
+   "oa_url": "https://www.mdpi.com/2504-2289/10/1/22/pdf?version=1767710381",
+   "publisher": "Multidisciplinary Digital Publishing Institute"
+  },
+  "10.1016/j.ins.2022.12.012": {
+   "title": "Prolog-based agnostic explanation module",
+   "year": 2022,
+   "date": "2022-12-12",
+   "type": "article",
+   "journal": "Information Sciences",
+   "volume": "622",
+   "issue": "",
+   "first_page": "1196",
+   "last_page": "1227",
+   "authors": [
+    "Gonzalo Nápoles",
+    "Fabian Hoitsma",
+    "Andreas Knoben",
+    "Agnieszka Jastrzębska",
+    "Maikel León"
+   ],
+   "pdf": "",
+   "oa_url": "https://doi.org/10.1016/j.ins.2022.12.012",
+   "publisher": "Elsevier BV"
+  },
+  "10.1109/tcyb.2022.3165104": {
+   "title": "Recurrence-Aware Long-Term Cognitive Network",
+   "year": 2022,
+   "date": "2022-04-27",
+   "type": "article",
+   "journal": "IEEE Transactions on Cybernetics",
+   "volume": "53",
+   "issue": "10",
+   "first_page": "6083",
+   "last_page": "6094",
+   "authors": [
+    "Gonzalo Nápoles",
+    "Yamisleydi Salgueiro",
+    "Isel Grau",
+    "Maikel León"
+   ],
+   "pdf": "",
+   "oa_url": "https://research.tilburguniversity.edu/en/publications/2007d7e5-f201-4c0e-b1ae-50c71b14bf46",
+   "publisher": "Institute of Electrical and Electronics Engineers"
+  },
+  "10.1142/s0218213018600102": {
+   "title": "FCM Expert",
+   "year": 2018,
+   "date": "2018-11-01",
+   "type": "article",
+   "journal": "International Journal of Artificial Intelligence Tools",
+   "volume": "27",
+   "issue": "07",
+   "first_page": "1860010",
+   "last_page": "1860010",
+   "authors": [
+    "Gonzalo Nápoles",
+    "Maikel León",
+    "Isel Grau",
+    "Koen Vanhoof"
+   ],
+   "pdf": "",
+   "oa_url": "http://hdl.handle.net/1942/27948",
+   "publisher": "World Scientific"
+  },
+  "10.1007/s10115-013-0616-z": {
+   "title": "Learning and clustering of fuzzy cognitive maps",
+   "year": 2013,
+   "date": "2013-03-20",
+   "type": "article",
+   "journal": "Knowledge and Information Systems",
+   "volume": "39",
+   "issue": "2",
+   "first_page": "435",
+   "last_page": "462",
+   "authors": [
+    "Maikel León",
+    "Lusine Mkrtchyan",
+    "Benoît Depaire",
+    "Da Ruan",
+    "Koen Vanhoof"
+   ],
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Springer Science+Business Media"
+  },
+  "10.1080/18756891.2013.816025": {
+   "title": "Tackling Travel Behaviour",
+   "year": 2013,
+   "date": "2013-01-01",
+   "type": "article",
+   "journal": "International Journal of Computational Intelligence Systems",
+   "volume": "6",
+   "issue": "6",
+   "first_page": "1012",
+   "last_page": "1012",
+   "authors": [
+    "Maikel León",
+    "Gonzalo Nápoles",
+    "Rafael Bello",
+    "Lusine Mkrtchyan",
+    "Benoît Depaire",
+    "Koen Vanhoof"
+   ],
+   "pdf": "https://link.springer.com/content/pdf/10.1080/18756891.2013.816025.pdf",
+   "oa_url": "https://link.springer.com/content/pdf/10.1080/18756891.2013.816025.pdf",
+   "publisher": "Springer Nature"
+  },
+  "10.1007/s10109-010-0144-2": {
+   "title": "Mental maps and travel behaviour",
+   "year": 2010,
+   "date": "2010-11-11",
+   "type": "article",
+   "journal": "Journal of Geographical Systems",
+   "volume": "14",
+   "issue": "2",
+   "first_page": "143",
+   "last_page": "165",
+   "authors": [
+    "Els Hannes",
+    "Diana Kusumastuti",
+    "Maikel León",
+    "Davy Janssens",
+    "Koen Vanhoof",
+    "Geert Wets"
+   ],
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Springer Science+Business Media"
+  },
+  "10.37394/23202.2024.23.46": {
+   "title": "The Escalating AI's Energy Demands",
+   "year": 2024,
+   "date": "2024-01-01",
+   "type": "article",
+   "journal": "WSEAS TRANSACTIONS on SYSTEMS archive",
+   "volume": "23",
+   "issue": "",
+   "first_page": "444",
+   "last_page": "457",
+   "authors": [
+    "Maikel León"
+   ]
+  }
+ },
+ "crossref": {
+  "10.32473/flairs.39.1.141620": {
+   "title": "Domain-Specificity of Refusal Representations in Large Language Models",
+   "year": 2026,
+   "date": "2026-05-06",
+   "type": "journal-article",
+   "journal": "The International FLAIRS Conference Proceedings",
+   "volume": "39",
+   "issue": "1",
+   "first_page": "",
+   "last_page": "",
+   "authors": [
+    "Charlie Tucker",
+    "Maikel Leon"
+   ],
+   "pdf": "https://journals.flvc.org/FLAIRS/article/download/141620/146927",
+   "oa_url": "https://journals.flvc.org/FLAIRS/article/download/141620/146927",
+   "publisher": "George A. Smathers Libraries"
+  },
+  "10.1109/orss71174.2026.11684276": {
+   "title": "Auditing Abliteration: Normalization Placement, Edit Budget, and Transfer in Single-Direction Refusal Removal",
+   "year": 2026,
+   "date": "2026-04-01",
+   "type": "conference-paper",
+   "journal": "2026 IEEE Opportunity Research Scholars Symposium (ORSS)",
+   "volume": "",
+   "issue": "",
+   "first_page": "1",
+   "last_page": "5",
+   "authors": [
+    "Charlie Tucker",
+    "Maikel Leon"
+   ],
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "IEEE"
+  },
+  "10.1109/orss71174.2026.11684282": {
+   "title": "Non-Stationary Spectral Decomposition Network: Adaptive Spectral Emission Heads and Frequency Modulation",
+   "year": 2026,
+   "date": "2026-04-01",
+   "type": "conference-paper",
+   "journal": "2026 IEEE Opportunity Research Scholars Symposium (ORSS)",
+   "volume": "",
+   "issue": "",
+   "first_page": "1",
+   "last_page": "5",
+   "authors": [
+    "Nikhil Sunder",
+    "Maikel Leon"
+   ],
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "IEEE"
+  },
+  "10.1109/orss66051.2025.11121637": {
+   "title": "Machine Learning Detection of IPKVM Exploitation in Online Exam Environments",
+   "year": 2025,
+   "date": "2025-04-01",
+   "type": "conference-paper",
+   "journal": "2025 IEEE Opportunity Research Scholars Symposium (ORSS)",
+   "volume": "",
+   "issue": "",
+   "first_page": "1",
+   "last_page": "5",
+   "authors": [
+    "Jonathan Kats",
+    "Maikel Leon"
+   ],
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "IEEE"
+  },
+  "10.25046/aj090502": {
+   "title": "Advancements in Explainable Artificial Intelligence for Enhanced Trans- parency and Interpretability across Business Applications",
+   "year": 2024,
+   "date": "2024-09-01",
+   "type": "journal-article",
+   "journal": "Advances in Science, Technology and Engineering Systems Journal",
+   "volume": "9",
+   "issue": "5",
+   "first_page": "9",
+   "last_page": "20",
+   "authors": [
+    "Maikel Leon",
+    "Hanna DeSimone"
+   ],
+   "pdf": "https://www.astesj.com/?sdm_process_download=1&download_id=81513",
+   "oa_url": "https://www.astesj.com/?sdm_process_download=1&download_id=81513",
+   "publisher": "Advances in Science, Technology and Engineering Systems Journal (ASTESJ)"
+  },
+  "10.1109/icict62343.2024.00093": {
+   "title": "Explainable AI: The Quest for Transparency in Business and Beyond",
+   "year": 2024,
+   "date": "2024-03-15",
+   "type": "book-chapter",
+   "journal": "2024 7th International Conference on Information and Computer Technologies (ICICT)",
+   "volume": "",
+   "issue": "",
+   "first_page": "532",
+   "last_page": "538",
+   "authors": [
+    "Hanna DeSimone",
+    "Maikel Leon-Espinosa"
+   ],
+   "pdf": "",
+   "oa_url": "",
+   "publisher": ""
+  },
+  "10.1109/orss62274.2024.10697961": {
+   "title": "Leveraging Explainable AI in Business and Further",
+   "year": 2024,
+   "date": "2024-04-15",
+   "type": "conference-paper",
+   "journal": "2024 IEEE Opportunity Research Scholars Symposium (ORSS)",
+   "volume": "",
+   "issue": "",
+   "first_page": "1",
+   "last_page": "6",
+   "authors": [
+    "Hanna DeSimone",
+    "Maikel Leon-Espinosa"
+   ],
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "IEEE"
+  },
+  "10.32473/flairs.37.1.135349": {
+   "title": "Intelligent Prevention of DDoS Attacks using Reinforcement Learning and Smart Contracts",
+   "year": 2024,
+   "date": "2024-05-13",
+   "type": "journal-article",
+   "journal": "The International FLAIRS Conference Proceedings",
+   "volume": "37",
+   "issue": "",
+   "first_page": "",
+   "last_page": "",
+   "authors": [
+    " Emily Struble",
+    "Maikel Leon Espinosa",
+    "Erotokritos Skordilis"
+   ],
+   "pdf": "https://journals.flvc.org/FLAIRS/article/download/135349/139955",
+   "oa_url": "https://journals.flvc.org/FLAIRS/article/download/135349/139955",
+   "publisher": "George A. Smathers Libraries"
+  }
+ }
+}

@@ -1,0 +1,198 @@
+{
+  "orcid": "0000-0002-8849-4521",
+  "scholar_user": "1hocwokAAAAJ",
+  "my_name_variants": [
+    "Maikel Leon",
+    "Maikel Leon Espinosa",
+    "Maikel Leon-Espinosa",
+    "Maikel León",
+    "Maikel León Espinosa"
+  ],
+  "my_name_display": "Leon, M.",
+  "_journals_help": "Papers are featured only if they appear in one of these journals. Key = journal name as OpenAlex spells it (lowercase is fine). 'name' = how the site shows it, 'if' = impact factor shown on the site. To feature a new journal, add a line here.",
+  "journals": {
+    "computer science review": {
+      "name": "Computer Science Review",
+      "if": 17.5
+    },
+    "computers, materials & continua": {
+      "name": "Computers, Materials & Continua",
+      "if": 2.4
+    },
+    "computers, materials & continua/computers, materials & continua (print)": {
+      "name": "Computers, Materials & Continua",
+      "if": 2.4
+    },
+    "the journal of supercomputing": {
+      "name": "The Journal of Supercomputing",
+      "if": 3.5
+    },
+    "big data and cognitive computing": {
+      "name": "Big Data and Cognitive Computing",
+      "if": 5.3
+    },
+    "journal of engineering and technology management": {
+      "name": "Journal of Engineering and Technology Management",
+      "if": 4.3
+    },
+    "algorithms": {
+      "name": "Algorithms",
+      "if": 2.6
+    },
+    "information systems": {
+      "name": "Information Systems",
+      "if": 4.0
+    },
+    "systems research and behavioral science": {
+      "name": "Systems Research and Behavioral Science",
+      "if": 1.8
+    },
+    "information sciences": {
+      "name": "Information Sciences",
+      "if": 6.0
+    },
+    "ieee transactions on cybernetics": {
+      "name": "IEEE Transactions on Cybernetics",
+      "if": 11.3
+    },
+    "international journal of artificial intelligence tools": {
+      "name": "International Journal on Artificial Intelligence Tools",
+      "if": 1.0
+    },
+    "international journal on artificial intelligence tools": {
+      "name": "International Journal on Artificial Intelligence Tools",
+      "if": 1.0
+    },
+    "knowledge and information systems": {
+      "name": "Knowledge and Information Systems",
+      "if": 3.6
+    },
+    "international journal of computational intelligence systems": {
+      "name": "International Journal of Computational Intelligence Systems",
+      "if": 4.0
+    },
+    "journal of geographical systems": {
+      "name": "Journal of Geographical Systems",
+      "if": 2.8
+    }
+  },
+  "_overrides_help": "Corrections keyed by DOI, applied on every update: title, year, volume, issue, pages, or pdf (a link to a free copy, for example a preprint you host). The featured papers' titles are kept here in sentence case.",
+  "overrides": {
+    "10.32604/cmc.2026.087930": {
+      "year": 2026,
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "title": "Fuzzy cognitive maps: A comprehensive survey and comparative analysis"
+    },
+    "10.1007/s11227-026-08760-7": {
+      "year": 2026,
+      "pages": "641",
+      "title": "Governing generative AI in organizations: A design theory and quasi-experimental field study of sociotechnical guardrails"
+    },
+    "10.1016/j.is.2025.102620": {
+      "year": 2026,
+      "title": "GPT-5 and open-weight large language models: Advances in reasoning, transparency, and control"
+    },
+    "10.1016/j.cosrev.2025.100862": {
+      "year": 2026,
+      "title": "Cognitive mapping variants and their training algorithms"
+    },
+    "10.1109/tcyb.2022.3165104": {
+      "year": 2023,
+      "title": "Recurrence-aware long-term cognitive network for explainable pattern classification"
+    },
+    "10.1016/j.ins.2022.12.012": {
+      "year": 2023,
+      "title": "Prolog-based agnostic explanation module for structured pattern classification"
+    },
+    "10.1007/s10115-013-0616-z": {
+      "year": 2014,
+      "title": "Learning and clustering of fuzzy cognitive maps for travel behaviour analysis"
+    },
+    "10.1080/18756891.2013.816025": {
+      "pages": "1012–1039",
+      "title": "Tackling travel behaviour: An approach based on fuzzy cognitive maps"
+    },
+    "10.1007/s10109-010-0144-2": {
+      "year": 2012,
+      "title": "Mental maps and travel behaviour: Meanings and models"
+    },
+    "10.25046/aj090502": {
+      "title": "Advancements in Explainable Artificial Intelligence for Enhanced Transparency and Interpretability across Business Applications"
+    },
+    "10.3390/bdcc10080272": {
+      "title": "Layerwise conditioned backpropagation: A curvature-aware reparameterization of the backward pass with convergence guarantees"
+    },
+    "10.1016/j.jengtecman.2026.101993": {
+      "title": "Agentic AI and labor disruption: A comprehensive review, measurement, and policy framework"
+    },
+    "10.3390/a19060492": {
+      "title": "Publisher-built generative AI assistants in U.S. higher education: A critical review and a reproducible TRIAD–JTBD evaluation framework"
+    },
+    "10.3390/bdcc10030069": {
+      "title": "Generative AI as a general-purpose technology: Foundations, applications, and labor market implications through 2030"
+    },
+    "10.1002/sres.70014": {
+      "title": "Lifecycle-based governance to build reliable ethical AI systems"
+    },
+    "10.3390/a19020136": {
+      "title": "Investing in AI interpretability, control, and robustness"
+    },
+    "10.3390/bdcc10010022": {
+      "title": "A review on fuzzy cognitive mapping: Recent advances and algorithms"
+    },
+    "10.1142/s0218213018600102": {
+      "title": "FCM Expert: Software tool for scenario analysis and pattern classification based on fuzzy cognitive maps"
+    }
+  },
+  "_exclude_help": "DOIs to never feature, even if they are in a listed journal.",
+  "exclude": [],
+  "_metrics_help": "Google Scholar numbers. The update tries to refresh them from your Scholar profile; if Google blocks it, these values stay as they are. You can also edit them by hand.",
+  "metrics": {
+    "citations": 1129,
+    "h_index": 20,
+    "i10_index": 26,
+    "source": "Google Scholar",
+    "checked": "2026-10"
+  },
+  "since_year": 2015,
+  "_goatcounter_help": "Visitor stats: after creating a free GoatCounter account, put its code here (for maikelleon.goatcounter.com, the code is maikelleon). Leave empty for no analytics.",
+  "goatcounter": "",
+  "_students_help": "Papers you co-authored with these students are listed under Teaching > Undergraduate research, newest first. Add a student's name as it appears on the paper. Badges and code links go in student_extras, keyed by DOI.",
+  "students": [
+    "Hanna DeSimone",
+    "Jonathan Kats",
+    "Charlie Tucker",
+    "Nikhil Sunder",
+    "Emily Struble"
+  ],
+  "student_extras": {
+    "10.32473/flairs.39.1.141620": {
+      "badge_en": "Best Poster Award",
+      "badge_es": "Premio al Mejor Póster"
+    },
+    "10.1109/orss71174.2026.11684282": {
+      "code": "https://doi.org/10.5281/zenodo.23368625"
+    }
+  },
+  "_paper_links_help": "Extra links shown beside a paper in the publication lists, keyed by DOI. The icon can be globe, play, doc, or download.",
+  "paper_links": {
+    "10.1142/s0218213018600102": [
+      {
+        "en": "FCM Expert website",
+        "es": "Sitio de FCM Expert",
+        "url": "https://sites.google.com/view/fcm-expert",
+        "icon": "globe"
+      },
+      {
+        "en": "Video demo",
+        "es": "Video demostrativo",
+        "url": "https://www.youtube.com/watch?v=tCrT9sPc0xc",
+        "icon": "play"
+      }
+    ]
+  },
+  "_reviews_exclude_help": "Journals never to list under Journals reviewed for, even if they appear in the peer-review section of your ORCID record.",
+  "reviews_exclude": []
+}

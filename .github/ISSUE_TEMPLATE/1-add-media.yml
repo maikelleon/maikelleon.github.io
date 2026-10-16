@@ -1,0 +1,40 @@
+name: Add a media appearance
+description: TV interview, news story, podcast, or article. It appears as a new card in the Media section.
+title: "[Media] "
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - TV or video
+        - News story or article
+        - Podcast or radio
+    validations:
+      required: true
+  - type: input
+    id: outlet
+    attributes:
+      label: Outlet and program
+      description: For example "CNN en Español · Oppenheimer Presenta" or "Univision · Despierta América"
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: In the language it aired or was published in
+    validations:
+      required: true
+  - type: input
+    id: year
+    attributes:
+      label: Year
+      placeholder: "2026"
+  - type: textarea
+    id: links
+    attributes:
+      label: Link or links
+      description: |
+        One link per line. For a series with several segments, write each line as "Segment title | link".
+      placeholder: https://...

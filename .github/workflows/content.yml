@@ -1,0 +1,43 @@
+name: Apply admin form
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  apply:
+    # Only forms you submit yourself can change the site.
+    if: github.event.issue.user.login == github.repository_owner && startsWith(github.event.issue.title, '[')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Apply the form
+        id: apply
+        run: |
+          set +e
+          python scripts/from_issue.py "$GITHUB_EVENT_PATH"
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+      - name: Save changes
+        if: steps.apply.outputs.code == '0'
+        env:
+          TITLE: ${{ github.event.issue.title }}
+          NUM: ${{ github.event.issue.number }}
+        run: |
+          git config user.name "site-updater"
+          git config user.email "site-updater@users.noreply.github.com"
+          git add data/content.json index.html
+          git commit -m "$TITLE (#$NUM)"
+          git push
+      - name: Reply and close
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue comment ${{ github.event.issue.number }} --body-file reply.md
+          gh issue close ${{ github.event.issue.number }}

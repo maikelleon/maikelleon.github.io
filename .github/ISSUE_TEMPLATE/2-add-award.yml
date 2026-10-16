@@ -1,0 +1,32 @@
+name: Add an award or certification
+description: Appears in the Honors section, newest first.
+title: "[Award] "
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options:
+        - Award
+        - Certification or fellowship
+    validations:
+      required: true
+  - type: input
+    id: year
+    attributes:
+      label: Year
+      placeholder: "2026"
+    validations:
+      required: true
+  - type: textarea
+    id: en
+    attributes:
+      label: Text in English
+      placeholder: Best Paper Award, 40th FLAIRS Conference, Miami, Florida
+    validations:
+      required: true
+  - type: textarea
+    id: es
+    attributes:
+      label: Text in Spanish (optional)
+      description: Leave blank to show the English text on the Spanish version too.

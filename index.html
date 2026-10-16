@@ -1,0 +1,989 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Maikel Leon, PhD</title>
+<meta name="description" content="Maikel Leon, PhD: AI researcher, consultant, educator, and bilingual media commentator.">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Maikel Leon, PhD">
+<meta property="og:description" content="AI researcher, consultant, educator, and bilingual media commentator.">
+<meta property="og:url" content="https://maikelleon.github.io/">
+<meta property="og:image" content="https://maikelleon.github.io/assets/photo.jpg">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Maikel Leon","honorificSuffix":"PhD",
+ "description":"AI researcher, consultant, educator, and bilingual media commentator.",
+ "url":"https://maikelleon.github.io/","image":"https://maikelleon.github.io/assets/photo.jpg",
+ "jobTitle":"Associate Professor of Practice in Business Technology",
+ "worksFor":[{"@type":"CollegeOrUniversity","name":"University of Miami"},{"@type":"Organization","name":"ML Education & Consulting LLC"}],
+ "alumniOf":{"@type":"CollegeOrUniversity","name":"Hasselt University"},
+ "knowsLanguage":["en","es"],
+ "address":{"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"},
+ "knowsAbout":["Artificial intelligence","Generative AI","AI agents","AI governance","Machine learning","Fuzzy cognitive maps"],
+ "sameAs":["https://www.linkedin.com/in/maikelleon/","https://scholar.google.com/citations?user=1hocwokAAAAJ","https://www.semanticscholar.org/author/Maikel-Leon/66618042","https://orcid.org/0000-0002-8849-4521","https://www.researchgate.net/profile/Maikel-Leon","https://app.dimensions.ai/discover/publication?search_mode=content&and_facet_researcher=ur.015527277731.48&order=date","https://scholargps.com/scholars/49121140777133/maikel-leon"]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: full-width tiles; a light hero, then sections alternating black and white
+   (assigned automatically, so hiding a section never puts two of a kind together);
+   a slim translucent bar on top; centered display headlines over a 980px column.
+   Deliberately one look (no dark mode): every tile sets its own colors.
+   Type scale: seven sizes, used everywhere and nothing else. */
+:root{
+  --t-caption:12px;                      /* labels, chips, nav, footer */
+  --t-small:14px;                        /* secondary text, notes, list details */
+  --t-body:17px;                         /* paragraphs, list titles, links, buttons */
+  --t-title:21px;                        /* subheads, card titles, tagline */
+  --t-large:28px;                        /* research numbers, phone menu */
+  --t-display:clamp(26px, 3vw, 32px);    /* section headings */
+  --t-headline:clamp(28px, 3.6vw, 38px); /* your name in the hero, the largest text */
+
+  --white:#ffffff; --silver:#f5f5f7; --black:#000000;
+  --bg:#ffffff; --ink:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7;
+  --surface:#f5f5f7; --chip:#f5f5f7; --chip-in:#ffffff;
+  --accent:#0071e3; --link:#0066cc; --accent-soft:#e8f1fc;
+  --font:-apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mono:ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace; /* technical details */
+  --gutter:max(22px, env(safe-area-inset-left, 0px), env(safe-area-inset-right, 0px));
+  --col:980px;
+  color-scheme:light;
+}
+.t-silver{--bg:#f5f5f7; --surface:#ffffff; --chip:#ffffff; --chip-in:#f5f5f7; background:var(--silver); color:var(--ink)}
+.t-white{--bg:#ffffff; --surface:#f5f5f7; --chip:#f5f5f7; --chip-in:#ffffff; background:var(--white); color:var(--ink)}
+.t-black{--bg:#000000; --ink:#f5f5f7; --muted:#86868b; --line:#424245; --surface:#1d1d1f; --chip:#1d1d1f; --chip-in:#2c2c2e;
+  --accent:#2997ff; --link:#2997ff; --accent-soft:#0b2a4a; background:var(--black); color:var(--ink); color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;color-scheme:light}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--silver);color:var(--ink);font-family:var(--font);font-size:var(--t-body);line-height:1.47;letter-spacing:-.022em;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+[hidden]{display:none!important}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+#site[data-lang="en"] .es, #site[data-lang="es"] .en{display:none}
+.wrap{max-width:var(--col);margin:0 auto;padding-left:var(--gutter);padding-right:var(--gutter)}
+.nw{white-space:nowrap}
+.muted{color:var(--muted)}
+.small{font-size:var(--t-small);line-height:1.43;letter-spacing:-.016em}
+
+/* ---------- global bar ---------- */
+header{position:sticky;top:0;z-index:20;padding-top:env(safe-area-inset-top, 0px);background:rgba(250,250,252,.8);backdrop-filter:saturate(1.8) blur(20px);-webkit-backdrop-filter:saturate(1.8) blur(20px)}
+.bar{display:flex;align-items:center;gap:8px;height:44px;max-width:1024px;margin:0 auto;padding-left:var(--gutter);padding-right:var(--gutter)}
+.home{display:block;flex:none;width:28px;height:28px;border-radius:50%;overflow:hidden;box-shadow:0 0 0 1px rgba(0,0,0,.08)}
+.home img{display:block;width:100%;height:100%;object-fit:cover}
+.home:hover{opacity:.85}
+nav{flex:1;min-width:0}
+nav ul{display:flex;justify-content:center;list-style:none;margin:0;padding:0}
+nav a{display:block;padding:0 9px;line-height:44px;font-size:var(--t-caption);letter-spacing:-.01em;color:rgba(0,0,0,.8);white-space:nowrap;text-decoration:none!important;transition:color .2s}
+nav a:hover,nav a.on{color:#000}
+.lang{display:flex;gap:2px;flex:none}
+.lang button{font:500 var(--t-caption)/1 var(--font);border:0;background:transparent;color:rgba(0,0,0,.45);padding:6px;border-radius:6px;cursor:pointer}
+.lang button[aria-pressed="true"]{color:#000}
+.menu-btn{display:none;width:36px;height:36px;margin-right:-8px;border:0;background:transparent;cursor:pointer;position:relative}
+.menu-btn span{position:absolute;left:10px;right:10px;height:1.5px;background:#1d1d1f;border-radius:1px;transition:transform .25s, top .25s}
+.menu-btn span:first-child{top:14px}.menu-btn span:last-child{top:21px}
+header.open .menu-btn span:first-child{top:17.5px;transform:rotate(45deg)}
+header.open .menu-btn span:last-child{top:17.5px;transform:rotate(-45deg)}
+@media (max-width:860px){
+  .home{margin-right:auto}
+  .menu-btn{display:block}
+  nav{position:absolute;left:0;right:0;top:100%;background:rgba(250,250,252,.98);max-height:0;overflow:hidden;visibility:hidden;transition:max-height .3s ease, visibility .3s}
+  header.open nav{max-height:85vh;visibility:visible}
+  nav ul{flex-direction:column;justify-content:flex-start;padding:8px var(--gutter) 28px}
+  nav a{font-size:var(--t-large);font-weight:600;line-height:1.14;letter-spacing:-.015em;padding:10px 0;color:#1d1d1f}
+}
+
+/* ---------- announcement ribbon ---------- */
+.announce{background:var(--white);color:var(--ink);text-align:center;border-bottom:1px solid var(--line)}
+.announce .wrap{padding-block:12px;font-size:var(--t-small);display:flex;flex-wrap:wrap;justify-content:center;gap:4px 10px}
+.announce a::after{content:" ›"}
+
+/* ---------- hero ---------- */
+.hero{text-align:center;padding:64px var(--gutter) 60px}
+.hero p{margin-left:auto;margin-right:auto}
+.portrait{position:relative;width:240px;height:240px;max-width:100%;margin:0 auto 14px;display:grid;place-items:center}
+.portrait img{position:relative;z-index:1;display:block;width:132px;height:132px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 1px var(--line)}
+.dial{position:absolute;inset:0;width:100%;height:100%;fill:none;stroke:var(--muted)}
+.dial .idx{stroke:var(--accent);opacity:1}
+.halo{position:absolute;inset:0;width:100%;height:100%;fill:var(--muted);font:500 var(--t-caption) var(--mono);animation:spin 60s linear infinite}
+.portrait:hover .halo{animation-play-state:paused}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion: reduce){.halo{animation:none}}
+.eyebrow{font-size:var(--t-body);font-weight:600;color:var(--muted);margin:0 0 6px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+h1{font-size:var(--t-headline);line-height:1.1;font-weight:700;letter-spacing:-.03em;margin:0 0 8px;color:var(--ink);text-wrap:balance}
+.loc{display:flex;align-items:center;justify-content:center;font-size:var(--t-body);color:var(--muted);margin:0 auto 22px}
+.loc .ico-s{margin-right:5px}
+.role{font-size:var(--t-title);line-height:1.38;letter-spacing:-.015em;color:var(--ink);margin:0 auto 26px;max-width:32em;text-wrap:balance}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px}
+.hero .actions{display:grid;grid-template-columns:1fr 1fr;width:max-content;max-width:100%;margin:0 auto;gap:12px}
+.hero .actions .btn{justify-content:center;white-space:nowrap}
+@media (max-width:480px){.hero .actions{width:100%}.hero .actions .btn{padding:11px 14px}}
+@media (max-width:359px){.hero .actions{grid-template-columns:1fr}}
+.btn{display:inline-flex;align-items:center;font-size:var(--t-body);color:var(--link);text-decoration:none!important}
+.btn::after{content:"›";margin-left:5px;font-size:1.15em;line-height:1}
+.btn:hover{text-decoration:underline!important}
+.btn.primary{background:var(--accent);color:#fff;padding:11px 22px;border-radius:980px}
+.btn.primary::after,.btn.plain::after{content:none}
+.btn.primary:hover{text-decoration:none!important;filter:brightness(1.08)}
+.facts{display:flex;justify-content:center;margin:36px auto 0;max-width:440px}
+.facts > span{flex:1 1 0;display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 12px;font-size:var(--t-small);color:var(--muted)}
+.facts > span + span{border-left:1px solid var(--line)}
+.facts strong{font-size:var(--t-large);line-height:1.14;font-weight:600;letter-spacing:-.02em;color:var(--ink);font-variant-numeric:tabular-nums}
+.src{margin:12px auto 0;font-size:var(--t-caption);color:var(--muted)}
+
+/* ---------- code font: years, course codes, DOIs, counts, links on papers ---------- */
+.yr,.code,.doi,.if,.fold-n,.xl,.md,.facts strong{font-family:var(--mono);letter-spacing:0}
+.code{font-weight:500}
+.facts strong{font-weight:500}
+.tool{font:500 var(--t-caption)/1.4 var(--mono);letter-spacing:0;color:var(--link);background:none;border:0;padding:0;cursor:pointer;text-decoration:none}
+.tool:hover{text-decoration:underline}
+.tool.ok{color:var(--muted);text-decoration:none}
+.works .meta{margin-top:3px}
+
+/* ---------- icons: thin line drawings, one family ---------- */
+.sprite{position:absolute;width:0;height:0;overflow:hidden}
+.ico,.ico-s{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.ico{width:28px;height:28px;stroke-width:1.3}
+.ico-s{width:15px;height:15px;stroke-width:1.6;vertical-align:-2px;margin-right:6px}
+.ext::after,.btn.ext::after{content:"";display:inline-block;width:.6em;height:.6em;margin-left:.32em;vertical-align:.05em;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3.5 8.5l5-5M4.5 3.5h4v4'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3.5 8.5l5-5M4.5 3.5h4v4'/%3E%3C/svg%3E") center/contain no-repeat}
+
+/* ---------- section tiles ---------- */
+section{padding-block:88px;padding-left:max(var(--gutter), calc((100% - var(--col)) / 2));padding-right:max(var(--gutter), calc((100% - var(--col)) / 2));scroll-margin-top:44px}
+section > .label{text-align:center;font:500 var(--t-small)/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+section > .label .ico{display:block;margin:0 auto 10px;width:32px;height:32px;color:var(--accent)}
+h2{font-size:var(--t-display);line-height:1.15;font-weight:600;letter-spacing:-.02em;margin:0 0 28px;text-align:center;text-wrap:balance}
+h3{font-size:var(--t-title);line-height:1.24;font-weight:600;letter-spacing:-.015em;margin:44px 0 12px}
+.first{margin-top:0}
+p{margin:0 0 16px;max-width:68ch;text-wrap:pretty}
+@media (max-width:760px){section{padding-block:64px}}
+
+/* centered intros and legends */
+section > div:last-child > h2 + p.small{text-align:center;margin-left:auto;margin-right:auto}
+.intro{max-width:720px;margin:0 auto 40px;text-align:center}
+.intro p{margin-left:auto;margin-right:auto}
+.intro .tags{justify-content:center}
+.intro:last-child{margin-bottom:0}
+p{text-wrap:pretty}
+#about > div:last-child > div{max-width:692px;margin:0 auto}
+#about p{max-width:none}
+#executive > div:last-child{text-align:center}
+#executive p{margin-left:auto;margin-right:auto;max-width:640px}
+
+
+/* four sides (About) */
+.sides{list-style:none;padding:0;margin:48px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:14px}
+.sides a{display:flex;flex-direction:column;gap:6px;height:100%;background:var(--surface);border-radius:20px;padding:24px 22px;color:var(--ink);text-decoration:none!important;transition:transform .25s ease}
+.sides a:hover{transform:scale(1.02)}
+.sides .ico{color:var(--accent);margin-bottom:8px}
+.sk{font-size:var(--t-title);font-weight:600;letter-spacing:-.015em}
+.sk::after{content:" ›";color:var(--link)}
+.sd{font-size:var(--t-small);color:var(--muted)}
+
+/* chips */
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:22px 0 0}
+.tags li{padding:7px 14px;border-radius:980px;background:var(--chip);color:var(--ink);font-size:var(--t-small)}
+
+/* lists with a year column */
+.list,.pubs,.works{list-style:none;padding:0;margin:0}
+.list li,.pubs li{display:grid;grid-template-columns:100px minmax(0,1fr);gap:18px;padding-block:16px;border-top:1px solid var(--line)}
+.pubs li{grid-template-columns:56px minmax(0,1fr)}
+.list li:first-child,.pubs li:first-child{border-top:0}
+.yr{font-size:var(--t-small);color:var(--muted);font-variant-numeric:tabular-nums;padding-top:2px}
+.pt{display:block;font-weight:600;line-height:1.35}
+.pv{display:block;color:var(--muted);font-size:var(--t-small);margin-top:3px}
+.pv i{font-style:italic}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;margin-top:6px}
+.doi{font-size:var(--t-caption);word-break:break-all}
+.if{font-size:var(--t-caption);padding:3px 9px;border-radius:980px;background:var(--chip);color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.if.award{background:#0071e3;color:#fff}
+.xl{display:inline-flex;align-items:center;font-size:var(--t-caption);white-space:nowrap}
+.xl .ico-s{width:13px;height:13px;margin-right:4px;vertical-align:0}
+.more{margin:28px 0 0;text-align:center;max-width:none}
+@media (max-width:520px){.list li,.pubs li{grid-template-columns:1fr;gap:2px}}
+
+/* all works */
+.works li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:16px;padding-block:10px;border-top:1px solid var(--line);font-size:var(--t-small)}
+.works li:first-child{border-top:0}
+.jlist li{grid-template-columns:150px minmax(0,1fr)}
+@media (max-width:520px){.jlist li{grid-template-columns:1fr;gap:2px}}
+.skills{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:26px 36px}
+.sk-h{font-size:var(--t-caption);font-weight:600;color:var(--muted);margin:0 0 10px}
+.chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.chips li{font-size:var(--t-caption);line-height:1.3;color:var(--muted);background:var(--chip-in);border-radius:980px;padding:5px 10px}
+.works .wt{display:block}
+.works .wv{display:block;color:var(--muted);font-size:var(--t-caption)}
+.works a{color:inherit}
+.works a:hover{color:var(--link)}
+
+/* expand and collapse */
+.fold{border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:24px}
+.fold + .fold{border-top:0;margin-top:0}
+.fold > summary{display:flex;align-items:center;gap:12px;padding:18px 2px;cursor:pointer;list-style:none}
+.fold > summary::-webkit-details-marker{display:none}
+.fold > summary h3{margin:0}
+.fold > summary::after{content:"";margin-left:auto;width:14px;height:14px;background:var(--link);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 4.5l4 4 4-4'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 4.5l4 4 4-4'/%3E%3C/svg%3E") center/contain no-repeat;transition:transform .25s ease}
+.fold[open] > summary::after{transform:rotate(180deg)}
+.fold-n{font-size:var(--t-caption);font-weight:600;color:var(--muted);background:var(--chip);border-radius:980px;padding:3px 9px;font-variant-numeric:tabular-nums}
+.fold > :not(summary){margin-bottom:22px}
+@media (prefers-reduced-motion: reduce){.fold > summary::after{transition:none}}
+
+/* courses */
+.courses{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:0 36px}
+.courses li{display:flex;gap:14px;padding-block:11px;border-top:1px solid var(--line)}
+.code{font-size:var(--t-small);font-weight:600;color:var(--muted);flex:none;width:68px;padding-top:2px;font-variant-numeric:tabular-nums}
+.dot{color:var(--accent);font-size:10px;margin-left:6px;vertical-align:2px}
+
+/* media cards */
+.media{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));grid-auto-flow:row dense;gap:16px}
+.media > li{background:var(--surface);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:8px;transition:transform .25s ease}
+.media > li:hover{transform:scale(1.015)}
+.media > li.wide{grid-column:span 2}
+@media (max-width:640px){.media > li.wide{grid-column:auto}}
+@media (prefers-reduced-motion: reduce){.media > li,.sides a{transition:none}.media > li:hover,.sides a:hover{transform:none}}
+.outlet{font-size:var(--t-caption);font-weight:600;color:var(--muted)}
+.mt{font-size:var(--t-title);font-weight:600;line-height:1.24;letter-spacing:-.015em}
+.md{font-size:var(--t-small);color:var(--muted);margin-top:auto;padding-top:8px}
+.seg{margin:6px 0 0;padding-left:1.1em;display:grid;gap:6px;font-size:var(--t-small);color:var(--muted)}
+
+/* inquiry panel */
+.inquiry{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px 36px;align-items:start;background:var(--surface);border-radius:22px;padding:28px 30px;margin-bottom:44px}
+.inquiry .k{font-size:var(--t-title);font-weight:600;letter-spacing:-.015em;margin:0 0 6px;color:var(--ink)}
+.inquiry p{margin-bottom:0;color:var(--muted)}
+.inquiry .tags li{background:var(--chip-in)}
+.inquiry .v{font-weight:600;text-align:right;color:var(--ink)}
+@media (max-width:640px){.inquiry{grid-template-columns:1fr}.inquiry .v{text-align:left}}
+
+/* contact */
+.contact{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (max-width:640px){.contact{grid-template-columns:1fr}}
+.contact > div{min-width:0;background:var(--surface);border-radius:20px;padding:22px}
+.contact .ico{display:block;width:24px;height:24px;color:var(--accent);margin-bottom:10px}
+.k{font-size:var(--t-caption);font-weight:600;color:var(--muted);margin-bottom:8px}
+.v{font-weight:500;word-break:break-word}
+.v a.em{font-size:var(--t-title);font-weight:600;letter-spacing:-.015em}
+.copy{font:500 var(--t-caption) var(--font);margin-left:8px;border:0;background:#0071e3;color:#fff;border-radius:980px;padding:4px 11px;cursor:pointer;vertical-align:3px}
+.copy:hover{filter:brightness(1.08)}
+.contact .note{font-size:var(--t-small);color:var(--muted);margin:8px 0 0}
+.contact > .wide{grid-column:1 / -1}
+.plinks{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.pbtn{display:inline-flex;align-items:center;padding:9px 16px;border-radius:980px;background:var(--chip-in);color:var(--ink);font-size:var(--t-small);font-weight:500;text-decoration:none!important;transition:background .2s}
+.pbtn .ico-s{color:var(--accent);margin-right:8px}
+.pbtn:hover{background:var(--line)}
+@media (min-width:900px){.plinks{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}.pbtn{width:100%;justify-content:center}}
+
+/* footer */
+footer{background:var(--silver);color:rgba(0,0,0,.56);font-size:var(--t-caption);line-height:1.33;padding-block:22px 28px}
+footer .wrap{max-width:var(--col)}
+.foot-nav{display:flex;flex-wrap:wrap;gap:6px 22px;padding-bottom:16px;margin-bottom:14px;border-bottom:1px solid #d2d2d7}
+.foot-nav a{color:#424245}
+.foot-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 18px}
+</style>
+<link rel="icon" href="assets/photo.jpg">
+</head>
+<body>
+
+<div id="site" data-lang="en">
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-person" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.9-3.6 3.7-5.5 7-5.5s6.1 1.9 7 5.5"/></symbol>
+  <symbol id="i-nodes" viewBox="0 0 24 24"><circle cx="6" cy="7" r="2.2"/><circle cx="18" cy="6" r="2.2"/><circle cx="12" cy="17" r="2.2"/><path d="M8.2 6.8l7.6-.6M7.1 8.9l3.8 6.2M16.9 7.9l-3.8 7.2"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6.5C10 5 7 4.5 3.5 5v13c3.5-.5 6.5 0 8.5 1.5 2-1.5 5-2 8.5-1.5V5C17 4.5 14 5 12 6.5zM12 6.5v13"/></symbol>
+  <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3.5" y="7.5" width="17" height="12" rx="2"/><path d="M9 7.5V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1.5M3.5 12.5h17"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2.5 9.5 12 5l9.5 4.5L12 14zM6.5 11.4V16c1.4 1.3 3.4 2 5.5 2s4.1-.7 5.5-2v-4.6M21.5 9.5v5"/></symbol>
+  <symbol id="i-tv" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="12.5" rx="2"/><path d="M8.5 20.5h7M10.5 8.4l4.2 2.4-4.2 2.4z"/></symbol>
+  <symbol id="i-medal" viewBox="0 0 24 24"><circle cx="12" cy="15" r="5"/><path d="M8.6 11.2 6.5 3.5H10l2 4.3 2-4.3h3.5l-2.1 7.7"/><circle cx="12" cy="15" r="1.8"/></symbol>
+  <symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3"/><path d="M3.5 19c.7-3 2.8-4.6 5.5-4.6s4.8 1.6 5.5 4.6"/><circle cx="16.5" cy="9" r="2.5"/><path d="M15.6 14.5c2.4 0 4.2 1.4 4.9 4"/></symbol>
+  <symbol id="i-envelope" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.6 7.2 8.4 6 8.4-6"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 9.5 12 4.5l9 5M4.5 9.5h15M6 10v7M10 10v7M14 10v7M18 10v7M3.5 19.5h17"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.3 2.4 3.5 5.2 3.5 8.5s-1.2 6.1-3.5 8.5c-2.3-2.4-3.5-5.2-3.5-8.5S9.7 5.9 12 3.5z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s6.5-5.6 6.5-11a6.5 6.5 0 0 0-13 0c0 5.4 6.5 11 6.5 11z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="m10.3 8.9 4.9 3.1-4.9 3.1z"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3.5H7.5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V8zM14 3.5V8h4.5M9 12.5h6M9 16h6"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2.2"/><path d="M5.8 16.2c.6-1.6 1.8-2.4 3.2-2.4s2.6.8 3.2 2.4M14.5 10h4M14.5 13.5h3"/></symbol>
+  <symbol id="i-quote" viewBox="0 0 24 24"><path d="M5 17v-4.5c0-3 1.6-5 4.5-5.5M5 12.5h4V17H5zM13 17v-4.5c0-3 1.6-5 4.5-5.5M13 12.5h4V17h-4z"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3.5l1.8 5.2 5.2 1.8-5.2 1.8L12 17.5l-1.8-5.2L5 10.5l5.2-1.8zM18.5 15.5l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7z"/></symbol>
+  <symbol id="i-badge" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 12.5h8M8 16h5"/></symbol>
+  <symbol id="i-bars" viewBox="0 0 24 24"><path d="M4.5 19.5h15M7 16v-4M11 16V7.5M15 16v-6.5M19 16v-3"/></symbol>
+  <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></symbol>
+</svg>
+<header id="gn">
+  <div class="bar">
+    <a class="home" href="#top" aria-label="Maikel Leon, home"><img src="assets/photo.jpg?v=1" alt="" width="28" height="28"></a>
+    <nav id="gn-menu" aria-label="Sections">
+      <ul>
+        <li><a href="#about"><span class="en">About</span><span class="es">Perfil</span></a></li>
+        <li><a href="#research"><span class="en">Research</span><span class="es">Investigación</span></a></li>
+        <li><a href="#publications"><span class="en">Publications</span><span class="es">Publicaciones</span></a></li>
+        <li data-toggle="consulting"><a href="#executive"><span class="en">Consulting</span><span class="es">Consultoría</span></a></li>
+        <li><a href="#teaching"><span class="en">Teaching</span><span class="es">Docencia</span></a></li>
+        <li><a href="#media"><span class="en">Media</span><span class="es">Medios</span></a></li>
+        <li><a href="#honors"><span class="en">Honors</span><span class="es">Premios</span></a></li>
+        <li><a href="#contact"><span class="en">Contact</span><span class="es">Contacto</span></a></li>
+      </ul>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" id="btn-en" data-set="en" aria-pressed="true">EN</button>
+      <button type="button" id="btn-es" data-set="es" aria-pressed="false">ES</button>
+    </div>
+    <button type="button" class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="gn-menu" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</header>
+<!-- ANNOUNCE:START -->
+<!-- ANNOUNCE:END -->
+
+<main id="top">
+  <div class="hero t-silver">
+    <figure class="portrait">
+      <svg class="dial" viewBox="0 0 240 240" aria-hidden="true">
+        <circle cx="120" cy="120" r="88" stroke-width=".6" opacity=".5"/>
+        <path d="M124.40 36.12L124.61 32.12M128.78 36.46L129.20 32.48M133.14 37.03L133.77 33.08M137.46 37.84L138.30 33.92M141.74 38.86L142.78 35.00M145.96 40.11L147.19 36.31M150.10 41.58L151.54 37.84M154.17 43.26L155.79 39.61M158.14 45.16L159.95 41.59M165.75 49.55L167.93 46.20M169.37 52.04L171.73 48.81M172.86 54.72L175.38 51.61M176.21 57.58L178.88 54.60M179.40 60.60L182.23 57.77M182.42 63.79L185.40 61.12M185.28 67.14L188.39 64.62M187.96 70.63L191.19 68.27M190.45 74.25L193.80 72.07M194.84 81.86L198.41 80.05M196.74 85.83L200.39 84.21M198.42 89.90L202.16 88.46M199.89 94.04L203.69 92.81M201.14 98.26L205.00 97.22M202.16 102.54L206.08 101.70M202.97 106.86L206.92 106.23M203.54 111.22L207.52 110.80M203.88 115.60L207.88 115.39M203.88 124.40L207.88 124.61M203.54 128.78L207.52 129.20M202.97 133.14L206.92 133.77M202.16 137.46L206.08 138.30M201.14 141.74L205.00 142.78M199.89 145.96L203.69 147.19M198.42 150.10L202.16 151.54M196.74 154.17L200.39 155.79M194.84 158.14L198.41 159.95M190.45 165.75L193.80 167.93M187.96 169.37L191.19 171.73M185.28 172.86L188.39 175.38M182.42 176.21L185.40 178.88M179.40 179.40L182.23 182.23M176.21 182.42L178.88 185.40M172.86 185.28L175.38 188.39M169.37 187.96L171.73 191.19M165.75 190.45L167.93 193.80M158.14 194.84L159.95 198.41M154.17 196.74L155.79 200.39M150.10 198.42L151.54 202.16M145.96 199.89L147.19 203.69M141.74 201.14L142.78 205.00M137.46 202.16L138.30 206.08M133.14 202.97L133.77 206.92M128.78 203.54L129.20 207.52M124.40 203.88L124.61 207.88M115.60 203.88L115.39 207.88M111.22 203.54L110.80 207.52M106.86 202.97L106.23 206.92M102.54 202.16L101.70 206.08M98.26 201.14L97.22 205.00M94.04 199.89L92.81 203.69M89.90 198.42L88.46 202.16M85.83 196.74L84.21 200.39M81.86 194.84L80.05 198.41M74.25 190.45L72.07 193.80M70.63 187.96L68.27 191.19M67.14 185.28L64.62 188.39M63.79 182.42L61.12 185.40M60.60 179.40L57.77 182.23M57.58 176.21L54.60 178.88M54.72 172.86L51.61 175.38M52.04 169.37L48.81 171.73M49.55 165.75L46.20 167.93M45.16 158.14L41.59 159.95M43.26 154.17L39.61 155.79M41.58 150.10L37.84 151.54M40.11 145.96L36.31 147.19M38.86 141.74L35.00 142.78M37.84 137.46L33.92 138.30M37.03 133.14L33.08 133.77M36.46 128.78L32.48 129.20M36.12 124.40L32.12 124.61M36.12 115.60L32.12 115.39M36.46 111.22L32.48 110.80M37.03 106.86L33.08 106.23M37.84 102.54L33.92 101.70M38.86 98.26L35.00 97.22M40.11 94.04L36.31 92.81M41.58 89.90L37.84 88.46M43.26 85.83L39.61 84.21M45.16 81.86L41.59 80.05M49.55 74.25L46.20 72.07M52.04 70.63L48.81 68.27M54.72 67.14L51.61 64.62M57.58 63.79L54.60 61.12M60.60 60.60L57.77 57.77M63.79 57.58L61.12 54.60M67.14 54.72L64.62 51.61M70.63 52.04L68.27 48.81M74.25 49.55L72.07 46.20M81.86 45.16L80.05 41.59M85.83 43.26L84.21 39.61M89.90 41.58L88.46 37.84M94.04 40.11L92.81 36.31M98.26 38.86L97.22 35.00M102.54 37.84L101.70 33.92M106.86 37.03L106.23 33.08M111.22 36.46L110.80 32.48M115.60 36.12L115.39 32.12" stroke-width=".7" opacity=".45"/>
+        <path d="M160.00 50.72L164.00 43.79M189.28 80.00L196.21 76.00M200.00 120.00L208.00 120.00M189.28 160.00L196.21 164.00M160.00 189.28L164.00 196.21M120.00 200.00L120.00 208.00M80.00 189.28L76.00 196.21M50.72 160.00L43.79 164.00M40.00 120.00L32.00 120.00M50.72 80.00L43.79 76.00M80.00 50.72L76.00 43.79" stroke-width="1.1" opacity=".85"/>
+        <path class="idx" d="M120 32V41" stroke-width="1.6"/>
+      </svg>
+      <svg class="halo" viewBox="0 0 240 240" aria-hidden="true">
+        <defs><path id="halo-path" d="M120 120m-100 0a100 100 0 1 1 200 0a100 100 0 1 1-200 0"/></defs>
+        <text class="en"><textPath href="#halo-path" textLength="620" lengthAdjust="spacing">AI RESEARCHER · CONSULTANT · EDUCATOR · MEDIA COMMENTATOR ·</textPath></text>
+        <text class="es"><textPath href="#halo-path" textLength="620" lengthAdjust="spacing">INVESTIGADOR EN IA · CONSULTOR · EDUCADOR · COMENTARISTA EN MEDIOS ·</textPath></text>
+      </svg>
+      <img src="assets/photo.jpg?v=1" alt="Portrait of Maikel Leon" width="132" height="132">
+    </figure>
+    <p class="eyebrow sr-only"><span class="en">AI researcher · Consultant · Educator · Media commentator</span><span class="es">Investigador en IA · Consultor · Educador · Comentarista en medios</span></p>
+    <h1>Maikel Leon, PhD</h1>
+    <p class="loc"><svg class="ico-s" aria-hidden="true"><use href="#i-pin"/></svg>Miami, Florida</p>
+    <p class="role"><span class="en">Making artificial intelligence useful and understandable for organizations, students, and the public, in English and Spanish.</span><span class="es">Para que la inteligencia artificial sea útil y comprensible para organizaciones, estudiantes y el público, en inglés y en español.</span></p>
+    <div class="actions">
+      <a class="btn primary" href="#contact"><span class="en">Get in touch</span><span class="es">Contacto</span></a>
+      <a class="btn primary" href="assets/cv.pdf?v=1" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-download"/></svg><span class="en">Download CV</span><span class="es">Descargar CV</span></a>
+    </div>
+  </div>
+
+  <section id="about" class="t-black">
+    <div class="label"><svg class="ico" aria-hidden="true"><use href="#i-person"/></svg><span class="en">About</span><span class="es">Perfil</span></div>
+    <div>
+      <h2><span class="en">Intelligent systems, from theory to practice</span><span class="es">Sistemas inteligentes, de la teoría a la práctica</span></h2>
+      <div class="en">
+        <p>Maikel Leon is an artificial intelligence researcher, consultant, and educator. His work sits where AI research meets everyday practice: how organizations adopt and govern generative AI, how AI agents are changing work, and how people can use these tools well. He explains AI in English and Spanish to boardrooms, classrooms, and television audiences.</p>
+        <p class="muted small">PhD in Computer Science and Artificial Intelligence, Hasselt University, Belgium, with doctoral research applying AI to transportation</p>
+      </div>
+      <div class="es">
+        <p>Maikel Leon es investigador en inteligencia artificial, consultor y educador. Su trabajo se sitúa donde la investigación en IA se encuentra con la práctica cotidiana: cómo las organizaciones adoptan y gobiernan la IA generativa, cómo los agentes de IA están transformando el trabajo y cómo las personas pueden usar bien estas herramientas. Explica la IA en inglés y en español a juntas directivas, aulas y audiencias de televisión.</p>
+        <p class="muted small">Doctorado en Ciencias de la Computación e Inteligencia Artificial, Universidad de Hasselt, Bélgica, con una tesis sobre IA aplicada al transporte</p>
+      </div>
+      <ul class="sides">
+        <li><a href="#research"><svg class="ico" aria-hidden="true"><use href="#i-nodes"/></svg><span class="sk"><span class="en">Research</span><span class="es">Investigación</span></span><span class="sd"><span class="en">Agentic AI, AI governance, and language models</span><span class="es">IA agéntica, gobernanza de la IA y modelos de lenguaje</span></span></a></li>
+        <li data-toggle="consulting"><a href="#executive"><svg class="ico" aria-hidden="true"><use href="#i-briefcase"/></svg><span class="sk"><span class="en">Consulting</span><span class="es">Consultoría</span></span><span class="sd">ML Education &amp; Consulting LLC</span></a></li>
+        <li><a href="#teaching"><svg class="ico" aria-hidden="true"><use href="#i-cap"/></svg><span class="sk"><span class="en">Teaching</span><span class="es">Docencia</span></span><span class="sd"><span class="en">University of Miami Business School</span><span class="es">Escuela de Negocios de la Universidad de Miami</span></span></a></li>
+        <li><a href="#media"><svg class="ico" aria-hidden="true"><use href="#i-tv"/></svg><span class="sk"><span class="en">Media</span><span class="es">Medios</span></span><span class="sd"><span class="en">CNN en Español and Univision</span><span class="es">CNN en Español y Univision</span></span></a></li>
+      </ul>
+      <details class="fold" id="skills" data-toggle="skills">
+        <summary><h3><span class="en">Skills</span><span class="es">Competencias</span></h3></summary>
+        <div class="skills">
+          <!-- SKILLS:START -->
+          <div><p class="sk-h"><span class="en">AI and machine learning</span><span class="es">IA y aprendizaje automático</span></p><ul class="chips"><li><span class="en">Machine learning</span><span class="es">Aprendizaje automático</span></li><li><span class="en">Deep learning</span><span class="es">Aprendizaje profundo</span></li><li><span class="en">Neural networks</span><span class="es">Redes neuronales</span></li><li><span class="en">Reinforcement learning</span><span class="es">Aprendizaje por refuerzo</span></li><li><span class="en">Optimization algorithms</span><span class="es">Algoritmos de optimización</span></li><li><span class="en">Swarm intelligence</span><span class="es">Inteligencia de enjambre</span></li><li><span class="en">Pattern classification</span><span class="es">Clasificación de patrones</span></li><li><span class="en">Clustering</span><span class="es">Agrupamiento</span></li></ul></div>
+          <div><p class="sk-h"><span class="en">Fuzzy and knowledge-based systems</span><span class="es">Sistemas difusos y basados en conocimiento</span></p><ul class="chips"><li><span class="en">Fuzzy cognitive maps</span><span class="es">Mapas cognitivos difusos</span></li><li><span class="en">Fuzzy logic</span><span class="es">Lógica difusa</span></li><li><span class="en">Complex systems modeling</span><span class="es">Modelado de sistemas complejos</span></li><li><span class="en">Scenario analysis</span><span class="es">Análisis de escenarios</span></li><li><span class="en">Travel behavior modeling</span><span class="es">Modelado del comportamiento de viaje</span></li><li><span class="en">Knowledge representation</span><span class="es">Representación del conocimiento</span></li><li><span class="en">Knowledge engineering</span><span class="es">Ingeniería del conocimiento</span></li><li><span class="en">Case-based reasoning</span><span class="es">Razonamiento basado en casos</span></li><li><span class="en">Neuro-symbolic AI</span><span class="es">IA neurosimbólica</span></li><li>Prolog</li></ul></div>
+          <div><p class="sk-h"><span class="en">Generative AI and language models</span><span class="es">IA generativa y modelos de lenguaje</span></p><ul class="chips"><li><span class="en">Generative AI</span><span class="es">IA generativa</span></li><li><span class="en">Large language models</span><span class="es">Grandes modelos de lenguaje</span></li><li><span class="en">Agentic AI</span><span class="es">IA agéntica</span></li><li><span class="en">Prompt engineering</span><span class="es">Ingeniería de prompts</span></li><li><span class="en">LLM evaluation and benchmarking</span><span class="es">Evaluación comparativa de LLM</span></li><li><span class="en">Natural language processing</span><span class="es">Procesamiento del lenguaje natural</span></li><li><span class="en">Sentiment analysis</span><span class="es">Análisis de sentimiento</span></li></ul></div>
+          <div><p class="sk-h"><span class="en">Responsible AI</span><span class="es">IA responsable</span></p><ul class="chips"><li><span class="en">Explainable AI</span><span class="es">IA explicable</span></li><li><span class="en">Model interpretability</span><span class="es">Interpretabilidad de modelos</span></li><li><span class="en">AI governance</span><span class="es">Gobernanza de la IA</span></li><li><span class="en">AI regulation and policy</span><span class="es">Regulación y políticas de IA</span></li><li><span class="en">AI safety</span><span class="es">Seguridad de la IA</span></li><li><span class="en">AI ethics and fairness</span><span class="es">Ética y equidad en IA</span></li><li><span class="en">Sustainable AI</span><span class="es">IA sostenible</span></li></ul></div>
+          <div><p class="sk-h"><span class="en">Data and programming</span><span class="es">Datos y programación</span></p><ul class="chips"><li><span class="en">Python programming</span><span class="es">Programación en Python</span></li><li><span class="en">Algorithms</span><span class="es">Algoritmos</span></li><li><span class="en">Scientific software development</span><span class="es">Desarrollo de software científico</span></li><li><span class="en">Database management</span><span class="es">Gestión de bases de datos</span></li><li>SQL</li><li><span class="en">Data mining</span><span class="es">Minería de datos</span></li><li><span class="en">Business analytics</span><span class="es">Analítica de negocios</span></li><li><span class="en">Business intelligence</span><span class="es">Inteligencia de negocios</span></li></ul></div>
+          <div><p class="sk-h"><span class="en">Business and strategy</span><span class="es">Negocios y estrategia</span></p><ul class="chips"><li><span class="en">Decision support systems</span><span class="es">Sistemas de apoyo a la decisión</span></li><li><span class="en">Management information systems</span><span class="es">Sistemas de información gerencial</span></li><li><span class="en">Digital transformation</span><span class="es">Transformación digital</span></li><li><span class="en">AI strategy and adoption</span><span class="es">Estrategia y adopción de IA</span></li><li><span class="en">AI and the future of work</span><span class="es">IA y el futuro del trabajo</span></li><li><span class="en">Innovation and entrepreneurship</span><span class="es">Innovación y emprendimiento</span></li></ul></div>
+          <div><p class="sk-h"><span class="en">Education</span><span class="es">Educación</span></p><ul class="chips"><li><span class="en">AI in education</span><span class="es">IA en la educación</span></li><li><span class="en">Intelligent tutoring systems</span><span class="es">Sistemas de tutoría inteligentes</span></li><li><span class="en">Concept maps</span><span class="es">Mapas conceptuales</span></li><li><span class="en">Personalized learning</span><span class="es">Aprendizaje personalizado</span></li><li><span class="en">Problem-based learning</span><span class="es">Aprendizaje basado en problemas</span></li><li><span class="en">Course design</span><span class="es">Diseño de cursos</span></li></ul></div>
+          <div><p class="sk-h"><span class="en">Research and communication</span><span class="es">Investigación y comunicación</span></p><ul class="chips"><li><span class="en">Systematic reviews</span><span class="es">Revisiones sistemáticas</span></li><li><span class="en">Science communication</span><span class="es">Divulgación científica</span></li></ul></div>
+          <!-- SKILLS:END -->
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <section id="research" class="t-white">
+    <div class="label"><svg class="ico" aria-hidden="true"><use href="#i-nodes"/></svg><span class="en">Research</span><span class="es">Investigación</span></div>
+    <div>
+      <h2><span class="en">Current focus</span><span class="es">Líneas actuales</span></h2>
+      <div class="intro">
+        <p class="en">Recent work examines agentic AI and its effects on labor markets, AI governance and safety, fuzzy cognitive maps, optimization methods for deep learning, personalized tutoring with generative models, and the rigorous evaluation and benchmarking of large language models.</p>
+        <p class="es">Su trabajo reciente estudia la IA agéntica y sus efectos en el mercado laboral, la gobernanza y seguridad de la IA, los mapas cognitivos difusos, los métodos de optimización para aprendizaje profundo, la tutoría personalizada con modelos generativos y la evaluación rigurosa de grandes modelos de lenguaje.</p>
+        <ul class="tags">
+          <li><span class="en">Agentic AI</span><span class="es">IA agéntica</span></li>
+          <li><span class="en">AI governance and safety</span><span class="es">Gobernanza y seguridad de la IA</span></li>
+          <li><span class="en">Generative AI</span><span class="es">IA generativa</span></li>
+          <li><span class="en">LLM evaluation</span><span class="es">Evaluación de LLM</span></li>
+          <li><span class="en">Explainable AI</span><span class="es">IA explicable</span></li>
+          <li><span class="en">Deep learning optimization</span><span class="es">Optimización en aprendizaje profundo</span></li>
+          <li><span class="en">Fuzzy cognitive maps</span><span class="es">Mapas cognitivos difusos</span></li>
+        </ul>
+        <!-- METRICS:START -->
+        <div class="facts">
+          <span><strong>1,129</strong><span class="en">citations</span><span class="es">citas</span></span>
+          <span><strong>20</strong><span class="en">h-index</span><span class="es">índice h</span></span>
+        </div>
+        <p class="src"><a class="ext" href="https://scholar.google.com/citations?user=1hocwokAAAAJ" target="_blank" rel="noopener">Google Scholar</a></p>
+        <!-- METRICS:END -->
+      </div>
+    </div>
+  </section>
+
+  <section id="publications" class="t-black">
+    <div class="label"><svg class="ico" aria-hidden="true"><use href="#i-book"/></svg><span class="en">Publications</span><span class="es">Publicaciones</span></div>
+    <div>
+      <h2><span class="en">Journal articles</span><span class="es">Artículos en revistas</span></h2>
+      <p class="muted small"><span class="en">IF: journal impact factor.</span><span class="es">FI: factor de impacto de la revista.</span></p>
+      <!-- PUBS:START -->
+      <h3 class="first">2026</h3>
+      <ol class="pubs">
+        <li><span class="yr">2026</span><div><span class="pt">Governing generative AI in organizations: A design theory and quasi-experimental field study of sociotechnical guardrails</span><span class="pv">Leon, M. <i>The Journal of Supercomputing</i>, 82(12), 641</span><span class="meta"><a class="doi" href="https://doi.org/10.1007/s11227-026-08760-7" target="_blank" rel="noopener">doi:10.1007/s11227-026-08760-7</a><span class="if">IF 3.5</span><a class="tool" href="https://link.springer.com/content/pdf/10.1007/s11227-026-08760-7.pdf" target="_blank" rel="noopener">PDF</a><button type="button" class="tool bib" data-key="leon2026governing" data-bib="@article{leon2026governing,
+  author = {Maikel Leon},
+  title = {Governing generative {AI} in organizations: A design theory and quasi-experimental field study of sociotechnical guardrails},
+  journal = {The Journal of Supercomputing},
+  year = {2026},
+  volume = {82},
+  number = {12},
+  pages = {641},
+  publisher = {Springer Nature},
+  doi = {10.1007/s11227-026-08760-7},
+  url = {https://doi.org/10.1007/s11227-026-08760-7}
+}">BibTeX</button></span></div></li>
+        <li><span class="yr">2026</span><div><span class="pt">Layerwise conditioned backpropagation: A curvature-aware reparameterization of the backward pass with convergence guarantees</span><span class="pv">Leon, M. <i>Big Data and Cognitive Computing</i>, 10(8), 272</span><span class="meta"><a class="doi" href="https://doi.org/10.3390/bdcc10080272" target="_blank" rel="noopener">doi:10.3390/bdcc10080272</a><span class="if">IF 5.3</span><button type="button" class="tool bib" data-key="leon2026layerwise" data-bib="@article{leon2026layerwise,
+  author = {Maikel Leon},
+  title = {Layerwise conditioned backpropagation: A curvature-aware reparameterization of the backward pass with convergence guarantees},
+  journal = {Big Data and Cognitive Computing},
+  year = {2026},
+  volume = {10},
+  number = {8},
+  pages = {272},
+  publisher = {MDPI},
+  doi = {10.3390/bdcc10080272},
+  url = {https://doi.org/10.3390/bdcc10080272}
+}">BibTeX</button></span></div></li>
+        <li><span class="yr">2026</span><div><span class="pt">Agentic AI and labor disruption: A comprehensive review, measurement, and policy framework</span><span class="pv">Leon, M. <i>Journal of Engineering and Technology Management</i>, 81, 101993</span><span class="meta"><a class="doi" href="https://doi.org/10.1016/j.jengtecman.2026.101993" target="_blank" rel="noopener">doi:10.1016/j.jengtecman.2026.101993</a><span class="if">IF 4.3</span><button type="button" class="tool bib" data-key="leon2026agentic" data-bib="@article{leon2026agentic,
+  author = {Maikel Leon},
+  title = {Agentic {AI} and labor disruption: A comprehensive review, measurement, and policy framework},
+  journal = {Journal of Engineering and Technology Management},
+  year = {2026},
+  volume = {81},
+  pages = {101993},
+  publisher = {Elsevier},
+  doi = {10.1016/j.jengtecman.2026.101993},
+  url = {https://doi.org/10.1016/j.jengtecman.2026.101993}
+}">BibTeX</button></span></div></li>
+      </ol>
+      <details class="fold">
+        <summary><h3><span class="en">More from 2026</span><span class="es">Más de 2026</span></h3><span class="fold-n">8</span></summary>
+      <ol class="pubs">
+        <li><span class="yr">2026</span><div><span class="pt">Publisher-built generative AI assistants in U.S. higher education: A critical review and a reproducible TRIAD–JTBD evaluation framework</span><span class="pv">Leon, M. <i>Algorithms</i>, 19(6), 492</span><span class="meta"><a class="doi" href="https://doi.org/10.3390/a19060492" target="_blank" rel="noopener">doi:10.3390/a19060492</a><span class="if">IF 2.6</span><a class="tool" href="https://www.mdpi.com/1999-4893/19/6/492/pdf?version=1781853344" target="_blank" rel="noopener">PDF</a><button type="button" class="tool bib" data-key="leon2026publisherbuilt" data-bib="@article{leon2026publisherbuilt,
+  author = {Maikel Leon},
+  title = {Publisher-built generative {AI} assistants in {U.S}. higher education: A critical review and a reproducible {TRIAD--JTBD} evaluation framework},
+  journal = {Algorithms},
+  year = {2026},
+  volume = {19},
+  number = {6},
+  pages = {492},
+  publisher = {MDPI},
+  doi = {10.3390/a19060492},
+  url = {https://doi.org/10.3390/a19060492}
+}">BibTeX</button></span></div></li>
+        <li><span class="yr">2026</span><div><span class="pt">Generative AI as a general-purpose technology: Foundations, applications, and labor market implications through 2030</span><span class="pv">Leon, M. <i>Big Data and Cognitive Computing</i>, 10(3), 69</span><span class="meta"><a class="doi" href="https://doi.org/10.3390/bdcc10030069" target="_blank" rel="noopener">doi:10.3390/bdcc10030069</a><span class="if">IF 5.3</span><a class="tool" href="https://www.mdpi.com/2504-2289/10/3/69/pdf?version=1772176949" target="_blank" rel="noopener">PDF</a><button type="button" class="tool bib" data-key="leon2026generative" data-bib="@article{leon2026generative,
+  author = {Maikel Leon},
+  title = {Generative {AI} as a general-purpose technology: Foundations, applications, and labor market implications through 2030},
+  journal = {Big Data and Cognitive Computing},
+  year = {2026},
+  volume = {10},
+  number = {3},
+  pages = {69},
+  publisher = {MDPI},
+  doi = {10.3390/bdcc10030069},
+  url = {https://doi.org/10.3390/bdcc10030069}
+}">BibTeX</button></span></div></li>
+        <li><span class="yr">2026</span><div><span class="pt">Investing in AI interpretability, control, and robustness</span><span class="pv">Leon, M. <i>Algorithms</i>, 19(2), 136</span><span class="meta"><a class="doi" href="https://doi.org/10.3390/a19020136" target="_blank" rel="noopener">doi:10.3390/a19020136</a><span class="if">IF 2.6</span><a class="tool" href="https://www.mdpi.com/1999-4893/19/2/136/pdf" target="_blank" rel="noopener">PDF</a><button type="button" class="tool bib" data-key="leon2026investing" data-bib="@article{leon2026investing,
+  author = {Maikel Leon},
+  title = {Investing in {AI} interpretability, control, and robustness},
+  journal = {Algorithms},
+  year = {2026},
+  volume = {19},
+  number = {2},
+  pages = {136},
+  publisher = {MDPI},
+  doi = {10.3390/a19020136},
+  url = {https://doi.org/10.3390/a19020136}
+}">BibTeX</button></span></div></li>
+        <li><span class="yr">2026</span><div><span class="pt">Lifecycle-based governance to build reliable ethical AI systems</span><span class="pv">Leon, M. <i>Systems Research and Behavioral Science</i>, 43(3), 1116–1132</span><span class="meta"><a class="doi" href="https://doi.org/10.1002/sres.70014" target="_blank" rel="noopener">doi:10.1002/sres.70014</a><span class="if">IF 1.8</span><a class="tool" href="https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/sres.70014" target="_blank" rel="noopener">PDF</a><button type="button" class="tool bib" data-key="leon2026lifecyclebased" data-bib="@article{leon2026lifecyclebased,
+  author = {Maikel Leon},
+  title = {Lifecycle-based governance to build reliable ethical {AI} systems},
+  journal = {Systems Research and Behavioral Science},
+  year = {2026},
+  volume = {43},
+  number = {3},
+  pages = {1116--1132},
+  publisher = {Wiley},
+  doi = {10.1002/sres.70014},
+  url = {https://doi.org/10.1002/sres.70014}
+}">BibTeX</button></span></div></li>
+        <li><span class="yr">2026</span><div><span class="pt">A review on fuzzy cognitive mapping: Recent advances and algorithms</span><span class="pv">Nápoles, G., Jastrzębska, A., Grau, I., Salgueiro, Y., &amp; Leon, M. <i>Big Data and Cognitive Computing</i>, 10(1), 22</span><span class="meta"><a class="doi" href="https://doi.org/10.3390/bdcc10010022" target="_blank" rel="noopener">doi:10.3390/bdcc10010022</a><span class="if">IF 5.3</span><a class="tool" href="https://www.mdpi.com/2504-2289/10/1/22/pdf?version=1767710381" target="_blank" rel="noopener">PDF</a><button type="button" class="tool bib" data-key="napoles2026review" data-bib="@article{napoles2026review,
+  author = {Gonzalo Nápoles and Agnieszka Jastrzębska and Isel Grau and Yamisleydi Salgueiro and Maikel Leon},
+  title = {A review on fuzzy cognitive mapping: Recent advances and algorithms},
+  journal = {Big Data and Cognitive Computing},
+  year = {2026},
+  volume = {10},
+  number = {1},
+  pages = {22},
+  publisher = {MDPI},
+  doi = {10.3390/bdcc10010022},
+  url = {https://doi.org/10.3390/bdcc10010022}
+}">BibTeX</button></span></div></li>
+        <li><span class="yr">2026</span><div><span class="pt">Fuzzy cognitive maps: A comprehensive survey and comparative analysis</span><span class="pv">Leon, M. <i>Computers, Materials &amp; Continua</i></span><span class="meta"><a class="doi" href="https://doi.org/10.32604/cmc.2026.087930" target="_blank" rel="noopener">doi:10.32604/cmc.2026.087930</a><span class="if">IF 2.4</span><a class="tool" href="https://www.techscience.com/files/onlinefirst/2026/9.23/TSP_CMC_87930/TSP_CMC_87930.pdf" target="_blank" rel="noopener">PDF</a><button type="button" class="tool bib" data-key="leon2026fuzzy" data-bib="@article{leon2026fuzzy,
+  author = {Maikel Leon},
+  title = {Fuzzy cognitive maps: A comprehensive survey and comparative analysis},
+  journal = {Computers, Materials \&amp; Continua},
+  year = {2026},
+  doi = {10.32604/cmc.2026.087930},
+  url = {https://doi.org/10.32604/cmc.2026.087930}
+}">BibTeX</button></span></div></li>
+        <li><span class="yr">2026</span><div><span class="pt">Cognitive mapping variants and their training algorithms</span><span class="pv">Leon, M. <i>Computer Science Review</i>, 59, 100862</span><span class="meta"><a class="doi" href="https://doi.org/10.1016/j.cosrev.2025.100862" target="_blank" rel="noopener">doi:10.1016/j.cosrev.2025.100862</a><span class="if">IF 17.5</span><button type="button" class="tool bib" data-key="leon2026cognitive" data-bib="@article{leon2026cognitive,
+  author = {Maikel Leon},
+  title = {Cognitive mapping variants and their training algorithms},
+  journal = {Computer Science Review},
+  year = {2026},
+  volume = {59},
+  pages = {100862},
+  publisher = {Elsevier},
+  doi = {10.1016/j.cosrev.2025.100862},
+  url = {https://doi.org/10.1016/j.cosrev.2025.100862}
+}">BibTeX</button></span></div></li>
+        <li><span class="yr">2026</span><div><span class="pt">GPT-5 and open-weight large language models: Advances in reasoning, transparency, and control</span><span class="pv">Leon, M. <i>Information Systems</i>, 136, 102620</span><span class="meta"><a class="doi" href="https://doi.org/10.1016/j.is.2025.102620" target="_blank" rel="noopener">doi:10.1016/j.is.2025.102620</a><span class="if">IF 4.0</span><button type="button" class="tool bib" data-key="leon2026gpt5" data-bib="@article{leon2026gpt5,
+  author = {Maikel Leon},
+  title = {{GPT-5} and open-weight large language models: Advances in reasoning, transparency, and control},
+  journal = {Information Systems},
+  year = {2026},
+  volume = {136},
+  pages = {102620},
+  publisher = {Elsevier},
+  doi = {10.1016/j.is.2025.102620},
+  url = {https://doi.org/10.1016/j.is.2025.102620}
+}">BibTeX</button></span></div></li>
+      </ol>
+      </details>
+      <details class="fold">
+        <summary><h3><span class="en">Earlier</span><span class="es">Anteriores</span></h3><span class="fold-n">6</span></summary>
+      <ol class="pubs">
+        <li><span class="yr">2023</span><div><span class="pt">Prolog-based agnostic explanation module for structured pattern classification</span><span class="pv">Nápoles, G., Hoitsma, F., Knoben, A., Jastrzębska, A., &amp; Leon, M. <i>Information Sciences</i>, 622, 1196–1227</span><span class="meta"><a class="doi" href="https://doi.org/10.1016/j.ins.2022.12.012" target="_blank" rel="noopener">doi:10.1016/j.ins.2022.12.012</a><span class="if">IF 6.0</span><button type="button" class="tool bib" data-key="napoles2023prologbased" data-bib="@article{napoles2023prologbased,
+  author = {Gonzalo Nápoles and Fabian Hoitsma and Andreas Knoben and Agnieszka Jastrzębska and Maikel Leon},
+  title = {Prolog-based agnostic explanation module for structured pattern classification},
+  journal = {Information Sciences},
+  year = {2023},
+  volume = {622},
+  pages = {1196--1227},
+  publisher = {Elsevier},
+  doi = {10.1016/j.ins.2022.12.012},
+  url = {https://doi.org/10.1016/j.ins.2022.12.012}
+}">BibTeX</button></span></div></li>
+        <li><span class="yr">2023</span><div><span class="pt">Recurrence-aware long-term cognitive network for explainable pattern classification</span><span class="pv">Nápoles, G., Salgueiro, Y., Grau, I., &amp; Leon, M. <i>IEEE Transactions on Cybernetics</i>, 53(10), 6083–6094</span><span class="meta"><a class="doi" href="https://doi.org/10.1109/tcyb.2022.3165104" target="_blank" rel="noopener">doi:10.1109/tcyb.2022.3165104</a><span class="if">IF 11.3</span><a class="tool" href="https://research.tilburguniversity.edu/en/publications/2007d7e5-f201-4c0e-b1ae-50c71b14bf46" target="_blank" rel="noopener"><span class="en">Open access</span><span class="es">Acceso abierto</span></a><button type="button" class="tool bib" data-key="napoles2023recurrenceaware" data-bib="@article{napoles2023recurrenceaware,
+  author = {Gonzalo Nápoles and Yamisleydi Salgueiro and Isel Grau and Maikel Leon},
+  title = {Recurrence-aware long-term cognitive network for explainable pattern classification},
+  journal = {IEEE Transactions on Cybernetics},
+  year = {2023},
+  volume = {53},
+  number = {10},
+  pages = {6083--6094},
+  publisher = {IEEE},
+  doi = {10.1109/tcyb.2022.3165104},
+  url = {https://doi.org/10.1109/tcyb.2022.3165104}
+}">BibTeX</button></span></div></li>
+        <li><span class="yr">2018</span><div><span class="pt">FCM Expert: Software tool for scenario analysis and pattern classification based on fuzzy cognitive maps</span><span class="pv">Nápoles, G., Leon, M., Grau, I., &amp; Vanhoof, K. <i>International Journal on Artificial Intelligence Tools</i>, 27(7), 1860010</span><span class="meta"><a class="doi" href="https://doi.org/10.1142/s0218213018600102" target="_blank" rel="noopener">doi:10.1142/s0218213018600102</a><span class="if">IF 1.0</span><a class="tool" href="http://hdl.handle.net/1942/27948" target="_blank" rel="noopener"><span class="en">Open access</span><span class="es">Acceso abierto</span></a><button type="button" class="tool bib" data-key="napoles2018fcm" data-bib="@article{napoles2018fcm,
+  author = {Gonzalo Nápoles and Maikel Leon and Isel Grau and Koen Vanhoof},
+  title = {{FCM} Expert: Software tool for scenario analysis and pattern classification based on fuzzy cognitive maps},
+  journal = {International Journal on Artificial Intelligence Tools},
+  year = {2018},
+  volume = {27},
+  number = {7},
+  pages = {1860010},
+  publisher = {World Scientific},
+  doi = {10.1142/s0218213018600102},
+  url = {https://doi.org/10.1142/s0218213018600102}
+}">BibTeX</button><a class="xl" href="https://sites.google.com/view/fcm-expert" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-globe"/></svg><span class="en">FCM Expert website</span><span class="es">Sitio de FCM Expert</span></a><a class="xl" href="https://www.youtube.com/watch?v=tCrT9sPc0xc" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-play"/></svg><span class="en">Video demo</span><span class="es">Video demostrativo</span></a></span></div></li>
+        <li><span class="yr">2014</span><div><span class="pt">Learning and clustering of fuzzy cognitive maps for travel behaviour analysis</span><span class="pv">Leon, M., Mkrtchyan, L., Depaire, B., Ruan, D., &amp; Vanhoof, K. <i>Knowledge and Information Systems</i>, 39(2), 435–462</span><span class="meta"><a class="doi" href="https://doi.org/10.1007/s10115-013-0616-z" target="_blank" rel="noopener">doi:10.1007/s10115-013-0616-z</a><span class="if">IF 3.6</span><button type="button" class="tool bib" data-key="leon2014learning" data-bib="@article{leon2014learning,
+  author = {Maikel Leon and Lusine Mkrtchyan and Benoît Depaire and Da Ruan and Koen Vanhoof},
+  title = {Learning and clustering of fuzzy cognitive maps for travel behaviour analysis},
+  journal = {Knowledge and Information Systems},
+  year = {2014},
+  volume = {39},
+  number = {2},
+  pages = {435--462},
+  publisher = {Springer Nature},
+  doi = {10.1007/s10115-013-0616-z},
+  url = {https://doi.org/10.1007/s10115-013-0616-z}
+}">BibTeX</button></span></div></li>
+        <li><span class="yr">2013</span><div><span class="pt">Tackling travel behaviour: An approach based on fuzzy cognitive maps</span><span class="pv">Leon, M., Nápoles, G., Bello, R., Mkrtchyan, L., Depaire, B., &amp; Vanhoof, K. <i>International Journal of Computational Intelligence Systems</i>, 6(6), 1012–1039</span><span class="meta"><a class="doi" href="https://doi.org/10.1080/18756891.2013.816025" target="_blank" rel="noopener">doi:10.1080/18756891.2013.816025</a><span class="if">IF 4.0</span><a class="tool" href="https://link.springer.com/content/pdf/10.1080/18756891.2013.816025.pdf" target="_blank" rel="noopener">PDF</a><button type="button" class="tool bib" data-key="leon2013tackling" data-bib="@article{leon2013tackling,
+  author = {Maikel Leon and Gonzalo Nápoles and Rafael Bello and Lusine Mkrtchyan and Benoît Depaire and Koen Vanhoof},
+  title = {Tackling travel behaviour: An approach based on fuzzy cognitive maps},
+  journal = {International Journal of Computational Intelligence Systems},
+  year = {2013},
+  volume = {6},
+  number = {6},
+  pages = {1012--1039},
+  publisher = {Springer Nature},
+  doi = {10.1080/18756891.2013.816025},
+  url = {https://doi.org/10.1080/18756891.2013.816025}
+}">BibTeX</button></span></div></li>
+        <li><span class="yr">2012</span><div><span class="pt">Mental maps and travel behaviour: Meanings and models</span><span class="pv">Hannes, E., Kusumastuti, D., Leon, M., Janssens, D., Vanhoof, K., &amp; Wets, G. <i>Journal of Geographical Systems</i>, 14(2), 143–165</span><span class="meta"><a class="doi" href="https://doi.org/10.1007/s10109-010-0144-2" target="_blank" rel="noopener">doi:10.1007/s10109-010-0144-2</a><span class="if">IF 2.8</span><button type="button" class="tool bib" data-key="hannes2012mental" data-bib="@article{hannes2012mental,
+  author = {Els Hannes and Diana Kusumastuti and Maikel Leon and Davy Janssens and Koen Vanhoof and Geert Wets},
+  title = {Mental maps and travel behaviour: Meanings and models},
+  journal = {Journal of Geographical Systems},
+  year = {2012},
+  volume = {14},
+  number = {2},
+  pages = {143--165},
+  publisher = {Springer Nature},
+  doi = {10.1007/s10109-010-0144-2},
+  url = {https://doi.org/10.1007/s10109-010-0144-2}
+}">BibTeX</button></span></div></li>
+      </ol>
+      </details>
+      <!-- PUBS:END -->
+      <!-- ALLWORKS:START -->
+      <!-- ALLWORKS:END -->
+      <p class="more"><a class="btn" href="https://scholar.google.com/citations?user=1hocwokAAAAJ" target="_blank" rel="noopener"><span class="en">Conference papers and full list on Google Scholar</span><span class="es">Ponencias y lista completa en Google Scholar</span></a></p>
+    </div>
+  </section>
+
+  <section id="executive" class="t-white" data-toggle="consulting">
+    <div class="label"><svg class="ico" aria-hidden="true"><use href="#i-briefcase"/></svg><span class="en">Consulting</span><span class="es">Consultoría</span></div>
+    <div>
+      <h2>ML Education &amp; Consulting LLC</h2>
+      <p class="en">Through his firm, ML Education &amp; Consulting LLC, Maikel Leon delivers education and consulting on artificial intelligence and business technology, in English or Spanish. Clients have included leading publishers, universities, insurance companies, and banks. Organizations interested in a program or advisory work for their teams are welcome to get in touch.</p>
+      <p class="es">A través de su empresa, ML Education &amp; Consulting LLC, Maikel Leon ofrece educación y consultoría en inteligencia artificial y tecnología de negocios, en inglés o en español. Entre sus clientes figuran grandes editoriales, universidades, aseguradoras y bancos. Las organizaciones interesadas en un programa o asesoría para sus equipos pueden escribirle.</p>
+      <p class="more"><a class="btn" href="#contact"><span class="en">Get in touch</span><span class="es">Contacto</span></a></p>
+    </div>
+  </section>
+
+  <section id="teaching" class="t-black">
+    <div class="label"><svg class="ico" aria-hidden="true"><use href="#i-cap"/></svg><span class="en">Teaching</span><span class="es">Docencia</span></div>
+    <div>
+      <h2><span class="en">Teaching at the University of Miami</span><span class="es">Docencia en la Universidad de Miami</span></h2>
+      <div class="intro">
+        <p class="en">Since 2015, Maikel Leon has taught at the University of Miami Business School, where he is an Associate Professor of Practice in Business Technology and an AI Institute Fellow of the Intelligent Computer Systems Research Institute. He previously directed the institute (<span class="nw">2025–2026</span>) and the Master of Science in Business Technology program (<span class="nw">2024–2025</span>).</p>
+        <p class="es">Desde 2015, Maikel Leon enseña en la Escuela de Negocios de la Universidad de Miami, donde es Profesor Asociado de Práctica en Tecnología de Negocios y AI Institute Fellow del Intelligent Computer Systems Research Institute. Antes dirigió el instituto (<span class="nw">2025–2026</span>) y la Maestría en Ciencias en Tecnología de Negocios (<span class="nw">2024–2025</span>).</p>
+        <p class="muted small"><span class="dot">●</span> <span class="en">Course content creator</span><span class="es">Creador del contenido del curso</span></p>
+      </div>
+      <details class="fold">
+        <summary><h3><span class="en">Undergraduate</span><span class="es">Pregrado</span></h3><span class="fold-n">9</span></summary>
+      <ul class="courses">
+        <li><span class="code">BUS 150</span><span>Business Analytics<span class="dot">●</span></span></li>
+        <li><span class="code">BTE 210</span><span>Fundamentals of Business Technology &amp; Innovation<span class="dot">●</span></span></li>
+        <li><span class="code">BTE 271</span><span>Generative Artificial Intelligence for Business Technology<span class="dot">●</span></span></li>
+        <li><span class="code">BTE 320</span><span>Programming: Fundamentals and Algorithms<span class="dot">●</span></span></li>
+        <li><span class="code">BTE 371</span><span>Foundations of AI for Business Technology<span class="dot">●</span></span></li>
+        <li><span class="code">BTE 413</span><span>Introduction to Machine Learning in Business Technology<span class="dot">●</span></span></li>
+        <li><span class="code">BTE 423</span><span>Database Management Systems<span class="dot">●</span></span></li>
+        <li><span class="code">BTE 471</span><span>Artificial Intelligence Programming for Business Management<span class="dot">●</span></span></li>
+        <li><span class="code">BTE 499</span><span>Special Topics in Business Technology<span class="dot">●</span></span></li>
+      </ul>
+      </details>
+      <details class="fold">
+        <summary><h3><span class="en">Graduate</span><span class="es">Posgrado</span></h3><span class="fold-n">7</span></summary>
+      <ul class="courses">
+        <li><span class="code">BTE 601</span><span>Python Programming<span class="dot">●</span></span></li>
+        <li><span class="code">BTE 609</span><span>Artificial Intelligence for Business</span></li>
+        <li><span class="code">BTE 613</span><span>Business Intelligence Technologies</span></li>
+        <li><span class="code">BTE 620</span><span>Database Development for High-Performance Computing</span></li>
+        <li><span class="code">BTE 621</span><span>Management Information Systems</span></li>
+        <li><span class="code">BTE 661</span><span>AI: Principles and Techniques</span></li>
+        <li><span class="code">BUS 663</span><span>Entrepreneurship &amp; Innovation</span></li>
+      </ul>
+      </details>
+      <h3><span class="en">Undergraduate research</span><span class="es">Investigación de pregrado</span></h3>
+      <p class="en">Undergraduates he mentors co-author peer-reviewed papers with him and present them at venues such as FLAIRS and the IEEE Opportunity Research Scholars Symposium (<a href="https://news.miami.edu/mbs/stories/2026/06/undergraduate-ai-researchers-at-miami-herbert-present-work-on-national-stage.html" target="_blank" rel="noopener">read the story</a>). Students who want to join an AI research project are welcome to get in touch.</p>
+      <p class="es">Los estudiantes de pregrado bajo su mentoría publican con él artículos arbitrados y los presentan en foros como FLAIRS y el IEEE Opportunity Research Scholars Symposium (<a href="https://news.miami.edu/mbs/stories/2026/06/undergraduate-ai-researchers-at-miami-herbert-present-work-on-national-stage.html" target="_blank" rel="noopener">leer la nota</a>). Quienes deseen sumarse a un proyecto de investigación en IA pueden escribirle.</p>
+      <!-- STUDENTS:START -->
+      <details class="fold">
+        <summary><h3><span class="en">Papers with students</span><span class="es">Artículos con estudiantes</span></h3><span class="fold-n">8</span></summary>
+      <ol class="pubs">
+        <li><span class="yr">2026</span><div><span class="pt">Domain-Specificity of Refusal Representations in Large Language Models</span><span class="pv">Charlie Tucker &amp; Maikel Leon · <i>The International FLAIRS Conference Proceedings</i>, 39(1)</span><span class="meta"><a class="doi" href="https://doi.org/10.32473/flairs.39.1.141620" target="_blank" rel="noopener">doi:10.32473/flairs.39.1.141620</a><span class="if award"><span class="en">Best Poster Award</span><span class="es">Premio al Mejor Póster</span></span><a class="tool" href="https://journals.flvc.org/FLAIRS/article/download/141620/146927" target="_blank" rel="noopener">PDF</a><button type="button" class="tool bib" data-key="tucker2026domainspecificity" data-bib="@article{tucker2026domainspecificity,
+  author = {Charlie Tucker and Maikel Leon},
+  title = {{Domain-Specificity} of Refusal Representations in Large Language Models},
+  journal = {The International FLAIRS Conference Proceedings},
+  year = {2026},
+  volume = {39},
+  number = {1},
+  publisher = {George A. Smathers Libraries},
+  doi = {10.32473/flairs.39.1.141620},
+  url = {https://doi.org/10.32473/flairs.39.1.141620}
+}">BibTeX</button></span></div></li>
+        <li><span class="yr">2026</span><div><span class="pt">Auditing Abliteration: Normalization Placement, Edit Budget, and Transfer in Single-Direction Refusal Removal</span><span class="pv">Charlie Tucker &amp; Maikel Leon · <i>2026 IEEE Opportunity Research Scholars Symposium (ORSS)</i>, 1–5</span><span class="meta"><a class="doi" href="https://doi.org/10.1109/orss71174.2026.11684276" target="_blank" rel="noopener">doi:10.1109/orss71174.2026.11684276</a><button type="button" class="tool bib" data-key="tucker2026auditing" data-bib="@inproceedings{tucker2026auditing,
+  author = {Charlie Tucker and Maikel Leon},
+  title = {Auditing Abliteration: Normalization Placement, Edit Budget, and Transfer in {Single-Direction} Refusal Removal},
+  booktitle = {2026 IEEE Opportunity Research Scholars Symposium (ORSS)},
+  year = {2026},
+  pages = {1--5},
+  publisher = {IEEE},
+  doi = {10.1109/orss71174.2026.11684276},
+  url = {https://doi.org/10.1109/orss71174.2026.11684276}
+}">BibTeX</button></span></div></li>
+        <li><span class="yr">2026</span><div><span class="pt">Non-Stationary Spectral Decomposition Network: Adaptive Spectral Emission Heads and Frequency Modulation</span><span class="pv">Nikhil Sunder &amp; Maikel Leon · <i>2026 IEEE Opportunity Research Scholars Symposium (ORSS)</i>, 1–5</span><span class="meta"><a class="doi" href="https://doi.org/10.1109/orss71174.2026.11684282" target="_blank" rel="noopener">doi:10.1109/orss71174.2026.11684282</a><a class="doi" href="https://doi.org/10.5281/zenodo.23368625" target="_blank" rel="noopener"><span class="en">Code</span><span class="es">Código</span></a><button type="button" class="tool bib" data-key="sunder2026nonstationary" data-bib="@inproceedings{sunder2026nonstationary,
+  author = {Nikhil Sunder and Maikel Leon},
+  title = {{Non-Stationary} Spectral Decomposition Network: Adaptive Spectral Emission Heads and Frequency Modulation},
+  booktitle = {2026 IEEE Opportunity Research Scholars Symposium (ORSS)},
+  year = {2026},
+  pages = {1--5},
+  publisher = {IEEE},
+  doi = {10.1109/orss71174.2026.11684282},
+  url = {https://doi.org/10.1109/orss71174.2026.11684282}
+}">BibTeX</button></span></div></li>
+        <li><span class="yr">2025</span><div><span class="pt">Machine Learning Detection of IPKVM Exploitation in Online Exam Environments</span><span class="pv">Jonathan Kats &amp; Maikel Leon · <i>2025 IEEE Opportunity Research Scholars Symposium (ORSS)</i>, 1–5</span><span class="meta"><a class="doi" href="https://doi.org/10.1109/orss66051.2025.11121637" target="_blank" rel="noopener">doi:10.1109/orss66051.2025.11121637</a><button type="button" class="tool bib" data-key="kats2025machine" data-bib="@inproceedings{kats2025machine,
+  author = {Jonathan Kats and Maikel Leon},
+  title = {Machine Learning Detection of {IPKVM} Exploitation in Online Exam Environments},
+  booktitle = {2025 IEEE Opportunity Research Scholars Symposium (ORSS)},
+  year = {2025},
+  pages = {1--5},
+  publisher = {IEEE},
+  doi = {10.1109/orss66051.2025.11121637},
+  url = {https://doi.org/10.1109/orss66051.2025.11121637}
+}">BibTeX</button></span></div></li>
+        <li><span class="yr">2024</span><div><span class="pt">Advancements in Explainable Artificial Intelligence for Enhanced Transparency and Interpretability across Business Applications</span><span class="pv">Maikel Leon &amp; Hanna DeSimone · <i>Advances in Science, Technology and Engineering Systems Journal</i>, 9(5), 9–20</span><span class="meta"><a class="doi" href="https://doi.org/10.25046/aj090502" target="_blank" rel="noopener">doi:10.25046/aj090502</a><a class="tool" href="https://www.astesj.com/?sdm_process_download=1&amp;download_id=81513" target="_blank" rel="noopener">PDF</a><button type="button" class="tool bib" data-key="leon2024advancements" data-bib="@article{leon2024advancements,
+  author = {Maikel Leon and Hanna DeSimone},
+  title = {Advancements in Explainable Artificial Intelligence for Enhanced Transparency and Interpretability across Business Applications},
+  journal = {Advances in Science, Technology and Engineering Systems Journal},
+  year = {2024},
+  volume = {9},
+  number = {5},
+  pages = {9--20},
+  publisher = {Advances in Science, Technology and Engineering Systems Journal (ASTESJ)},
+  doi = {10.25046/aj090502},
+  url = {https://doi.org/10.25046/aj090502}
+}">BibTeX</button></span></div></li>
+        <li><span class="yr">2024</span><div><span class="pt">Intelligent Prevention of DDoS Attacks using Reinforcement Learning and Smart Contracts</span><span class="pv">Emily Struble, Maikel Leon &amp; Erotokritos Skordilis · <i>The International FLAIRS Conference Proceedings</i>, 37</span><span class="meta"><a class="doi" href="https://doi.org/10.32473/flairs.37.1.135349" target="_blank" rel="noopener">doi:10.32473/flairs.37.1.135349</a><a class="tool" href="https://journals.flvc.org/FLAIRS/article/download/135349/139955" target="_blank" rel="noopener">PDF</a><button type="button" class="tool bib" data-key="struble2024intelligent" data-bib="@article{struble2024intelligent,
+  author = {Emily Struble and Maikel Leon and Erotokritos Skordilis},
+  title = {Intelligent Prevention of {DDoS} Attacks using Reinforcement Learning and Smart Contracts},
+  journal = {The International FLAIRS Conference Proceedings},
+  year = {2024},
+  volume = {37},
+  publisher = {George A. Smathers Libraries},
+  doi = {10.32473/flairs.37.1.135349},
+  url = {https://doi.org/10.32473/flairs.37.1.135349}
+}">BibTeX</button></span></div></li>
+        <li><span class="yr">2024</span><div><span class="pt">Leveraging Explainable AI in Business and Further</span><span class="pv">Hanna DeSimone &amp; Maikel Leon · <i>2024 IEEE Opportunity Research Scholars Symposium (ORSS)</i>, 1–6</span><span class="meta"><a class="doi" href="https://doi.org/10.1109/orss62274.2024.10697961" target="_blank" rel="noopener">doi:10.1109/orss62274.2024.10697961</a><button type="button" class="tool bib" data-key="desimone2024leveraging" data-bib="@inproceedings{desimone2024leveraging,
+  author = {Hanna DeSimone and Maikel Leon},
+  title = {Leveraging Explainable {AI} in Business and Further},
+  booktitle = {2024 IEEE Opportunity Research Scholars Symposium (ORSS)},
+  year = {2024},
+  pages = {1--6},
+  publisher = {IEEE},
+  doi = {10.1109/orss62274.2024.10697961},
+  url = {https://doi.org/10.1109/orss62274.2024.10697961}
+}">BibTeX</button></span></div></li>
+        <li><span class="yr">2024</span><div><span class="pt">Explainable AI: The Quest for Transparency in Business and Beyond</span><span class="pv">Hanna DeSimone &amp; Maikel Leon · <i>2024 7th International Conference on Information and Computer Technologies (ICICT)</i>, 532–538</span><span class="meta"><a class="doi" href="https://doi.org/10.1109/icict62343.2024.00093" target="_blank" rel="noopener">doi:10.1109/icict62343.2024.00093</a><button type="button" class="tool bib" data-key="desimone2024explainable" data-bib="@incollection{desimone2024explainable,
+  author = {Hanna DeSimone and Maikel Leon},
+  title = {Explainable {AI}: The Quest for Transparency in Business and Beyond},
+  booktitle = {2024 7th International Conference on Information and Computer Technologies (ICICT)},
+  year = {2024},
+  pages = {532--538},
+  doi = {10.1109/icict62343.2024.00093},
+  url = {https://doi.org/10.1109/icict62343.2024.00093}
+}">BibTeX</button></span></div></li>
+      </ol>
+      </details>
+      <!-- STUDENTS:END -->
+    </div>
+  </section>
+
+  <section id="media" class="t-white">
+    <div class="label"><svg class="ico" aria-hidden="true"><use href="#i-tv"/></svg><span class="en">Media</span><span class="es">Medios</span></div>
+    <div>
+      <h2><span class="en">Media and talks</span><span class="es">Medios y conferencias</span></h2>
+      <div class="inquiry">
+        <div>
+          <p class="k"><span class="en">Media and speaking inquiries</span><span class="es">Solicitudes de medios y conferencias</span></p>
+          <p class="en">Available for interviews and talks in English and Spanish on:</p>
+          <p class="es">Disponible para entrevistas y conferencias en inglés y en español sobre:</p>
+          <ul class="tags">
+            <li><span class="en">AI and the future of work</span><span class="es">IA y el futuro del trabajo</span></li>
+            <li><span class="en">Generative AI and AI agents in business</span><span class="es">IA generativa y agentes de IA en los negocios</span></li>
+            <li><span class="en">AI governance and regulation</span><span class="es">Gobernanza y regulación de la IA</span></li>
+            <li><span class="en">Deepfakes and misinformation</span><span class="es">Deepfakes y desinformación</span></li>
+            <li><span class="en">U.S.–China technology competition</span><span class="es">Competencia tecnológica entre EE. UU. y China</span></li>
+            <li><span class="en">Robotics and autonomous vehicles</span><span class="es">Robótica y vehículos autónomos</span></li>
+          </ul>
+        </div>
+        <p class="v"><a class="btn" href="#contact"><span class="en">Get in touch</span><span class="es">Contacto</span></a></p>
+      </div>
+      <h3><span class="en">On television and in the news</span><span class="es">En televisión y en la prensa</span></h3>
+      <!-- MEDIA:START -->
+      <ul class="media">
+        <li><span class="outlet">News@TheU · University of Miami</span><span class="mt">Undergraduate AI researchers at Miami Herbert present work on national stage</span><span class="md">2026 · <a href="https://news.miami.edu/mbs/stories/2026/06/undergraduate-ai-researchers-at-miami-herbert-present-work-on-national-stage.html" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-doc"/></svg><span class="en">Read</span><span class="es">Leer</span></a></span></li>
+        <li><span class="outlet">Univision · Despierta América</span><span class="mt">Inteligencia artificial: ¿debemos preocuparnos?</span><span class="md">2023 · <a href="https://www.instagram.com/p/CtJoL04M7G8/" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-play"/></svg><span class="en">Watch</span><span class="es">Ver</span></a></span></li>
+        <li><span class="outlet">CNN en Español · Oppenheimer Presenta</span><span class="mt">Los autos del futuro</span><span class="md">2018 · <a href="https://www.youtube.com/watch?v=sytB9cVUiBg" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-play"/></svg><span class="en">Watch</span><span class="es">Ver</span></a></span></li>
+      </ul>
+      <details class="fold">
+        <summary><h3><span class="en">More appearances</span><span class="es">Más apariciones</span></h3><span class="fold-n">7</span></summary>
+      <ul class="media">
+        <li class="wide"><span class="outlet">CNN en Español · CNN Dinero</span><span class="mt">Deepfakes: cómo funcionan los videos falsos y sus aplicaciones</span>
+          <ol class="seg">
+            <li><a href="https://cnnespanol.cnn.com/video/deepfake-imagenes-videos-falsos-algoritmo-como-funciona-intv-cnn-dinero/" target="_blank" rel="noopener">Así funciona la creación de videos e imágenes falsas</a></li>
+            <li><a href="https://cnnespanol.cnn.com/video/deepfake-videos-falsos-beneficios-aplicaciones-algoritmos-intv-cnn-dinero/" target="_blank" rel="noopener">Beneficios y aplicaciones de los deepfakes</a></li>
+          </ol>
+          <span class="md">2021 · <span class="en">2 segments</span><span class="es">2 segmentos</span></span></li>
+        <li class="wide"><span class="outlet">CNN en Español · CNN Dinero</span><span class="mt">Huawei y el veto de Estados Unidos</span>
+          <ol class="seg">
+            <li><a href="https://www.cnn.com/videos/spanish/2019/05/24/es-cierto-que-huawei-nos-puede-espiar-jose-sevilla-enrique-carrier-maikel-leon-espinosa-entrevista-rodriguez-dinero.cnn" target="_blank" rel="noopener">¿Es cierto que Huawei nos puede espiar?</a></li>
+            <li><a href="https://www.cnn.com/videos/spanish/2019/05/24/dominio-tecnologico-si-no-huawei-quien-jose-sevilla-enrique-carrier-maikel-leon-espinosa-entrevista-rodriguez-dinero.cnn" target="_blank" rel="noopener">Dominio tecnológico: ¿si no es Huawei, quién?</a></li>
+            <li><a href="https://www.cnn.com/videos/spanish/2019/05/24/a-quien-afecta-mas-el-veto-de-eeuu-google-huawei-jose-sevilla-enrique-carrier-maikel-leon-espinosa-entrevista-rodriguez-dinero.cnn" target="_blank" rel="noopener">¿A quién afecta más el veto de EE. UU. a Huawei?</a></li>
+            <li><a href="https://www.cnn.com/videos/spanish/2019/05/24/prohibicion-de-huawei-como-afectaria-empresas-estadounidenses-sevilla-carrier-espinosa-entrevista-rodriguez-dinero.cnn" target="_blank" rel="noopener">Prohibición de Huawei: cómo afectaría a las empresas estadounidenses</a></li>
+            <li><a href="https://www.cnn.com/videos/spanish/2019/05/24/huawei-fue-solo-una-herramienta-de-negociacion-para-trump-sevilla-carrier-espinosa-entrevista-rodriguez-dinero.cnn" target="_blank" rel="noopener">¿Huawei fue solo una herramienta de negociación?</a></li>
+          </ol>
+          <span class="md">2019 · <span class="en">5 segments</span><span class="es">5 segmentos</span></span></li>
+        <li><span class="outlet">CNN en Español · CNN Dinero</span><span class="mt">¿Cómo hacen estos ingenieros en Silicon Valley para ganar millones sin trabajar?</span><span class="md">2018 · <a href="https://cnnespanol.cnn.com/video/ganancias-ingenieros-silicon-valley-maikel-leon-entrevista-serbia-dinero/" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-play"/></svg><span class="en">Watch</span><span class="es">Ver</span></a></span></li>
+        <li><span class="outlet">CNN en Español · Oppenheimer Presenta</span><span class="mt">¿Nos van a reemplazar los robots?</span><span class="md">2017 · <a href="https://www.youtube.com/watch?v=jC-nS79vb_o" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-play"/></svg><span class="en">Watch</span><span class="es">Ver</span></a></span></li>
+        <li><span class="outlet">CNN en Español</span><span class="mt">La inteligencia artificial según Elon Musk y Mark Zuckerberg</span><span class="md">2017 · <a href="https://cnnespanol.cnn.com/video/cnnee-quik-melissa-velasquez-ai-elon-musk-y-mark-zuckerberg/" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-play"/></svg><span class="en">Watch</span><span class="es">Ver</span></a></span></li>
+        <li><span class="outlet">CNN en Español · Oppenheimer Presenta</span><span class="mt">¿Ocuparán los robots nuestro empleo?</span><span class="md">2016 · <a href="https://www.youtube.com/watch?v=6cKsau_IwB4" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-play"/></svg><span class="en">Watch</span><span class="es">Ver</span></a></span></li>
+        <li><span class="outlet">CNN en Español · CNN Dinero</span><span class="mt">Estados Unidos y China: la guerra tecnológica</span><span class="md"><a href="https://cnnespanol.cnn.com/video/eeuu-china-guerra-tecnologica-maikel-leon-entrevista-romo-dinero/" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-play"/></svg><span class="en">Watch</span><span class="es">Ver</span></a></span></li>
+      </ul>
+      </details>
+      <!-- MEDIA:END -->
+      <details class="fold" id="talks" data-toggle="talks">
+        <summary><h3><span class="en">Talks and sessions chaired</span><span class="es">Conferencias y sesiones presididas</span></h3><span class="fold-n" data-count="talks">4</span></summary>
+      <ul class="list">
+      <!-- TALKS:START -->
+        <li><span class="yr">2022–26</span><span>Instructor, &quot;Digital Transformation for Community Development,&quot; UStart@Miami</span></li>
+        <li><span class="yr">2024</span><span><span class="en">Chair, University of Miami Student Research Symposium</span><span class="es">Presidente, Simposio de Investigación Estudiantil de la Universidad de Miami</span></span></li>
+        <li><span class="yr">2023</span><span><span class="en">Session chair, &quot;Learning/Teaching Methodologies and Assessment,&quot; 13th Canada International Conference on Education (CICE 2023)</span><span class="es">Presidente de sesión, &quot;Learning/Teaching Methodologies and Assessment,&quot; 13.ª Conferencia Internacional de Educación de Canadá (CICE 2023)</span></span></li>
+        <li><span class="yr">2023</span><span><span class="en">Chair, TECHXPLORER 2023, Ecuadorian Chamber of Innovation and Technology and Ecuadorian Federation of Exporters, Miami</span><span class="es">Presidente, TECHXPLORER 2023, Cámara Ecuatoriana de Innovación y Tecnología y Federación Ecuatoriana de Exportadores, Miami</span></span></li>
+      <!-- TALKS:END -->
+      </ul>
+      </details>
+    </div>
+  </section>
+
+  <section id="honors" class="t-black">
+    <div class="label"><svg class="ico" aria-hidden="true"><use href="#i-medal"/></svg><span class="en">Honors</span><span class="es">Premios</span></div>
+    <div>
+      <h2><span class="en">Awards and recognition</span><span class="es">Premios y reconocimientos</span></h2>
+      <ul class="list">
+      <!-- AWARDS:START -->
+        <li><span class="yr">2026</span><span><span class="en">Best Poster Award (with Charlie Tucker), 39th International Florida Artificial Intelligence Research Society Conference (FLAIRS), Marco Island, Florida</span><span class="es">Premio al Mejor Póster (con Charlie Tucker), 39.ª Conferencia Internacional de la Florida Artificial Intelligence Research Society (FLAIRS), Marco Island, Florida</span></span></li>
+        <li><span class="yr">2017</span><span><span class="en">Best Paper Award (with Gonzalo Nápoles, Isel Grau, and Koen Vanhoof), 29th IEEE International Conference on Tools with Artificial Intelligence (ICTAI), Boston</span><span class="es">Premio al Mejor Artículo (con Gonzalo Nápoles, Isel Grau y Koen Vanhoof), 29.ª Conferencia Internacional IEEE sobre Herramientas con Inteligencia Artificial (ICTAI), Boston</span></span></li>
+        <li><span class="yr">2015</span><span><span class="en">Award for the Most Relevant Research in Computer Science, Cuban National Academy of Sciences</span><span class="es">Premio a la investigación más relevante en Ciencias de la Computación, Academia de Ciencias de Cuba</span></span></li>
+      <!-- AWARDS:END -->
+      </ul>
+      <details class="fold">
+        <summary><h3><span class="en">Certifications and fellowships</span><span class="es">Certificaciones y becas</span></h3><span class="fold-n" data-count="certs">5</span></summary>
+      <ul class="list">
+      <!-- CERTS:START -->
+        <li><span class="yr">2026</span><span><span class="en">Teaching with AI, Harvard Business Impact Certificate</span><span class="es">Teaching with AI, certificado de Harvard Business Impact</span></span></li>
+        <li><span class="yr">2024</span><span>Oracle Cloud Infrastructure Generative AI Certified Professional</span></li>
+        <li><span class="yr">2024</span><span><span class="en">Fundamentals of Case Teaching, Harvard Business Publishing Certificate</span><span class="es">Fundamentals of Case Teaching, certificado de Harvard Business Publishing</span></span></li>
+        <li><span class="yr">2022–23</span><span><span class="en">UM QEP Faculty Fellow, Problem-Based Learning and Collaborative Online International Learning tracks</span><span class="es">UM QEP Faculty Fellow, programas de aprendizaje basado en problemas y aprendizaje internacional colaborativo en línea</span></span></li>
+        <li><span class="yr">2021</span><span>AWS Academy Educator Certified Professional</span></li>
+      <!-- CERTS:END -->
+      </ul>
+      </details>
+    </div>
+  </section>
+
+  <section id="service" class="t-white">
+    <div class="label"><svg class="ico" aria-hidden="true"><use href="#i-people"/></svg><span class="en">Service</span><span class="es">Servicio</span></div>
+    <div>
+      <h2><span class="en">Editorial and professional service</span><span class="es">Servicio editorial y profesional</span></h2>
+      <ul class="list">
+        <li><span class="yr">Editorial</span><span><span class="en">Editorial Board Member, Discover Informatics (Springer Nature); Guest Editor, Algorithms special issue "AI-Driven Business Analytics Revolution" (<span class="nw">2025–2026</span>)</span><span class="es">Miembro del Consejo Editorial, Discover Informatics (Springer Nature); Editor invitado, número especial de Algorithms "AI-Driven Business Analytics Revolution" (<span class="nw">2025–2026</span>)</span></span></li>
+        <li><span class="yr">Committees</span><span><span class="en">Program Committee, FLAIRS Conference, IEEE CISDA, and IEEE ORSS</span><span class="es">Comité de programa, conferencia FLAIRS, IEEE CISDA e IEEE ORSS</span></span></li>
+      </ul>
+      <details class="fold" id="reviewing" data-toggle="reviews">
+        <summary><h3><span class="en">Journals reviewed for</span><span class="es">Revisor de revistas</span></h3><span class="fold-n" data-count="reviews">30</span></summary>
+        <ul class="list jlist">
+          <!-- REVIEWS:START -->
+          <li><span class="yr">Elsevier</span><span>Applied Soft Computing&nbsp;· Information Sciences&nbsp;· Intelligent Systems with Applications&nbsp;· Technological Forecasting and Social Change&nbsp;· World Development Sustainability</span></li>
+          <li><span class="yr">IEEE</span><span>IEEE Transactions on Computational Social Systems&nbsp;· IEEE Transactions on Fuzzy Systems&nbsp;· IEEE Transactions on Neural Networks and Learning Systems&nbsp;· IEEE Transactions on Pattern Analysis and Machine Intelligence</span></li>
+          <li><span class="yr">MDPI</span><span>Algorithms&nbsp;· Applied Sciences&nbsp;· Applied System Innovation&nbsp;· Behavioral Sciences&nbsp;· Big Data and Cognitive Computing&nbsp;· Bioengineering&nbsp;· Biomimetics&nbsp;· Computers&nbsp;· Information&nbsp;· Journal of Risk and Financial Management&nbsp;· Machine Learning and Knowledge Extraction&nbsp;· Mathematical and Computational Applications&nbsp;· Prosthesis&nbsp;· Sensors&nbsp;· Sustainability&nbsp;· Systems&nbsp;· Technologies</span></li>
+          <li><span class="yr">Springer Nature</span><span>BMC Public Health&nbsp;· Knowledge and Information Systems&nbsp;· Soft Computing</span></li>
+          <li><span class="yr">Taylor &amp; Francis</span><span>Journal of Experimental &amp; Theoretical Artificial Intelligence</span></li>
+          <!-- REVIEWS:END -->
+        </ul>
+      </details>
+    </div>
+  </section>
+
+  <section id="contact" class="t-black">
+    <div class="label"><svg class="ico" aria-hidden="true"><use href="#i-envelope"/></svg><span class="en">Contact</span><span class="es">Contacto</span></div>
+    <div>
+      <h2><span class="en">Get in touch</span><span class="es">Escríbame</span></h2>
+      <div class="contact">
+        <div><svg class="ico" aria-hidden="true"><use href="#i-briefcase"/></svg><div class="k">ML Education &amp; Consulting LLC</div><div class="v"><a class="em" href="mailto:maikelleon@gmail.com">maikelleon@gmail.com</a><button type="button" class="copy" data-copy="maikelleon@gmail.com"><span class="en">Copy</span><span class="es">Copiar</span></button></div><p class="note"><span class="en">Consulting and education</span><span class="es">Consultoría y educación</span></p></div>
+        <div><svg class="ico" aria-hidden="true"><use href="#i-building"/></svg><div class="k"><span class="en">University of Miami</span><span class="es">Universidad de Miami</span></div><div class="v"><a class="em" href="mailto:mleon@miami.edu">mleon@miami.edu</a><button type="button" class="copy" data-copy="mleon@miami.edu"><span class="en">Copy</span><span class="es">Copiar</span></button></div><p class="note"><span class="en">Teaching, students, research, and media requests</span><span class="es">Docencia, estudiantes, investigación y solicitudes de medios</span></p></div>
+        <div class="wide"><svg class="ico" aria-hidden="true"><use href="#i-globe"/></svg><div class="k"><span class="en">Profiles</span><span class="es">Perfiles</span></div><ul class="plinks"><li><a class="pbtn" href="https://www.linkedin.com/in/maikelleon/" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-card"/></svg>LinkedIn</a></li><li><a class="pbtn" href="https://scholar.google.com/citations?user=1hocwokAAAAJ" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-quote"/></svg>Google Scholar</a></li><li><a class="pbtn" href="https://www.semanticscholar.org/author/Maikel-Leon/66618042?sort=pub-date" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-sparkle"/></svg>Semantic Scholar</a></li><li><a class="pbtn" href="https://orcid.org/0000-0002-8849-4521" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-badge"/></svg>ORCID</a></li><li><a class="pbtn" href="https://www.researchgate.net/profile/Maikel-Leon" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-people"/></svg>ResearchGate</a></li><li><a class="pbtn" href="https://app.dimensions.ai/discover/publication?search_mode=content&amp;and_facet_researcher=ur.015527277731.48&amp;order=date" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-bars"/></svg>Dimensions</a></li><li><a class="pbtn" href="https://scholargps.com/scholars/49121140777133/maikel-leon" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-compass"/></svg>ScholarGPS</a></li></ul></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="#about"><span class="en">About</span><span class="es">Perfil</span></a>
+      <a href="#research"><span class="en">Research</span><span class="es">Investigación</span></a>
+      <a href="#publications"><span class="en">Publications</span><span class="es">Publicaciones</span></a>
+      <a href="#executive" data-toggle="consulting"><span class="en">Consulting</span><span class="es">Consultoría</span></a>
+      <a href="#teaching"><span class="en">Teaching</span><span class="es">Docencia</span></a>
+      <a href="#media"><span class="en">Media</span><span class="es">Medios</span></a>
+      <a href="#honors"><span class="en">Honors</span><span class="es">Premios</span></a>
+      <a href="#contact"><span class="en">Contact</span><span class="es">Contacto</span></a>
+    </nav>
+    <div class="foot-row">
+      <span>© 2026 Maikel Leon · <!-- UPDATED:START --><span class="en">Updated October 2026</span><span class="es">Actualizado en octubre de 2026</span><!-- UPDATED:END --></span>
+      <span>Miami, Florida · English · Español</span>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script>
+(function(){
+  var site=document.getElementById('site');
+  function setLang(l){
+    site.dataset.lang=l;
+    document.documentElement.lang=l;
+    document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed', b.dataset.set===l?'true':'false');});
+    try{localStorage.setItem('lang',l);}catch(e){}
+  }
+  var saved=null;
+  try{saved=localStorage.getItem('lang');}catch(e){}
+  if(saved==='es'||saved==='en'){setLang(saved);}
+  document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.set);});});
+
+  var gn=document.getElementById('gn'), mb=document.getElementById('menu-btn');
+  function setMenu(open){gn.classList.toggle('open',open);mb.setAttribute('aria-expanded',open?'true':'false');}
+  mb.addEventListener('click',function(){setMenu(!gn.classList.contains('open'));});
+  document.querySelectorAll('#gn-menu a').forEach(function(a){a.addEventListener('click',function(){setMenu(false);});});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')setMenu(false);});
+
+  document.querySelectorAll('.copy[data-copy]').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var t=btn.getAttribute('data-copy'), o=btn.innerHTML;
+      var done=function(){btn.textContent=site.dataset.lang==='es'?'Copiado':'Copied';setTimeout(function(){btn.innerHTML=o;},1600);};
+      var fallback=function(){var el=btn.previousElementSibling;var r=document.createRange();r.selectNodeContents(el);var sel=getSelection();sel.removeAllRanges();sel.addRange(r);};
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,fallback);}else{fallback();}
+    });
+  });
+
+  document.addEventListener('click',function(ev){
+    var b=ev.target.closest&&ev.target.closest('.bib'); if(!b)return;
+    var t=b.getAttribute('data-bib'), o=b.textContent;
+    var done=function(){b.textContent=site.dataset.lang==='es'?'Copiado':'Copied';b.classList.add('ok');setTimeout(function(){b.textContent=o;b.classList.remove('ok');},1600);};
+    var save=function(){try{var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([t+'\n'],{type:'text/plain'}));a.download=(b.getAttribute('data-key')||'citation')+'.bib';document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},0);}catch(e){}};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,save);}else{save();}
+  });
+
+  var links=[].slice.call(document.querySelectorAll('#gn-menu a'));
+  var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a;});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&map[e.target.id]){links.forEach(function(a){a.classList.remove('on');});map[e.target.id].classList.add('on');}});},{rootMargin:'-40% 0px -55% 0px'});
+    document.querySelectorAll('section[id]').forEach(function(s){io.observe(s);});
+  }
+})();
+</script>
+
+<!-- ANALYTICS:START -->
+<!-- ANALYTICS:END -->
+</body>
+</html>

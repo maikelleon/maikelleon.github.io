@@ -1,0 +1,26 @@
+name: Show or clear the announcement banner
+description: A slim banner at the top of every visit, for news like recruiting students or a leave.
+title: "[Announcement] "
+body:
+  - type: dropdown
+    id: action
+    attributes:
+      label: What to do
+      options:
+        - Show this announcement
+        - Remove the current announcement
+    validations:
+      required: true
+  - type: textarea
+    id: en
+    attributes:
+      label: Announcement in English
+      placeholder: Recruiting undergraduate AI researchers for Spring 2027.
+  - type: textarea
+    id: es
+    attributes:
+      label: Announcement in Spanish (optional)
+  - type: input
+    id: link
+    attributes:
+      label: Link for "Details" (optional)

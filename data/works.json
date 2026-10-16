@@ -1,0 +1,2588 @@
+{
+ "featured": [
+  {
+   "doi": "10.1007/s11227-026-08760-7",
+   "title": "Governing generative AI in organizations: A design theory and quasi-experimental field study of sociotechnical guardrails",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "The Journal of Supercomputing",
+   "volume": "82",
+   "issue": "12",
+   "pages": "641",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2026-08-16",
+   "pdf": "https://link.springer.com/content/pdf/10.1007/s11227-026-08760-7.pdf",
+   "oa_url": "https://link.springer.com/content/pdf/10.1007/s11227-026-08760-7.pdf",
+   "publisher": "Springer Science+Business Media",
+   "src_type": "article",
+   "journal": "The Journal of Supercomputing",
+   "if": 3.5
+  },
+  {
+   "doi": "10.3390/bdcc10080272",
+   "title": "Layerwise conditioned backpropagation: A curvature-aware reparameterization of the backward pass with convergence guarantees",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "Big Data and Cognitive Computing",
+   "volume": "10",
+   "issue": "8",
+   "pages": "272",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2026-08-13",
+   "pdf": "",
+   "oa_url": "https://doi.org/10.3390/bdcc10080272",
+   "publisher": "Multidisciplinary Digital Publishing Institute",
+   "src_type": "article",
+   "journal": "Big Data and Cognitive Computing",
+   "if": 5.3
+  },
+  {
+   "doi": "10.1016/j.jengtecman.2026.101993",
+   "title": "Agentic AI and labor disruption: A comprehensive review, measurement, and policy framework",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "Journal of Engineering and Technology Management",
+   "volume": "81",
+   "issue": "",
+   "pages": "101993",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2026-07-01",
+   "pdf": "",
+   "oa_url": "https://doi.org/10.1016/j.jengtecman.2026.101993",
+   "publisher": "Elsevier BV",
+   "src_type": "article",
+   "journal": "Journal of Engineering and Technology Management",
+   "if": 4.3
+  },
+  {
+   "doi": "10.3390/a19060492",
+   "title": "Publisher-built generative AI assistants in U.S. higher education: A critical review and a reproducible TRIAD–JTBD evaluation framework",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "Algorithms",
+   "volume": "19",
+   "issue": "6",
+   "pages": "492",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2026-06-19",
+   "pdf": "https://www.mdpi.com/1999-4893/19/6/492/pdf?version=1781853344",
+   "oa_url": "https://www.mdpi.com/1999-4893/19/6/492/pdf?version=1781853344",
+   "publisher": "Multidisciplinary Digital Publishing Institute",
+   "src_type": "article",
+   "journal": "Algorithms",
+   "if": 2.6
+  },
+  {
+   "doi": "10.3390/bdcc10030069",
+   "title": "Generative AI as a general-purpose technology: Foundations, applications, and labor market implications through 2030",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "Big Data and Cognitive Computing",
+   "volume": "10",
+   "issue": "3",
+   "pages": "69",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2026-02-27",
+   "pdf": "https://www.mdpi.com/2504-2289/10/3/69/pdf?version=1772176949",
+   "oa_url": "https://www.mdpi.com/2504-2289/10/3/69/pdf?version=1772176949",
+   "publisher": "Multidisciplinary Digital Publishing Institute",
+   "src_type": "article",
+   "journal": "Big Data and Cognitive Computing",
+   "if": 5.3
+  },
+  {
+   "doi": "10.3390/a19020136",
+   "title": "Investing in AI interpretability, control, and robustness",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "Algorithms",
+   "volume": "19",
+   "issue": "2",
+   "pages": "136",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2026-02-09",
+   "pdf": "https://www.mdpi.com/1999-4893/19/2/136/pdf",
+   "oa_url": "https://www.mdpi.com/1999-4893/19/2/136/pdf",
+   "publisher": "Multidisciplinary Digital Publishing Institute",
+   "src_type": "article",
+   "journal": "Algorithms",
+   "if": 2.6
+  },
+  {
+   "doi": "10.1002/sres.70014",
+   "title": "Lifecycle-based governance to build reliable ethical AI systems",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "Systems Research and Behavioral Science",
+   "volume": "43",
+   "issue": "3",
+   "pages": "1116–1132",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2026-01-30",
+   "pdf": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/sres.70014",
+   "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/sres.70014",
+   "publisher": "Wiley",
+   "src_type": "article",
+   "journal": "Systems Research and Behavioral Science",
+   "if": 1.8
+  },
+  {
+   "doi": "10.3390/bdcc10010022",
+   "title": "A review on fuzzy cognitive mapping: Recent advances and algorithms",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "Big Data and Cognitive Computing",
+   "volume": "10",
+   "issue": "1",
+   "pages": "22",
+   "authors": [
+    "Nápoles, G.",
+    "Jastrzębska, A.",
+    "Grau, I.",
+    "Salgueiro, Y.",
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Gonzalo Nápoles",
+    "Agnieszka Jastrzębska",
+    "Isel Grau",
+    "Yamisleydi Salgueiro",
+    "Maikel Leon"
+   ],
+   "date": "2026-01-06",
+   "pdf": "https://www.mdpi.com/2504-2289/10/1/22/pdf?version=1767710381",
+   "oa_url": "https://www.mdpi.com/2504-2289/10/1/22/pdf?version=1767710381",
+   "publisher": "Multidisciplinary Digital Publishing Institute",
+   "src_type": "article",
+   "journal": "Big Data and Cognitive Computing",
+   "if": 5.3
+  },
+  {
+   "doi": "10.32604/cmc.2026.087930",
+   "title": "Fuzzy cognitive maps: A comprehensive survey and comparative analysis",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "Computers, materials & continua/Computers, materials & continua (Print)",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2026-01-01",
+   "pdf": "https://www.techscience.com/files/onlinefirst/2026/9.23/TSP_CMC_87930/TSP_CMC_87930.pdf",
+   "oa_url": "https://www.techscience.com/files/onlinefirst/2026/9.23/TSP_CMC_87930/TSP_CMC_87930.pdf",
+   "publisher": "",
+   "src_type": "article",
+   "journal": "Computers, Materials & Continua",
+   "if": 2.4
+  },
+  {
+   "doi": "10.1016/j.cosrev.2025.100862",
+   "title": "Cognitive mapping variants and their training algorithms",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "Computer Science Review",
+   "volume": "59",
+   "issue": "",
+   "pages": "100862",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2025-11-26",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Elsevier BV",
+   "src_type": "article",
+   "journal": "Computer Science Review",
+   "if": 17.5
+  },
+  {
+   "doi": "10.1016/j.is.2025.102620",
+   "title": "GPT-5 and open-weight large language models: Advances in reasoning, transparency, and control",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "Information Systems",
+   "volume": "136",
+   "issue": "",
+   "pages": "102620",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2025-09-22",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Elsevier BV",
+   "src_type": "article",
+   "journal": "Information Systems",
+   "if": 4.0
+  },
+  {
+   "doi": "10.1016/j.ins.2022.12.012",
+   "title": "Prolog-based agnostic explanation module for structured pattern classification",
+   "year": 2023,
+   "type": "journal-article",
+   "journal_raw": "Information Sciences",
+   "volume": "622",
+   "issue": "",
+   "pages": "1196–1227",
+   "authors": [
+    "Nápoles, G.",
+    "Hoitsma, F.",
+    "Knoben, A.",
+    "Jastrzębska, A.",
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Gonzalo Nápoles",
+    "Fabian Hoitsma",
+    "Andreas Knoben",
+    "Agnieszka Jastrzębska",
+    "Maikel Leon"
+   ],
+   "date": "2022-12-12",
+   "pdf": "",
+   "oa_url": "https://doi.org/10.1016/j.ins.2022.12.012",
+   "publisher": "Elsevier BV",
+   "src_type": "article",
+   "journal": "Information Sciences",
+   "if": 6.0
+  },
+  {
+   "doi": "10.1109/tcyb.2022.3165104",
+   "title": "Recurrence-aware long-term cognitive network for explainable pattern classification",
+   "year": 2023,
+   "type": "journal-article",
+   "journal_raw": "IEEE Transactions on Cybernetics",
+   "volume": "53",
+   "issue": "10",
+   "pages": "6083–6094",
+   "authors": [
+    "Nápoles, G.",
+    "Salgueiro, Y.",
+    "Grau, I.",
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Gonzalo Nápoles",
+    "Yamisleydi Salgueiro",
+    "Isel Grau",
+    "Maikel Leon"
+   ],
+   "date": "2022-04-27",
+   "pdf": "",
+   "oa_url": "https://research.tilburguniversity.edu/en/publications/2007d7e5-f201-4c0e-b1ae-50c71b14bf46",
+   "publisher": "Institute of Electrical and Electronics Engineers",
+   "src_type": "article",
+   "journal": "IEEE Transactions on Cybernetics",
+   "if": 11.3
+  },
+  {
+   "doi": "10.1142/s0218213018600102",
+   "title": "FCM Expert: Software tool for scenario analysis and pattern classification based on fuzzy cognitive maps",
+   "year": 2018,
+   "type": "journal-article",
+   "journal_raw": "International Journal of Artificial Intelligence Tools",
+   "volume": "27",
+   "issue": "7",
+   "pages": "1860010",
+   "authors": [
+    "Nápoles, G.",
+    "Leon, M.",
+    "Grau, I.",
+    "Vanhoof, K."
+   ],
+   "authors_full": [
+    "Gonzalo Nápoles",
+    "Maikel Leon",
+    "Isel Grau",
+    "Koen Vanhoof"
+   ],
+   "date": "2018-11-01",
+   "pdf": "",
+   "oa_url": "http://hdl.handle.net/1942/27948",
+   "publisher": "World Scientific",
+   "src_type": "article",
+   "journal": "International Journal on Artificial Intelligence Tools",
+   "if": 1.0
+  },
+  {
+   "doi": "10.1007/s10115-013-0616-z",
+   "title": "Learning and clustering of fuzzy cognitive maps for travel behaviour analysis",
+   "year": 2014,
+   "type": "journal-article",
+   "journal_raw": "Knowledge and Information Systems",
+   "volume": "39",
+   "issue": "2",
+   "pages": "435–462",
+   "authors": [
+    "Leon, M.",
+    "Mkrtchyan, L.",
+    "Depaire, B.",
+    "Ruan, D.",
+    "Vanhoof, K."
+   ],
+   "authors_full": [
+    "Maikel Leon",
+    "Lusine Mkrtchyan",
+    "Benoît Depaire",
+    "Da Ruan",
+    "Koen Vanhoof"
+   ],
+   "date": "2013-03-20",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Springer Science+Business Media",
+   "src_type": "article",
+   "journal": "Knowledge and Information Systems",
+   "if": 3.6
+  },
+  {
+   "doi": "10.1080/18756891.2013.816025",
+   "title": "Tackling travel behaviour: An approach based on fuzzy cognitive maps",
+   "year": 2013,
+   "type": "other",
+   "journal_raw": "International Journal of Computational Intelligence Systems",
+   "volume": "6",
+   "issue": "6",
+   "pages": "1012–1039",
+   "authors": [
+    "Leon, M.",
+    "Nápoles, G.",
+    "Bello, R.",
+    "Mkrtchyan, L.",
+    "Depaire, B.",
+    "Vanhoof, K."
+   ],
+   "authors_full": [
+    "Maikel Leon",
+    "Gonzalo Nápoles",
+    "Rafael Bello",
+    "Lusine Mkrtchyan",
+    "Benoît Depaire",
+    "Koen Vanhoof"
+   ],
+   "date": "2013-01-01",
+   "pdf": "https://link.springer.com/content/pdf/10.1080/18756891.2013.816025.pdf",
+   "oa_url": "https://link.springer.com/content/pdf/10.1080/18756891.2013.816025.pdf",
+   "publisher": "Springer Nature",
+   "src_type": "article",
+   "journal": "International Journal of Computational Intelligence Systems",
+   "if": 4.0
+  },
+  {
+   "doi": "10.1007/s10109-010-0144-2",
+   "title": "Mental maps and travel behaviour: Meanings and models",
+   "year": 2012,
+   "type": "journal-article",
+   "journal_raw": "Journal of Geographical Systems",
+   "volume": "14",
+   "issue": "2",
+   "pages": "143–165",
+   "authors": [
+    "Hannes, E.",
+    "Kusumastuti, D.",
+    "Leon, M.",
+    "Janssens, D.",
+    "Vanhoof, K.",
+    "Wets, G."
+   ],
+   "authors_full": [
+    "Els Hannes",
+    "Diana Kusumastuti",
+    "Maikel Leon",
+    "Davy Janssens",
+    "Koen Vanhoof",
+    "Geert Wets"
+   ],
+   "date": "2010-11-11",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Springer Science+Business Media",
+   "src_type": "article",
+   "journal": "Journal of Geographical Systems",
+   "if": 2.8
+  }
+ ],
+ "all": [
+  {
+   "doi": "10.37394/23202.2026.25.49",
+   "title": "Enduring Strengths of Knowledge-Based Methods in the Era of Machine Learning and Large Language Models: A Task-and-Architecture Perspective",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "WSEAS TRANSACTIONS on SYSTEMS archive",
+   "volume": "25",
+   "issue": "",
+   "pages": "609",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2026-09-23",
+   "pdf": "https://wseas.com/journals/systems/2026/a985102-018(2026).pdf",
+   "oa_url": "https://wseas.com/journals/systems/2026/a985102-018(2026).pdf",
+   "publisher": "",
+   "src_type": "article"
+  },
+  {
+   "doi": "10.37394/232018.2026.14.53",
+   "title": "The Reversed Turing Test: Measuring Superhuman AI Performance Beyond Imitation",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "WSEAS TRANSACTIONS ON COMPUTER RESEARCH",
+   "volume": "14",
+   "issue": "",
+   "pages": "617",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2026-09-23",
+   "pdf": "https://wseas.com/journals/cr/2026/b085118-012(2026).pdf",
+   "oa_url": "https://wseas.com/journals/cr/2026/b085118-012(2026).pdf",
+   "publisher": "World Scientific and Engineering Academy and Society",
+   "src_type": "article"
+  },
+  {
+   "doi": "10.1007/s11227-026-08760-7",
+   "title": "Governing generative AI in organizations: A design theory and quasi-experimental field study of sociotechnical guardrails",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "The Journal of Supercomputing",
+   "volume": "82",
+   "issue": "12",
+   "pages": "641",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2026-08-16",
+   "pdf": "https://link.springer.com/content/pdf/10.1007/s11227-026-08760-7.pdf",
+   "oa_url": "https://link.springer.com/content/pdf/10.1007/s11227-026-08760-7.pdf",
+   "publisher": "Springer Science+Business Media",
+   "src_type": "article",
+   "journal": "The Journal of Supercomputing",
+   "if": 3.5
+  },
+  {
+   "doi": "10.3390/bdcc10080272",
+   "title": "Layerwise conditioned backpropagation: A curvature-aware reparameterization of the backward pass with convergence guarantees",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "Big Data and Cognitive Computing",
+   "volume": "10",
+   "issue": "8",
+   "pages": "272",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2026-08-13",
+   "pdf": "",
+   "oa_url": "https://doi.org/10.3390/bdcc10080272",
+   "publisher": "Multidisciplinary Digital Publishing Institute",
+   "src_type": "article",
+   "journal": "Big Data and Cognitive Computing",
+   "if": 5.3
+  },
+  {
+   "doi": "10.1016/j.jengtecman.2026.101993",
+   "title": "Agentic AI and labor disruption: A comprehensive review, measurement, and policy framework",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "Journal of Engineering and Technology Management",
+   "volume": "81",
+   "issue": "",
+   "pages": "101993",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2026-07-01",
+   "pdf": "",
+   "oa_url": "https://doi.org/10.1016/j.jengtecman.2026.101993",
+   "publisher": "Elsevier BV",
+   "src_type": "article",
+   "journal": "Journal of Engineering and Technology Management",
+   "if": 4.3
+  },
+  {
+   "doi": "10.3390/a19060492",
+   "title": "Publisher-built generative AI assistants in U.S. higher education: A critical review and a reproducible TRIAD–JTBD evaluation framework",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "Algorithms",
+   "volume": "19",
+   "issue": "6",
+   "pages": "492",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2026-06-19",
+   "pdf": "https://www.mdpi.com/1999-4893/19/6/492/pdf?version=1781853344",
+   "oa_url": "https://www.mdpi.com/1999-4893/19/6/492/pdf?version=1781853344",
+   "publisher": "Multidisciplinary Digital Publishing Institute",
+   "src_type": "article",
+   "journal": "Algorithms",
+   "if": 2.6
+  },
+  {
+   "doi": "10.1007/s44564-026-00003-4",
+   "title": "Inaugural editorial for Discover Informatics",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "Discover Informatics",
+   "volume": "1",
+   "issue": "1",
+   "pages": "",
+   "authors": [
+    "Wu, Z.",
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Ziyou Wu",
+    "Maikel Leon"
+   ],
+   "date": "2026-06-10",
+   "pdf": "https://link.springer.com/content/pdf/10.1007/s44564-026-00003-4.pdf",
+   "oa_url": "https://link.springer.com/content/pdf/10.1007/s44564-026-00003-4.pdf",
+   "publisher": "",
+   "src_type": "article"
+  },
+  {
+   "doi": "10.32473/flairs.39.1.141593",
+   "title": "Emerging AI Trends",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "Proceedings of the ... International Florida Artificial Intelligence Research Society Conference",
+   "volume": "39",
+   "issue": "1",
+   "pages": "",
+   "authors": [
+    "Leon, M.",
+    "Plant, R."
+   ],
+   "authors_full": [
+    "Maikel Leon",
+    "Robert Plant"
+   ],
+   "date": "2026-05-06",
+   "pdf": "https://journals.flvc.org/FLAIRS/article/download/141593/146932",
+   "oa_url": "https://journals.flvc.org/FLAIRS/article/download/141593/146932",
+   "publisher": "George A. Smathers Libraries",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": "10.32473/flairs.39.1.141620",
+   "title": "Domain-Specificity of Refusal Representations in Large Language Models",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "Proceedings of the ... International Florida Artificial Intelligence Research Society Conference",
+   "volume": "39",
+   "issue": "1",
+   "pages": "",
+   "authors": [
+    "Tucker, C.",
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Charlie Tucker",
+    "Maikel Leon"
+   ],
+   "date": "2026-05-06",
+   "pdf": "https://journals.flvc.org/FLAIRS/article/download/141620/146927",
+   "oa_url": "https://journals.flvc.org/FLAIRS/article/download/141620/146927",
+   "publisher": "George A. Smathers Libraries",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": "10.1109/orss71174.2026.11684276",
+   "title": "Auditing Abliteration: Normalization Placement, Edit Budget, and Transfer in Single-Direction Refusal Removal",
+   "year": 2026,
+   "type": "conference-paper",
+   "journal_raw": "2026 IEEE Opportunity Research Scholars Symposium (ORSS)",
+   "volume": "",
+   "issue": "",
+   "pages": "1–5",
+   "authors": [
+    "Tucker, C.",
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Charlie Tucker",
+    "Maikel Leon"
+   ],
+   "date": "2026-04-01",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "IEEE",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": "10.1109/orss71174.2026.11684282",
+   "title": "Non-Stationary Spectral Decomposition Network: Adaptive Spectral Emission Heads and Frequency Modulation",
+   "year": 2026,
+   "type": "conference-paper",
+   "journal_raw": "2026 IEEE Opportunity Research Scholars Symposium (ORSS)",
+   "volume": "",
+   "issue": "",
+   "pages": "1–5",
+   "authors": [
+    "Sunder, N.",
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Nikhil Sunder",
+    "Maikel Leon"
+   ],
+   "date": "2026-04-01",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "IEEE",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": "10.37394/23209.2026.23.20",
+   "title": "Framework for the Ethical and Societally Conscious AI Deployment",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "WSEAS Transactions on Information Science and Applications archive",
+   "volume": "23",
+   "issue": "",
+   "pages": "262",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2026-03-31",
+   "pdf": "https://doi.org/10.37394/23209.2026.23.20",
+   "oa_url": "https://doi.org/10.37394/23209.2026.23.20",
+   "publisher": "",
+   "src_type": "article"
+  },
+  {
+   "doi": "10.3390/bdcc10030069",
+   "title": "Generative AI as a general-purpose technology: Foundations, applications, and labor market implications through 2030",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "Big Data and Cognitive Computing",
+   "volume": "10",
+   "issue": "3",
+   "pages": "69",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2026-02-27",
+   "pdf": "https://www.mdpi.com/2504-2289/10/3/69/pdf?version=1772176949",
+   "oa_url": "https://www.mdpi.com/2504-2289/10/3/69/pdf?version=1772176949",
+   "publisher": "Multidisciplinary Digital Publishing Institute",
+   "src_type": "article",
+   "journal": "Big Data and Cognitive Computing",
+   "if": 5.3
+  },
+  {
+   "doi": "10.3390/a19020136",
+   "title": "Investing in AI interpretability, control, and robustness",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "Algorithms",
+   "volume": "19",
+   "issue": "2",
+   "pages": "136",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2026-02-09",
+   "pdf": "https://www.mdpi.com/1999-4893/19/2/136/pdf",
+   "oa_url": "https://www.mdpi.com/1999-4893/19/2/136/pdf",
+   "publisher": "Multidisciplinary Digital Publishing Institute",
+   "src_type": "article",
+   "journal": "Algorithms",
+   "if": 2.6
+  },
+  {
+   "doi": "10.1002/sres.70014",
+   "title": "Lifecycle-based governance to build reliable ethical AI systems",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "Systems Research and Behavioral Science",
+   "volume": "43",
+   "issue": "3",
+   "pages": "1116–1132",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2026-01-30",
+   "pdf": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/sres.70014",
+   "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/sres.70014",
+   "publisher": "Wiley",
+   "src_type": "article",
+   "journal": "Systems Research and Behavioral Science",
+   "if": 1.8
+  },
+  {
+   "doi": "10.37394/232018.2026.14.12",
+   "title": "Responsible Machine Learning Deployment: Imperative Framework for Ethical Action",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "WSEAS TRANSACTIONS ON COMPUTER RESEARCH",
+   "volume": "14",
+   "issue": "",
+   "pages": "141",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2026-01-08",
+   "pdf": "https://doi.org/10.37394/232018.2026.14.12",
+   "oa_url": "https://doi.org/10.37394/232018.2026.14.12",
+   "publisher": "World Scientific and Engineering Academy and Society",
+   "src_type": "article"
+  },
+  {
+   "doi": "10.3390/bdcc10010022",
+   "title": "A review on fuzzy cognitive mapping: Recent advances and algorithms",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "Big Data and Cognitive Computing",
+   "volume": "10",
+   "issue": "1",
+   "pages": "22",
+   "authors": [
+    "Nápoles, G.",
+    "Jastrzębska, A.",
+    "Grau, I.",
+    "Salgueiro, Y.",
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Gonzalo Nápoles",
+    "Agnieszka Jastrzębska",
+    "Isel Grau",
+    "Yamisleydi Salgueiro",
+    "Maikel Leon"
+   ],
+   "date": "2026-01-06",
+   "pdf": "https://www.mdpi.com/2504-2289/10/1/22/pdf?version=1767710381",
+   "oa_url": "https://www.mdpi.com/2504-2289/10/1/22/pdf?version=1767710381",
+   "publisher": "Multidisciplinary Digital Publishing Institute",
+   "src_type": "article",
+   "journal": "Big Data and Cognitive Computing",
+   "if": 5.3
+  },
+  {
+   "doi": "10.32604/cmc.2026.087930",
+   "title": "Fuzzy cognitive maps: A comprehensive survey and comparative analysis",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "Computers, materials & continua/Computers, materials & continua (Print)",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2026-01-01",
+   "pdf": "https://www.techscience.com/files/onlinefirst/2026/9.23/TSP_CMC_87930/TSP_CMC_87930.pdf",
+   "oa_url": "https://www.techscience.com/files/onlinefirst/2026/9.23/TSP_CMC_87930/TSP_CMC_87930.pdf",
+   "publisher": "",
+   "src_type": "article",
+   "journal": "Computers, Materials & Continua",
+   "if": 2.4
+  },
+  {
+   "doi": "10.2139/ssrn.6928039",
+   "title": "AI Safety Practices and Public Perception: Historical Analysis, Survey Insights, and a Weighted Scoring Framework (Corrected and Republished Article)",
+   "year": 2026,
+   "type": "preprint",
+   "journal_raw": "SSRN Electronic Journal",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2026-01-01",
+   "pdf": "",
+   "oa_url": "https://doi.org/10.2139/ssrn.6928039",
+   "publisher": "RELX Group (Netherlands)",
+   "src_type": "preprint"
+  },
+  {
+   "doi": "10.2139/ssrn.6928018",
+   "title": "Sentiment Analysis: From Rule-Based Lexicons to Large Language Models (Corrected and Republished Article)",
+   "year": 2026,
+   "type": "preprint",
+   "journal_raw": "SSRN Electronic Journal",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2026-01-01",
+   "pdf": "",
+   "oa_url": "https://doi.org/10.2139/ssrn.6928018",
+   "publisher": "RELX Group (Netherlands)",
+   "src_type": "preprint"
+  },
+  {
+   "doi": "10.1016/j.cosrev.2025.100862",
+   "title": "Cognitive mapping variants and their training algorithms",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "Computer Science Review",
+   "volume": "59",
+   "issue": "",
+   "pages": "100862",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2025-11-26",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Elsevier BV",
+   "src_type": "article",
+   "journal": "Computer Science Review",
+   "if": 17.5
+  },
+  {
+   "doi": "10.1016/j.is.2025.102620",
+   "title": "GPT-5 and open-weight large language models: Advances in reasoning, transparency, and control",
+   "year": 2026,
+   "type": "journal-article",
+   "journal_raw": "Information Systems",
+   "volume": "136",
+   "issue": "",
+   "pages": "102620",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2025-09-22",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Elsevier BV",
+   "src_type": "article",
+   "journal": "Information Systems",
+   "if": 4.0
+  },
+  {
+   "doi": "10.37394/23207.2025.22.219",
+   "title": "AI-Driven Transformation: Methodologies, Governance, and Strategic Imperatives",
+   "year": 2025,
+   "type": "journal-article",
+   "journal_raw": "WSEAS TRANSACTIONS ON BUSINESS AND ECONOMICS",
+   "volume": "22",
+   "issue": "",
+   "pages": "2789",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2025-12-31",
+   "pdf": "https://doi.org/10.37394/23207.2025.22.219",
+   "oa_url": "https://doi.org/10.37394/23207.2025.22.219",
+   "publisher": "World Scientific and Engineering Academy and Society",
+   "src_type": "article"
+  },
+  {
+   "doi": "10.54963/jic.v4i2.1434",
+   "title": "From Lexicons to Transformers: An AI View of Sentiment Analysis",
+   "year": 2025,
+   "type": "journal-article",
+   "journal_raw": "Journal of Intelligent Communication",
+   "volume": "4",
+   "issue": "2",
+   "pages": "13–25",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2025-08-30",
+   "pdf": "https://ojs.ukscip.com/index.php/jic/article/download/1434/964",
+   "oa_url": "https://ojs.ukscip.com/index.php/jic/article/download/1434/964",
+   "publisher": "",
+   "src_type": "article"
+  },
+  {
+   "doi": "10.31031/cojec.2025.03.000563",
+   "title": "Toward Robust and Scalable Evaluation of AI Models: Past Practices, Current Tooling and Future Directions",
+   "year": 2025,
+   "type": "journal-article",
+   "journal_raw": "COJ Electronics & Communications",
+   "volume": "3",
+   "issue": "3",
+   "pages": "",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2025-08-05",
+   "pdf": "http://crimsonpublishers.com/cojec/pdf/COJEC.000563.pdf",
+   "oa_url": "http://crimsonpublishers.com/cojec/pdf/COJEC.000563.pdf",
+   "publisher": "",
+   "src_type": "article"
+  },
+  {
+   "doi": "10.55708/js0408004",
+   "title": "Magnetic AI Explainability: Retrofit Agents for Post-Hoc Transparency in Deployed Machine-Learning Systems",
+   "year": 2025,
+   "type": "journal-article",
+   "journal_raw": "Journal of Engineering Research and Sciences",
+   "volume": "4",
+   "issue": "8",
+   "pages": "31–40",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2025-08-01",
+   "pdf": "",
+   "oa_url": "https://doi.org/10.55708/js0408004",
+   "publisher": "",
+   "src_type": "article"
+  },
+  {
+   "doi": "10.31031/rdms.2025.22.001027",
+   "title": "Advancing Equitable and Transparent Machine Learning across Business, Computing, and Engineering Innovations",
+   "year": 2025,
+   "type": "journal-article",
+   "journal_raw": "Research & Development in Material Science",
+   "volume": "22",
+   "issue": "1",
+   "pages": "",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2025-07-10",
+   "pdf": "http://crimsonpublishers.com/rdms/pdf/RDMS.001027.pdf",
+   "oa_url": "http://crimsonpublishers.com/rdms/pdf/RDMS.001027.pdf",
+   "publisher": "",
+   "src_type": "article"
+  },
+  {
+   "doi": "10.26717/bjstr.2025.62.009715",
+   "title": "Principles for Deploying Responsible Machine Learning Models",
+   "year": 2025,
+   "type": "journal-article",
+   "journal_raw": "Biomedical Journal of Scientific & Technical Research",
+   "volume": "62",
+   "issue": "2",
+   "pages": "",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2025-06-09",
+   "pdf": "https://biomedres.us/pdfs/BJSTR.MS.ID.009715.pdf",
+   "oa_url": "https://biomedres.us/pdfs/BJSTR.MS.ID.009715.pdf",
+   "publisher": "Biomedical Research Network",
+   "src_type": "article"
+  },
+  {
+   "doi": "10.32473/flairs.38.1.138689",
+   "title": "GAIL: Enhancing Student Engagement and Productivity",
+   "year": 2025,
+   "type": "journal-article",
+   "journal_raw": "Proceedings of the ... International Florida Artificial Intelligence Research Society Conference",
+   "volume": "38",
+   "issue": "",
+   "pages": "",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2025-05-14",
+   "pdf": "https://journals.flvc.org/FLAIRS/article/download/138689/144048",
+   "oa_url": "https://journals.flvc.org/FLAIRS/article/download/138689/144048",
+   "publisher": "George A. Smathers Libraries",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": "10.55708/js0404002",
+   "title": "AI-Driven Digital Transformation: Challenges and Opportunities",
+   "year": 2025,
+   "type": "journal-article",
+   "journal_raw": "Journal of Engineering Research and Sciences",
+   "volume": "4",
+   "issue": "4",
+   "pages": "8–19",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2025-04-01",
+   "pdf": "",
+   "oa_url": "https://doi.org/10.55708/js0404002",
+   "publisher": "",
+   "src_type": "article"
+  },
+  {
+   "doi": "10.1109/orss66051.2025.11121637",
+   "title": "Machine Learning Detection of IPKVM Exploitation in Online Exam Environments",
+   "year": 2025,
+   "type": "conference-paper",
+   "journal_raw": "2025 IEEE Opportunity Research Scholars Symposium (ORSS)",
+   "volume": "",
+   "issue": "",
+   "pages": "1–5",
+   "authors": [
+    "Kats, J.",
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Jonathan Kats",
+    "Maikel Leon"
+   ],
+   "date": "2025-04-01",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "IEEE",
+   "src_type": "proceedings-article"
+  },
+  {
+   "doi": "10.25046/aj100201",
+   "title": "Generative Artificial Intelligence and Prompt Engineering: A Comprehensive Guide to Models, Methods, and Best Practices",
+   "year": 2025,
+   "type": "journal-article",
+   "journal_raw": "Advances in Science Technology and Engineering Systems Journal",
+   "volume": "10",
+   "issue": "2",
+   "pages": "01–11",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2025-03-01",
+   "pdf": "",
+   "oa_url": "https://doi.org/10.25046/aj100201",
+   "publisher": "Advances in Science, Technology and Engineering Systems Journal (ASTESJ)",
+   "src_type": "article"
+  },
+  {
+   "doi": null,
+   "title": "Principles for Deploying Responsible Machine Learning Models",
+   "year": 2025,
+   "type": "journal-article",
+   "journal_raw": "International Journal of Computers",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "authors": [],
+   "authors_full": [],
+   "date": "",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "",
+   "src_type": ""
+  },
+  {
+   "doi": null,
+   "title": "GenAI-Driven Pedagogy: Transforming Education",
+   "year": 2025,
+   "type": "journal-article",
+   "journal_raw": "The Cuban Scientist",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "authors": [],
+   "authors_full": [],
+   "date": "",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "",
+   "src_type": ""
+  },
+  {
+   "doi": null,
+   "title": "Artificial Intelligence: Evolution, Challenges, Future and Governance",
+   "year": 2025,
+   "type": "journal-article",
+   "journal_raw": "International Journal of Computers",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "authors": [],
+   "authors_full": [],
+   "date": "",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "",
+   "src_type": ""
+  },
+  {
+   "doi": "10.37394/23202.2024.23.46",
+   "title": "The Escalating AI’s Energy Demands and the Imperative Need for Sustainable Solutions",
+   "year": 2024,
+   "type": "journal-article",
+   "journal_raw": "WSEAS TRANSACTIONS on SYSTEMS archive",
+   "volume": "23",
+   "issue": "",
+   "pages": "444–457",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2024-12-31",
+   "pdf": "https://doi.org/10.37394/23202.2024.23.46",
+   "oa_url": "https://doi.org/10.37394/23202.2024.23.46",
+   "publisher": "",
+   "src_type": "article"
+  },
+  {
+   "doi": "10.5121/ijite.2024.13304",
+   "title": "Generative AI as a New Paradigm for Personalized Tutoring in Modern Education",
+   "year": 2024,
+   "type": "journal-article",
+   "journal_raw": "International Journal on Integrating Technology in Education",
+   "volume": "15",
+   "issue": "3",
+   "pages": "49–63",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2024-09-28",
+   "pdf": "https://doi.org/10.5121/ijite.2024.13304",
+   "oa_url": "https://doi.org/10.5121/ijite.2024.13304",
+   "publisher": "",
+   "src_type": "article"
+  },
+  {
+   "doi": "10.5121/acij.2024.15501",
+   "title": "Harnessing Fuzzy Cognitive Maps for Advancing AI with Hybrid Interpretability and Learning Solutions",
+   "year": 2024,
+   "type": "journal-article",
+   "journal_raw": "Advanced Computing An International Journal",
+   "volume": "15",
+   "issue": "5",
+   "pages": "01–23",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2024-09-28",
+   "pdf": "https://doi.org/10.5121/acij.2024.15501",
+   "oa_url": "https://doi.org/10.5121/acij.2024.15501",
+   "publisher": "",
+   "src_type": "article"
+  },
+  {
+   "doi": "10.25046/aj090502",
+   "title": "Advancements in Explainable Artificial Intelligence for Enhanced Transparency and Interpretability across Business Applications",
+   "year": 2024,
+   "type": "journal-article",
+   "journal_raw": "Advances in Science Technology and Engineering Systems Journal",
+   "volume": "9",
+   "issue": "5",
+   "pages": "9–20",
+   "authors": [
+    "Leon, M.",
+    "DeSimone, H."
+   ],
+   "authors_full": [
+    "Maikel Leon",
+    "Hanna DeSimone"
+   ],
+   "date": "2024-09-01",
+   "pdf": "https://www.astesj.com/?sdm_process_download=1&download_id=81513",
+   "oa_url": "https://www.astesj.com/?sdm_process_download=1&download_id=81513",
+   "publisher": "Advances in Science, Technology and Engineering Systems Journal (ASTESJ)",
+   "src_type": "article"
+  },
+  {
+   "doi": "10.5121/ijsc.2024.15302",
+   "title": "Fuzzy Cognitive Maps Bridging Transparency and Performance in Hybrid AI Systems",
+   "year": 2024,
+   "type": "journal-article",
+   "journal_raw": "International Journal on Soft Computing",
+   "volume": "15",
+   "issue": "3",
+   "pages": "17–37",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2024-08-28",
+   "pdf": "http://dx.doi.org/10.5121/ijsc.2024.15302",
+   "oa_url": "http://dx.doi.org/10.5121/ijsc.2024.15302",
+   "publisher": "",
+   "src_type": "article"
+  },
+  {
+   "doi": "10.5121/ijci.2024.130502",
+   "title": "Leveraging Generative AI for On-Demand Tutoring as a New Paradigm in Education",
+   "year": 2024,
+   "type": "journal-article",
+   "journal_raw": "International Journal on Cybernetics & Informatics",
+   "volume": "13",
+   "issue": "5",
+   "pages": "17–29",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2024-08-28",
+   "pdf": "https://doi.org/10.5121/ijci.2024.130502",
+   "oa_url": "https://doi.org/10.5121/ijci.2024.130502",
+   "publisher": "",
+   "src_type": "article"
+  },
+  {
+   "doi": "10.5121/ijcseit.2024.14401",
+   "title": "The Needed Bridge Connecting Symbolic and Sub-Symbolic AI",
+   "year": 2024,
+   "type": "journal-article",
+   "journal_raw": "International Journal of Computer Science Engineering and Information Technology",
+   "volume": "14",
+   "issue": "1/2/3/4",
+   "pages": "01–19",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2024-08-16",
+   "pdf": "",
+   "oa_url": "https://doi.org/10.5121/ijcseit.2024.14401",
+   "publisher": "",
+   "src_type": "article"
+  },
+  {
+   "doi": "10.5121/ijfcst.2024.14302",
+   "title": "Benchmarking Large Language Models with a Unified Performance Ranking Metric",
+   "year": 2024,
+   "type": "journal-article",
+   "journal_raw": "International Journal in Foundations of Computer Science & Technology",
+   "volume": "14",
+   "issue": "4",
+   "pages": "15–27",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2024-07-29",
+   "pdf": "https://doi.org/10.5121/ijfcst.2024.14302",
+   "oa_url": "https://doi.org/10.5121/ijfcst.2024.14302",
+   "publisher": "",
+   "src_type": "article"
+  },
+  {
+   "doi": "10.5121/ijaia.2024.15403",
+   "title": "Comparing LLMs using a Unified Performance Ranking System",
+   "year": 2024,
+   "type": "journal-article",
+   "journal_raw": "International Journal of Artificial Intelligence & Applications",
+   "volume": "15",
+   "issue": "4",
+   "pages": "33–46",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2024-07-29",
+   "pdf": "https://doi.org/10.5121/ijaia.2024.15403",
+   "oa_url": "https://doi.org/10.5121/ijaia.2024.15403",
+   "publisher": "",
+   "src_type": "article"
+  },
+  {
+   "doi": "10.5121/ijci.2024.130406",
+   "title": "Fuzzy Cognitive Maps as a Bridge between Symbolic and Sub-Symbolic Artificial Intelligence",
+   "year": 2024,
+   "type": "journal-article",
+   "journal_raw": "International Journal on Cybernetics & Informatics",
+   "volume": "13",
+   "issue": "4",
+   "pages": "57–75",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2024-07-18",
+   "pdf": "",
+   "oa_url": "https://doi.org/10.5121/ijci.2024.130406",
+   "publisher": "",
+   "src_type": "article"
+  },
+  {
+   "doi": "10.32473/flairs.37.1.135349",
+   "title": "Intelligent Prevention of DDoS Attacks using Reinforcement Learning and Smart Contracts",
+   "year": 2024,
+   "type": "journal-article",
+   "journal_raw": "Proceedings of the ... International Florida Artificial Intelligence Research Society Conference",
+   "volume": "37",
+   "issue": "",
+   "pages": "",
+   "authors": [
+    "Struble, E.",
+    "Leon, M.",
+    "Skordilis, E."
+   ],
+   "authors_full": [
+    "Emily Struble",
+    "Maikel Leon",
+    "Erotokritos Skordilis"
+   ],
+   "date": "2024-05-13",
+   "pdf": "https://journals.flvc.org/FLAIRS/article/download/135349/139955",
+   "oa_url": "https://journals.flvc.org/FLAIRS/article/download/135349/139955",
+   "publisher": "George A. Smathers Libraries",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": "10.1109/orss62274.2024.10697961",
+   "title": "Leveraging Explainable AI in Business and Further",
+   "year": 2024,
+   "type": "conference-paper",
+   "journal_raw": "2024 IEEE Opportunity Research Scholars Symposium (ORSS)",
+   "volume": "",
+   "issue": "",
+   "pages": "1–6",
+   "authors": [
+    "DeSimone, H.",
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Hanna DeSimone",
+    "Maikel Leon"
+   ],
+   "date": "2024-04-15",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "IEEE",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": "10.1109/icict62343.2024.00093",
+   "title": "Explainable AI: The Quest for Transparency in Business and Beyond",
+   "year": 2024,
+   "type": "book-chapter",
+   "journal_raw": "International Conference on Information and Computer Technologies (ICICT)",
+   "volume": "",
+   "issue": "",
+   "pages": "532–538",
+   "authors": [
+    "DeSimone, H.",
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Hanna DeSimone",
+    "Maikel Leon"
+   ],
+   "date": "2024-03-15",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": "10.18178/ijlt.10.5.571-575",
+   "title": "Toward the Application of the Problem-Based Learning Paradigm into the Instruction of Business Technology and Innovation",
+   "year": 2024,
+   "type": "journal-article",
+   "journal_raw": "International Journal of Learning and Teaching",
+   "volume": "",
+   "issue": "",
+   "pages": "571–575",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2024-01-01",
+   "pdf": "",
+   "oa_url": "https://doi.org/10.18178/ijlt.10.5.571-575",
+   "publisher": "",
+   "src_type": "article"
+  },
+  {
+   "doi": "10.20533/cice.2023.0034",
+   "title": "Business Technology and Innovation Through Problem-Based Learning",
+   "year": 2023,
+   "type": "book-chapter",
+   "journal_raw": "Canada International Conference on Education (CICE-2023) and World Congress on Education (WCE-2023)",
+   "volume": "",
+   "issue": "",
+   "pages": "124–128",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2023-07-01",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Infonomics Society",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": "10.32473/flairs.36.133082",
+   "title": "Aggregating Procedure for Fuzzy Cognitive Maps",
+   "year": 2023,
+   "type": "conference-paper",
+   "journal_raw": "Proceedings of the ... International Florida Artificial Intelligence Research Society Conference",
+   "volume": "36",
+   "issue": "",
+   "pages": "",
+   "authors": [
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Maikel Leon"
+   ],
+   "date": "2023-05-08",
+   "pdf": "https://journals.flvc.org/FLAIRS/article/download/133082/137926",
+   "oa_url": "https://journals.flvc.org/FLAIRS/article/download/133082/137926",
+   "publisher": "George A. Smathers Libraries",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": "10.1016/j.ins.2022.12.012",
+   "title": "Prolog-based agnostic explanation module for structured pattern classification",
+   "year": 2023,
+   "type": "journal-article",
+   "journal_raw": "Information Sciences",
+   "volume": "622",
+   "issue": "",
+   "pages": "1196–1227",
+   "authors": [
+    "Nápoles, G.",
+    "Hoitsma, F.",
+    "Knoben, A.",
+    "Jastrzębska, A.",
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Gonzalo Nápoles",
+    "Fabian Hoitsma",
+    "Andreas Knoben",
+    "Agnieszka Jastrzębska",
+    "Maikel Leon"
+   ],
+   "date": "2022-12-12",
+   "pdf": "",
+   "oa_url": "https://doi.org/10.1016/j.ins.2022.12.012",
+   "publisher": "Elsevier BV",
+   "src_type": "article",
+   "journal": "Information Sciences",
+   "if": 6.0
+  },
+  {
+   "doi": "10.1109/tcyb.2022.3165104",
+   "title": "Recurrence-aware long-term cognitive network for explainable pattern classification",
+   "year": 2023,
+   "type": "journal-article",
+   "journal_raw": "IEEE Transactions on Cybernetics",
+   "volume": "53",
+   "issue": "10",
+   "pages": "6083–6094",
+   "authors": [
+    "Nápoles, G.",
+    "Salgueiro, Y.",
+    "Grau, I.",
+    "Leon, M."
+   ],
+   "authors_full": [
+    "Gonzalo Nápoles",
+    "Yamisleydi Salgueiro",
+    "Isel Grau",
+    "Maikel Leon"
+   ],
+   "date": "2022-04-27",
+   "pdf": "",
+   "oa_url": "https://research.tilburguniversity.edu/en/publications/2007d7e5-f201-4c0e-b1ae-50c71b14bf46",
+   "publisher": "Institute of Electrical and Electronics Engineers",
+   "src_type": "article",
+   "journal": "IEEE Transactions on Cybernetics",
+   "if": 11.3
+  },
+  {
+   "doi": "10.1007/978-3-030-63799-6_2",
+   "title": "Symbolic Explanation Module for Fuzzy Cognitive Map-Based Reasoning Models",
+   "year": 2020,
+   "type": "journal-article",
+   "journal_raw": "Lecture notes in computer science",
+   "volume": "",
+   "issue": "",
+   "pages": "21–34",
+   "authors": [
+    "Hoitsma, F.",
+    "Knoben, A.",
+    "Leon, M.",
+    "Nápoles, G."
+   ],
+   "authors_full": [
+    "Fabian Hoitsma",
+    "Andreas Knoben",
+    "Maikel Leon",
+    "Gonzalo Nápoles"
+   ],
+   "date": "2020-01-01",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Springer Science+Business Media",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": "10.1007/978-981-13-8311-3_7",
+   "title": "Fuzzy Cognitive Modeling: Theoretical and Practical Considerations",
+   "year": 2020,
+   "type": "conference-paper",
+   "journal_raw": "Smart innovation, systems and technologies",
+   "volume": "",
+   "issue": "",
+   "pages": "77–87",
+   "authors": [
+    "Nápoles, G.",
+    "wrong, A. i.",
+    "Froelich, W.",
+    "Falcón, R.",
+    "Leon, M.",
+    "Vanhoenshoven, F.",
+    "Bello, R.",
+    "Vanhoof, K."
+   ],
+   "authors_full": [
+    "Gonzalo Nápoles",
+    "Affiliation is wrong",
+    "Wojciech Froelich",
+    "Rafael Falcón",
+    "Maikel Leon",
+    "Frank Vanhoenshoven",
+    "Rafael Bello",
+    "Koen Vanhoof"
+   ],
+   "date": "2019-07-16",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Springer Nature",
+   "src_type": "book-chapter"
+  },
+  {
+   "doi": null,
+   "title": "Editor de preguntas con evaluación difusa",
+   "year": 2019,
+   "type": "journal-article",
+   "journal_raw": "Serie Científica Universidad de las Ciencias Informáticas",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "authors": [],
+   "authors_full": [],
+   "date": "",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "",
+   "src_type": ""
+  },
+  {
+   "doi": "10.1142/s0218213018600102",
+   "title": "FCM Expert: Software tool for scenario analysis and pattern classification based on fuzzy cognitive maps",
+   "year": 2018,
+   "type": "journal-article",
+   "journal_raw": "International Journal of Artificial Intelligence Tools",
+   "volume": "27",
+   "issue": "7",
+   "pages": "1860010",
+   "authors": [
+    "Nápoles, G.",
+    "Leon, M.",
+    "Grau, I.",
+    "Vanhoof, K."
+   ],
+   "authors_full": [
+    "Gonzalo Nápoles",
+    "Maikel Leon",
+    "Isel Grau",
+    "Koen Vanhoof"
+   ],
+   "date": "2018-11-01",
+   "pdf": "",
+   "oa_url": "http://hdl.handle.net/1942/27948",
+   "publisher": "World Scientific",
+   "src_type": "article",
+   "journal": "International Journal on Artificial Intelligence Tools",
+   "if": 1.0
+  },
+  {
+   "doi": "10.1007/978-3-319-64286-4_5",
+   "title": "Fuzzy Cognitive Maps Based Models for Pattern Classification: Advances and Challenges",
+   "year": 2018,
+   "type": "book-chapter",
+   "journal_raw": "Studies in fuzziness and soft computing",
+   "volume": "",
+   "issue": "",
+   "pages": "83–98",
+   "authors": [
+    "Nápoles, G.",
+    "Leon, M.",
+    "Grau, I.",
+    "Vanhoof, K.",
+    "Bello, R."
+   ],
+   "authors_full": [
+    "Gonzalo Nápoles",
+    "Maikel Leon",
+    "Isel Grau",
+    "Koen Vanhoof",
+    "Rafael Bello"
+   ],
+   "date": "2017-08-04",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Springer Nature",
+   "src_type": "book-chapter"
+  },
+  {
+   "doi": "10.1109/ictai.2017.00103",
+   "title": "Fuzzy Cognitive Maps Tool for Scenario Analysis and Pattern Classification",
+   "year": 2017,
+   "type": "conference-paper",
+   "journal_raw": "Proceedings - International Conference on Tools with Artificial Intelligence, TAI",
+   "volume": "",
+   "issue": "",
+   "pages": "644–651",
+   "authors": [
+    "Nápoles, G.",
+    "Leon, M.",
+    "Grau, I.",
+    "Vanhoof, K."
+   ],
+   "authors_full": [
+    "Gonzalo Nápoles",
+    "Maikel Leon",
+    "Isel Grau",
+    "Koen Vanhoof"
+   ],
+   "date": "2017-11-01",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Institute of Electrical and Electronics Engineers",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": "10.1109/ssci.2016.7850268",
+   "title": "Analyzing the impact of the adaptive clearing mechanism on algorithm accuracy in Variable Mesh Optimization",
+   "year": 2016,
+   "type": "conference-paper",
+   "journal_raw": "IEEE Symposium Series on Computational Intelligence (SSCI)",
+   "volume": "146",
+   "issue": "",
+   "pages": "1–8",
+   "authors": [
+    "Vanhoenshoven, F.",
+    "Nápoles, G.",
+    "Creemers, M.",
+    "Leon, M.",
+    "Vanhoof, K."
+   ],
+   "authors_full": [
+    "Frank Vanhoenshoven",
+    "Gonzalo Nápoles",
+    "Mathijs Creemers",
+    "Maikel Leon",
+    "Koen Vanhoof"
+   ],
+   "date": "2016-12-01",
+   "pdf": "",
+   "oa_url": "http://hdl.handle.net/1942/23150",
+   "publisher": "",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": "10.1609/aaai.v30i1.9841",
+   "title": "Modeling and Experimentation Framework for Fuzzy Cognitive Maps",
+   "year": 2016,
+   "type": "journal-article",
+   "journal_raw": "Proceedings of the AAAI Conference on Artificial Intelligence",
+   "volume": "30",
+   "issue": "1",
+   "pages": "",
+   "authors": [
+    "Leon, M.",
+    "Nápoles, G."
+   ],
+   "authors_full": [
+    "Maikel Leon",
+    "Gonzalo Nápoles"
+   ],
+   "date": "2016-03-05",
+   "pdf": "",
+   "oa_url": "https://doi.org/10.1609/aaai.v30i1.9841",
+   "publisher": "Association for the Advancement of Artificial Intelligence",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": "10.1109/fuzz-ieee.2015.7337859",
+   "title": "A computational tool for simulation and learning of Fuzzy Cognitive Maps",
+   "year": 2015,
+   "type": "book-chapter",
+   "journal_raw": "Proceedings of ... IEEE International Conference on Fuzzy Systems",
+   "volume": "",
+   "issue": "",
+   "pages": "1–8",
+   "authors": [
+    "Nápoles, G.",
+    "Grau, I.",
+    "Bello, R.",
+    "Leon, M.",
+    "Vahoof, K.",
+    "Papageorgiou, E. I."
+   ],
+   "authors_full": [
+    "Gonzalo Nápoles",
+    "Isel Grau",
+    "Rafael Bello",
+    "Maikel Leon",
+    "Koen Vahoof",
+    "Elpiniki I. Papageorgiou"
+   ],
+   "date": "2015-08-01",
+   "pdf": "",
+   "oa_url": "http://hdl.handle.net/1942/21849",
+   "publisher": "Institute of Electrical and Electronics Engineers",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": null,
+   "title": "Methods for the construction of fuzzy cognitive maps and their applications,Métodos para la construcción de Mapas Cognitivos Difusos y sus aplicaciones",
+   "year": 2015,
+   "type": "journal-article",
+   "journal_raw": "Anales De La Academia De Ciencias De Cuba",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "authors": [],
+   "authors_full": [],
+   "date": "",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "",
+   "src_type": ""
+  },
+  {
+   "doi": "10.1007/s10115-013-0616-z",
+   "title": "Learning and clustering of fuzzy cognitive maps for travel behaviour analysis",
+   "year": 2014,
+   "type": "journal-article",
+   "journal_raw": "Knowledge and Information Systems",
+   "volume": "39",
+   "issue": "2",
+   "pages": "435–462",
+   "authors": [
+    "Leon, M.",
+    "Mkrtchyan, L.",
+    "Depaire, B.",
+    "Ruan, D.",
+    "Vanhoof, K."
+   ],
+   "authors_full": [
+    "Maikel Leon",
+    "Lusine Mkrtchyan",
+    "Benoît Depaire",
+    "Da Ruan",
+    "Koen Vanhoof"
+   ],
+   "date": "2013-03-20",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Springer Science+Business Media",
+   "src_type": "article",
+   "journal": "Knowledge and Information Systems",
+   "if": 3.6
+  },
+  {
+   "doi": "10.2991/978-94-91216-74-9_12",
+   "title": "A Travel Behaviour Study Through Learning and Clustering of Fuzzy Cognitive Maps",
+   "year": 2013,
+   "type": "book-chapter",
+   "journal_raw": "Atlantis computational intelligence systems",
+   "volume": "",
+   "issue": "",
+   "pages": "259–293",
+   "authors": [
+    "Leon, M.",
+    "Mkrtchyan, L.",
+    "Depaire, B.",
+    "Ruan, D.",
+    "Vanhoof, K."
+   ],
+   "authors_full": [
+    "Maikel Leon",
+    "Lusine Mkrtchyan",
+    "Benoît Depaire",
+    "Da Ruan",
+    "Koen Vanhoof"
+   ],
+   "date": "2013-01-01",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Atlantis Press",
+   "src_type": "book-chapter"
+  },
+  {
+   "doi": "10.1007/978-3-642-41142-7_53",
+   "title": "Fuzzy Cognitive Maps with Rough Concepts",
+   "year": 2013,
+   "type": "book-chapter",
+   "journal_raw": "IFIP advances in information and communication technology",
+   "volume": "",
+   "issue": "",
+   "pages": "527–536",
+   "authors": [
+    "Leon, M.",
+    "Depaire, B.",
+    "Vanhoof, K."
+   ],
+   "authors_full": [
+    "Maikel Leon",
+    "Benoît Depaire",
+    "Koen Vanhoof"
+   ],
+   "date": "2013-01-01",
+   "pdf": "https://link.springer.com/content/pdf/10.1007%2F978-3-642-41142-7_53.pdf",
+   "oa_url": "https://link.springer.com/content/pdf/10.1007%2F978-3-642-41142-7_53.pdf",
+   "publisher": "Springer Science+Business Media",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": "10.1007/978-3-642-37798-3_17",
+   "title": "Modelling, Aggregation and Simulation of a Dynamic Biological System through Fuzzy Cognitive Maps",
+   "year": 2013,
+   "type": "conference-paper",
+   "journal_raw": "Lecture notes in computer science",
+   "volume": "",
+   "issue": "",
+   "pages": "188–199",
+   "authors": [
+    "Nápoles, G.",
+    "Grau, I.",
+    "Leon, M.",
+    "Grau, R. J. A."
+   ],
+   "authors_full": [
+    "Gonzalo Nápoles",
+    "Isel Grau",
+    "Maikel Leon",
+    "Ricardo J. A. Grau"
+   ],
+   "date": "2013-01-01",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Springer Science+Business Media",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": "10.1080/18756891.2013.816025",
+   "title": "Tackling travel behaviour: An approach based on fuzzy cognitive maps",
+   "year": 2013,
+   "type": "other",
+   "journal_raw": "International Journal of Computational Intelligence Systems",
+   "volume": "6",
+   "issue": "6",
+   "pages": "1012–1039",
+   "authors": [
+    "Leon, M.",
+    "Nápoles, G.",
+    "Bello, R.",
+    "Mkrtchyan, L.",
+    "Depaire, B.",
+    "Vanhoof, K."
+   ],
+   "authors_full": [
+    "Maikel Leon",
+    "Gonzalo Nápoles",
+    "Rafael Bello",
+    "Lusine Mkrtchyan",
+    "Benoît Depaire",
+    "Koen Vanhoof"
+   ],
+   "date": "2013-01-01",
+   "pdf": "https://link.springer.com/content/pdf/10.1080/18756891.2013.816025.pdf",
+   "oa_url": "https://link.springer.com/content/pdf/10.1080/18756891.2013.816025.pdf",
+   "publisher": "Springer Nature",
+   "src_type": "article",
+   "journal": "International Journal of Computational Intelligence Systems",
+   "if": 4.0
+  },
+  {
+   "doi": "10.1007/978-3-642-30864-2_6",
+   "title": "Clustering of Fuzzy Cognitive Maps for Travel Behavior Analysis",
+   "year": 2012,
+   "type": "conference-paper",
+   "journal_raw": "Advances in intelligent systems and computing",
+   "volume": "",
+   "issue": "",
+   "pages": "57–66",
+   "authors": [
+    "Mkrtchyan, L.",
+    "Leon, M.",
+    "Depaire, B.",
+    "Ruan, D.",
+    "Vanhoof, K."
+   ],
+   "authors_full": [
+    "Lusine Mkrtchyan",
+    "Maikel Leon",
+    "Benoît Depaire",
+    "Da Ruan",
+    "Koen Vanhoof"
+   ],
+   "date": "2012-01-01",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Springer Nature",
+   "src_type": "book-chapter"
+  },
+  {
+   "doi": "10.1007/978-3-642-34654-5_4",
+   "title": "Fuzzy Cognitive Maps for Modelling, Predicting and Interpreting HIV Drug Resistance",
+   "year": 2012,
+   "type": "conference-paper",
+   "journal_raw": "Lecture notes in computer science",
+   "volume": "",
+   "issue": "",
+   "pages": "31–40",
+   "authors": [
+    "Grau, I.",
+    "Nápoles, G.",
+    "Leon, M.",
+    "Grau, R. J. A."
+   ],
+   "authors_full": [
+    "Isel Grau",
+    "Gonzalo Nápoles",
+    "Maikel Leon",
+    "Ricardo J. A. Grau"
+   ],
+   "date": "2012-01-01",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Springer Science+Business Media",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": "10.1007/978-3-642-33269-2_90",
+   "title": "Learning Method Inspired on Swarm Intelligence for Fuzzy Cognitive Maps: Travel Behaviour Modelling",
+   "year": 2012,
+   "type": "conference-paper",
+   "journal_raw": "Lecture notes in computer science",
+   "volume": "",
+   "issue": "",
+   "pages": "718–725",
+   "authors": [
+    "Leon, M.",
+    "Mkrtchyan, L.",
+    "Depaire, B.",
+    "Ruan, D.",
+    "Bello, R.",
+    "Vanhoof, K."
+   ],
+   "authors_full": [
+    "Maikel Leon",
+    "Lusine Mkrtchyan",
+    "Benoît Depaire",
+    "Da Ruan",
+    "Rafael Bello",
+    "Koen Vanhoof"
+   ],
+   "date": "2012-01-01",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Springer Science+Business Media",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": "10.1007/s10109-010-0144-2",
+   "title": "Mental maps and travel behaviour: Meanings and models",
+   "year": 2012,
+   "type": "journal-article",
+   "journal_raw": "Journal of Geographical Systems",
+   "volume": "14",
+   "issue": "2",
+   "pages": "143–165",
+   "authors": [
+    "Hannes, E.",
+    "Kusumastuti, D.",
+    "Leon, M.",
+    "Janssens, D.",
+    "Vanhoof, K.",
+    "Wets, G."
+   ],
+   "authors_full": [
+    "Els Hannes",
+    "Diana Kusumastuti",
+    "Maikel Leon",
+    "Davy Janssens",
+    "Koen Vanhoof",
+    "Geert Wets"
+   ],
+   "date": "2010-11-11",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Springer Science+Business Media",
+   "src_type": "article",
+   "journal": "Journal of Geographical Systems",
+   "if": 2.8
+  },
+  {
+   "doi": "10.1007/978-3-642-21326-7_27",
+   "title": "A Fuzzy Cognitive Maps Modeling, Learning and Simulation Framework for Studying Complex System",
+   "year": 2011,
+   "type": "conference-paper",
+   "journal_raw": "Lecture notes in computer science",
+   "volume": "",
+   "issue": "",
+   "pages": "243–256",
+   "authors": [
+    "Leon, M.",
+    "Nápoles, G.",
+    "Rodriguez-Leon, C.",
+    "García, M. M.",
+    "Bello, R.",
+    "Vanhoof, K."
+   ],
+   "authors_full": [
+    "Maikel Leon",
+    "Gonzalo Nápoles",
+    "Ciro Rodriguez-León",
+    "María Matilde García",
+    "Rafael Bello",
+    "Koen Vanhoof"
+   ],
+   "date": "2011-01-01",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Springer Science+Business Media",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": "10.1007/978-3-642-25330-0_8",
+   "title": "Two Steps Individuals Travel Behavior Modeling through Fuzzy Cognitive Maps Pre-definition and Learning",
+   "year": 2011,
+   "type": "conference-paper",
+   "journal_raw": "Lecture notes in computer science",
+   "volume": "",
+   "issue": "",
+   "pages": "82–94",
+   "authors": [
+    "Leon, M.",
+    "Nápoles, G.",
+    "García, M. M.",
+    "Bello, R.",
+    "Vanhoof, K."
+   ],
+   "authors_full": [
+    "Maikel Leon",
+    "Gonzalo Nápoles",
+    "María Matilde García",
+    "Rafael Bello",
+    "Koen Vanhoof"
+   ],
+   "date": "2011-01-01",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Springer Science+Business Media",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": null,
+   "title": "Nuevo enfoque para desarrollar sistemas de enseñanza-aprendizaje inteligentes usando mapas conceptuales y razonamiento basado en casos",
+   "year": 2011,
+   "type": "journal-article",
+   "journal_raw": "",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "authors": [],
+   "authors_full": [],
+   "date": "",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "",
+   "src_type": ""
+  },
+  {
+   "doi": null,
+   "title": "Sistemas basados en conocimiento usando Prolog",
+   "year": 2011,
+   "type": "journal-article",
+   "journal_raw": "",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "authors": [],
+   "authors_full": [],
+   "date": "",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "",
+   "src_type": ""
+  },
+  {
+   "doi": "10.17562/pb-42-4",
+   "title": "A Revision and Experience using Cognitive Mapping and Knowledge Engineering in Travel Behavior Sciences",
+   "year": 2010,
+   "type": "journal-article",
+   "journal_raw": "Polibits",
+   "volume": "42",
+   "issue": "",
+   "pages": "43–49",
+   "authors": [
+    "Leon, M.",
+    "Nápoles, G.",
+    "García, M. M.",
+    "Bello, R.",
+    "Vanhoof, K."
+   ],
+   "authors_full": [
+    "Maikel Leon",
+    "Gonzalo Nápoles",
+    "María Matilde García",
+    "Rafael Bello",
+    "Koen Vanhoof"
+   ],
+   "date": "2010-12-31",
+   "pdf": "https://www.redalyc.org/pdf/4026/402640455004.pdf",
+   "oa_url": "https://www.redalyc.org/pdf/4026/402640455004.pdf",
+   "publisher": "",
+   "src_type": "article"
+  },
+  {
+   "doi": "10.1007/978-3-642-16761-4_15",
+   "title": "Fuzzy Cognitive Maps for Modeling Complex Systems",
+   "year": 2010,
+   "type": "conference-paper",
+   "journal_raw": "Lecture notes in computer science",
+   "volume": "",
+   "issue": "",
+   "pages": "166–174",
+   "authors": [
+    "Leon, M.",
+    "Rodriguez-Leon, C.",
+    "García, M. M.",
+    "Bello, R.",
+    "Vanhoof, K."
+   ],
+   "authors_full": [
+    "Maikel Leon",
+    "Ciro Rodriguez-León",
+    "María Matilde García",
+    "Rafael Bello",
+    "Koen Vanhoof"
+   ],
+   "date": "2010-01-01",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Springer Science+Business Media",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": "10.1109/micai.2009.13",
+   "title": "Cognitive Maps in Transport Behavior",
+   "year": 2009,
+   "type": "conference-paper",
+   "journal_raw": "Mexican International Conference on Artificial Intelligence",
+   "volume": "1",
+   "issue": "",
+   "pages": "179–184",
+   "authors": [
+    "Leon, M.",
+    "Bello, R.",
+    "Vanhoof, K."
+   ],
+   "authors_full": [
+    "Maikel Leon",
+    "Rafael Bello",
+    "Koen Vanhoof"
+   ],
+   "date": "2009-11-01",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": "10.1142/9789814295062_0014",
+   "title": "CONSIDERING ARTIFICIAL INTELLIGENCE TECHNIQUES TO PERFORM ADAPTABLE KNOWLEDGE STRUCTURES",
+   "year": 2009,
+   "type": "book-chapter",
+   "journal_raw": "Intelligent Decision Making Systems",
+   "volume": "",
+   "issue": "",
+   "pages": "88–93",
+   "authors": [
+    "Leon, M.",
+    "Bello, R.",
+    "Vanhoof, K."
+   ],
+   "authors_full": [
+    "Maikel Leon",
+    "Rafael Bello",
+    "Koen Vanhoof"
+   ],
+   "date": "2009-10-01",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "WORLD SCIENTIFIC",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": null,
+   "title": "Adaptability through Artificial Intelligence Techniques",
+   "year": 2009,
+   "type": "conference-paper",
+   "journal_raw": "8th Mexican International Conference on Artificial Intelligence",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "authors": [],
+   "authors_full": [],
+   "date": "",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "",
+   "src_type": ""
+  },
+  {
+   "doi": "10.1007/978-3-540-88636-5_75",
+   "title": "Combining Concept Maps and Petri Nets to Generate Intelligent Tutoring Systems: A Possible Approach",
+   "year": 2008,
+   "type": "conference-paper",
+   "journal_raw": "Lecture notes in computer science",
+   "volume": "",
+   "issue": "",
+   "pages": "797–805",
+   "authors": [
+    "Leon, M.",
+    "Bonet, I.",
+    "García, M. M.",
+    "Valdivia, Z. G."
+   ],
+   "authors_full": [
+    "Maikel Leon",
+    "Isis Bonet",
+    "María Matilde García",
+    "Zenaida García Valdivia"
+   ],
+   "date": "2008-01-01",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Springer Science+Business Media",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": null,
+   "title": "Combining Concept Maps and Petri Nets to Generate Intelligent Tutoring Systems",
+   "year": 2008,
+   "type": "journal-article",
+   "journal_raw": "Logic and Theory of Algorithms",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "authors": [],
+   "authors_full": [],
+   "date": "",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "",
+   "src_type": ""
+  },
+  {
+   "doi": null,
+   "title": "La Inteligencia Artificial en la Informática Educativa",
+   "year": 2008,
+   "type": "journal-article",
+   "journal_raw": "Revista de Informática Educativa y Medios Audiovisuales",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "authors": [],
+   "authors_full": [],
+   "date": "",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "",
+   "src_type": ""
+  },
+  {
+   "doi": null,
+   "title": "SISTEMA DE ENSEÑANZA/APRENDIZAJE INTELIGENTE PARA GRAFOS",
+   "year": 2008,
+   "type": "journal-article",
+   "journal_raw": "Acta Latinoamericana de Matemática Educativa",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "authors": [],
+   "authors_full": [],
+   "date": "",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "",
+   "src_type": ""
+  },
+  {
+   "doi": "10.1109/micai.2007.46",
+   "title": "Two Approaches to Generate Intelligent Teaching-Learning Systems Using Artificial Intelligence Techniques",
+   "year": 2007,
+   "type": "conference-paper",
+   "journal_raw": "2007 Sixth Mexican International Conference on Artificial Intelligence, Special Session (MICAI)",
+   "volume": "",
+   "issue": "",
+   "pages": "333–341",
+   "authors": [
+    "Leon, M.",
+    "Medina, D.",
+    "Martínez, N.",
+    "Valdivia, Z. Z. G."
+   ],
+   "authors_full": [
+    "Maikel Leon",
+    "Denysde Medina",
+    "Natalia Martínez",
+    "Zoila Zenaida García Valdivia"
+   ],
+   "date": "2007-11-01",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "IEEE",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": "10.1007/978-3-540-76631-5_115",
+   "title": "Features Selection Through FS-Testors in Case-Based Systems of Teaching-Learning",
+   "year": 2007,
+   "type": "conference-paper",
+   "journal_raw": "Springer eBooks",
+   "volume": "",
+   "issue": "",
+   "pages": "1206–1217",
+   "authors": [
+    "Martínez, N.",
+    "Leon, M.",
+    "Valdivia, Z. Z. G."
+   ],
+   "authors_full": [
+    "Natalia Martínez",
+    "Maikel Leon",
+    "Zoila Zenaida García Valdivia"
+   ],
+   "date": "2007-10-21",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "Springer Nature",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": "10.1109/isda.2007.4389609",
+   "title": "Concept Maps Combined with Case-Based Reasoning in Order to Elaborate Intelligent Teaching/Learning Systems",
+   "year": 2007,
+   "type": "conference-paper",
+   "journal_raw": "International Conference on Intelligent Systems Design and Applications (ISDA)",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "authors": [
+    "Leon, M.",
+    "Sánchez, N. M.",
+    "Valdivia, Z. G.",
+    "Bello, R."
+   ],
+   "authors_full": [
+    "Maikel Leon",
+    "Natalia Martínez Sánchez",
+    "Zenaida García Valdivia",
+    "Rafael Bello"
+   ],
+   "date": "2007-10-01",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": "10.1145/1352694.1352697",
+   "title": "Concept maps and case-based reasoning",
+   "year": 2007,
+   "type": "conference-paper",
+   "journal_raw": "Euro American Conference on Telematics and Information Systems",
+   "volume": "",
+   "issue": "",
+   "pages": "1–6",
+   "authors": [
+    "Leon, M.",
+    "Sánchez, N. M.",
+    "Valdivia, Z. Z. G."
+   ],
+   "authors_full": [
+    "Maikel Leon",
+    "Natalia Martínez Sánchez",
+    "Zoila Zenaida García Valdivia"
+   ],
+   "date": "2007-05-14",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "",
+   "src_type": "conference-paper"
+  },
+  {
+   "doi": null,
+   "title": "Generating Intelligent Teaching Learning Systems using Concept Maps and CaseB ased Reasoning",
+   "year": 2007,
+   "type": "journal-article",
+   "journal_raw": "Revista Avances en Sistemas e Informática",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "authors": [],
+   "authors_full": [],
+   "date": "",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "",
+   "src_type": ""
+  },
+  {
+   "doi": null,
+   "title": "Generating intelligent teachinglearning systems using concept maps and casebased reasoning",
+   "year": 2007,
+   "type": "journal-article",
+   "journal_raw": "",
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "authors": [],
+   "authors_full": [],
+   "date": "",
+   "pdf": "",
+   "oa_url": "",
+   "publisher": "",
+   "src_type": ""
+  }
+ ]
+}

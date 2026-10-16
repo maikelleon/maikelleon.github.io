@@ -262,6 +262,7 @@ def build(orcid_works, oa, cfg):
     journals = {k.lower(): v for k, v in cfg["journals"].items()}
     overrides = {k.lower(): v for k, v in cfg.get("overrides", {}).items()}
     exclude = {d.lower() for d in cfg.get("exclude", [])}
+    venues = {k.lower(): v for k, v in cfg.get("venue_names", {}).items()}
     featured, everything, seen = [], [], set()
 
     for w in orcid_works:
@@ -308,6 +309,7 @@ def build(orcid_works, oa, cfg):
             entry["journal"] = j["name"]
             entry["if"] = j.get("if")
             featured.append(entry)
+        entry["journal_raw"] = venues.get(entry["journal_raw"].lower(), entry["journal_raw"])
 
     key = lambda e: (e["year"] or 0, e.get("date") or "")
     featured.sort(key=key, reverse=True)

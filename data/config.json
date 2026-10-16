@@ -144,10 +144,33 @@
     },
     "10.1142/s0218213018600102": {
       "title": "FCM Expert: Software tool for scenario analysis and pattern classification based on fuzzy cognitive maps"
+    },
+    "10.1007/978-3-540-76631-5_115": {
+      "journal_raw": "Lecture Notes in Computer Science"
     }
   },
   "_exclude_help": "DOIs to never feature, even if they are in a listed journal.",
   "exclude": [],
+  "_venue_names_help": "Clean names for venues the databases spell oddly (all capitals, placeholders such as '...'). Matched without regard to case; used in the lists and in BibTeX.",
+  "venue_names": {
+    "Proceedings of the ... International Florida Artificial Intelligence Research Society Conference": "The International FLAIRS Conference Proceedings",
+    "Proceedings of ... IEEE International Conference on Fuzzy Systems": "IEEE International Conference on Fuzzy Systems (FUZZ-IEEE)",
+    "Proceedings - International Conference on Tools with Artificial Intelligence, TAI": "IEEE International Conference on Tools with Artificial Intelligence (ICTAI)",
+    "Advances in Science Technology and Engineering Systems Journal": "Advances in Science, Technology and Engineering Systems Journal",
+    "Advanced Computing An International Journal": "Advanced Computing: An International Journal",
+    "International Journal of Computer Science Engineering and Information Technology": "International Journal of Computer Science, Engineering and Information Technology",
+    "Computers, materials & continua/Computers, materials & continua (Print)": "Computers, Materials & Continua",
+    "WSEAS TRANSACTIONS ON BUSINESS AND ECONOMICS": "WSEAS Transactions on Business and Economics",
+    "WSEAS TRANSACTIONS ON COMPUTER RESEARCH": "WSEAS Transactions on Computer Research",
+    "WSEAS Transactions on Information Science and Applications archive": "WSEAS Transactions on Information Science and Applications",
+    "WSEAS TRANSACTIONS on SYSTEMS archive": "WSEAS Transactions on Systems",
+    "Lecture notes in computer science": "Lecture Notes in Computer Science",
+    "Advances in intelligent systems and computing": "Advances in Intelligent Systems and Computing",
+    "Atlantis computational intelligence systems": "Atlantis Computational Intelligence Systems",
+    "IFIP advances in information and communication technology": "IFIP Advances in Information and Communication Technology",
+    "Smart innovation, systems and technologies": "Smart Innovation, Systems and Technologies",
+    "Studies in fuzziness and soft computing": "Studies in Fuzziness and Soft Computing"
+  },
   "_metrics_help": "Google Scholar numbers. The update tries to refresh them from your Scholar profile; if Google blocks it, these values stay as they are. You can also edit them by hand.",
   "metrics": {
     "citations": 1129,

@@ -103,7 +103,7 @@ def main():
     out = Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else ROOT / "stats.json"
     now = dt.datetime.now(dt.timezone.utc).replace(minute=0, second=0, microsecond=0)
     end = now + dt.timedelta(hours=1)  # include the current hour
-    start = (end - dt.timedelta(days=DAYS)).replace(hour=0)
+    start = dt.datetime.combine(now.date() - dt.timedelta(days=DAYS - 1), dt.time(), tzinfo=dt.timezone.utc)  # 30 days ending today
     pstart = start - dt.timedelta(days=DAYS)
 
     if "--fixture" in sys.argv:

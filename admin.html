@@ -39,6 +39,45 @@ a.tile[aria-disabled="true"]{opacity:.55;pointer-events:none}
 .foot{margin-top:36px;padding-top:18px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 20px;font-size:.92rem}
 .foot a{color:var(--accent);text-decoration:none}
 .foot a:hover{text-decoration:underline}
+/* ---------- visitor dashboard: one series in the accent blue, hairline grid, text in ink and gray ---------- */
+.viz{display:grid;gap:12px}
+.viz[aria-busy="true"]{opacity:.6}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+@media (max-width:640px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.kpi{background:var(--surface);border-radius:18px;padding:16px 18px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.kl{font-size:.85rem;color:var(--muted)}
+.kv{font:600 1.9rem/1.15 var(--display);letter-spacing:-.02em;color:var(--ink)}
+.kv.hero{font-size:3rem;line-height:1.05}
+.kv.word{font-size:1.15rem;line-height:1.3;overflow-wrap:anywhere;padding-top:6px}
+.kd{font-size:.85rem;color:var(--muted)}
+.card{background:var(--surface);border-radius:18px;padding:18px;margin:0;min-width:0}
+.card figcaption{display:flex;align-items:baseline;justify-content:space-between;gap:12px;font:600 1rem/1.3 var(--display);margin:0 0 12px}
+.tv{font:500 .85rem var(--body);color:var(--accent);background:none;border:0;padding:0;cursor:pointer}
+.tv:hover{text-decoration:underline}
+.plot{position:relative}
+.plot svg{display:block;width:100%;height:auto;overflow:visible}
+.plot svg:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:6px}
+.plot .bar{fill:var(--accent)}
+.plot .bar.on{opacity:.7}
+.plot .grid{stroke:var(--line);stroke-width:1;shape-rendering:crispEdges}
+.plot text{fill:var(--muted);font:12px var(--body);font-variant-numeric:tabular-nums}
+.tip{position:absolute;pointer-events:none;transform:translate(-50%,-100%);margin-top:-8px;background:var(--ink);color:var(--bg);border-radius:8px;padding:6px 10px;font-size:.8rem;line-height:1.3;white-space:nowrap}
+.tip b{display:block;font-weight:600;font-size:.95rem}
+.tbl{width:100%;border-collapse:collapse;font-size:.9rem;margin-top:12px}
+.tbl th,.tbl td{text-align:left;padding:5px 0;border-top:1px solid var(--line)}
+.tbl td:last-child,.tbl th:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.tbl th{color:var(--muted);font-weight:500}
+.lists{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:12px}
+.rank{list-style:none;margin:0;padding:0;display:grid;gap:11px}
+.rank li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:5px 12px;align-items:baseline}
+.rn{font-size:.92rem;overflow-wrap:anywhere}
+.rv{font-size:.92rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.rb{grid-column:1 / -1;height:6px}
+.rb i{display:block;height:100%;min-width:2px;border-radius:0 3px 3px 0;background:var(--accent)}
+.empty{color:var(--muted);font-size:.92rem;margin:0}
+.vnote{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.88rem;color:var(--muted);margin:4px 2px 0}
+.vnote a{color:var(--accent);text-decoration:none}
+.vnote a:hover{text-decoration:underline}
 </style>
 </head>
 <body>
@@ -46,6 +85,28 @@ a.tile[aria-disabled="true"]{opacity:.55;pointer-events:none}
   <p class="eyebrow">maikelleon.github.io</p>
   <h1>Site controls</h1>
   <p class="lead">Each button opens GitHub, where you are signed in. Forms you submit update the site in about a minute and get a short reply confirming what changed. Visitors who find this page cannot change anything.</p>
+
+  <h2 id="visitors">Visitors</h2>
+  <section class="viz" id="viz" aria-labelledby="visitors">
+    <div class="kpis">
+      <div class="kpi"><span class="kl">Visitors, last 30 days</span><span class="kv hero" id="k-total">&ndash;</span><span class="kd" id="k-delta"></span></div>
+      <div class="kpi"><span class="kl">Last 7 days</span><span class="kv" id="k-week">&ndash;</span></div>
+      <div class="kpi"><span class="kl">CV downloads</span><span class="kv" id="k-cv">&ndash;</span></div>
+      <div class="kpi"><span class="kl">Top country</span><span class="kv word" id="k-country">&ndash;</span></div>
+    </div>
+    <figure class="card">
+      <figcaption><span>Visitors per day</span><button type="button" class="tv" id="daily-tv" aria-expanded="false" aria-controls="daily-tbl">Show as table</button></figcaption>
+      <div class="plot" id="daily"><p class="empty" id="viz-msg">Loading&hellip;</p></div>
+      <table class="tbl" id="daily-tbl" hidden><thead><tr><th scope="col">Day</th><th scope="col">Visitors</th></tr></thead><tbody></tbody></table>
+    </figure>
+    <div class="lists">
+      <figure class="card"><figcaption>Countries</figcaption><ol class="rank" id="l-countries"></ol></figure>
+      <figure class="card"><figcaption>Where visitors came from</figcaption><ol class="rank" id="l-sources"></ol></figure>
+      <figure class="card"><figcaption>Clicks</figcaption><ol class="rank" id="l-clicks"></ol></figure>
+      <figure class="card"><figcaption>Screens</figcaption><ol class="rank" id="l-devices"></ol></figure>
+    </div>
+    <p class="vnote"><span id="v-updated">Totals only. Nothing about individual visitors is kept.</span><a data-go="stats">Live dashboard on GoatCounter</a><a data-go="workflow:stats.yml">Refresh now</a><a href="./#toggle-goatcounter">Stop counting my visits in this browser</a></p>
+  </section>
 
   <h2>Add or change content</h2>
   <div class="grid">
@@ -67,7 +128,7 @@ a.tile[aria-disabled="true"]{opacity:.55;pointer-events:none}
   <div class="grid">
     <a class="tile" data-go="workflow:update.yml"><span class="ic"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.3-5.7"/><path d="M20 4v5h-5"/></svg></span><span><span class="t">Update publications and citations</span><span class="d">Press <b>Run workflow</b> twice. Also runs on the 1st of each month</span></span></a>
     <a class="tile" data-go="workflow:links.yml"><span class="ic"><svg viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></span><span><span class="t">Check for broken links</span><span class="d">Press <b>Run workflow</b> twice. Runs monthly and emails you if a link died</span></span></a>
-    <a class="tile" id="stats" data-go="stats"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><span><span class="t">Visitor stats</span><span class="d" id="stats-d">Visits, countries, and clicked links. No cookies</span></span></a>
+    <a class="tile" id="stats" data-go="stats"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><span><span class="t">Visitor stats</span><span class="d" id="stats-d">Live, detailed numbers on GoatCounter. No cookies</span></span></a>
     <a class="tile" data-go="zip"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></svg></span><span><span class="t">Download a backup</span><span class="d">The whole site as a zip file</span></span></a>
   </div>
 
@@ -108,6 +169,145 @@ a.tile[aria-disabled="true"]{opacity:.55;pointer-events:none}
   apply("");
   fetch("data/config.json", {cache: "no-store"}).then(function(r){ return r.json(); })
     .then(function(c){ apply(c.goatcounter || ""); }).catch(function(){});
+})();
+</script>
+<script>
+// Visitor dashboard: reads stats.json, which the "Visitor stats" workflow keeps on the stats branch.
+(function(){
+  var h = location.hostname, OWNER = "maikelleon", REPO = "maikelleon.github.io";
+  if (/\.github\.io$/.test(h)) { OWNER = h.split(".")[0]; REPO = h; }
+  var SRC = new URLSearchParams(location.search).get("stats") ||
+            "https://raw.githubusercontent.com/" + OWNER + "/" + REPO + "/stats/stats.json";
+  var $ = function(id){ return document.getElementById(id); };
+  var NS = "http://www.w3.org/2000/svg";
+  var nf = new Intl.NumberFormat("en-US"), cf = new Intl.NumberFormat("en-US", {notation: "compact", maximumFractionDigits: 1});
+  var fmt = function(n){ return n >= 10000 ? cf.format(n) : nf.format(n); };
+  var dShort = new Intl.DateTimeFormat("en-US", {month: "short", day: "numeric", timeZone: "UTC"});
+  var dLong = new Intl.DateTimeFormat("en-US", {weekday: "short", month: "short", day: "numeric", timeZone: "UTC"});
+  var day = function(s){ return new Date(s + "T00:00:00Z"); };
+  var say = function(t){ var m = $("viz-msg"); if (m) m.textContent = t; };
+
+  function list(id, rows, clean){
+    var ol = $(id); ol.textContent = "";
+    rows = (rows || []).filter(function(r){ return r.n > 0; });
+    if (!rows.length) { var e = document.createElement("li"); e.className = "empty"; e.textContent = "None yet"; ol.appendChild(e); return; }
+    var max = Math.max.apply(null, rows.map(function(r){ return r.n; }));
+    rows.forEach(function(r){
+      var li = document.createElement("li"), n = document.createElement("span"), v = document.createElement("span"),
+          b = document.createElement("span"), i = document.createElement("i");
+      n.className = "rn"; n.textContent = clean ? clean(r) : r.name;
+      v.className = "rv"; v.textContent = fmt(r.n);
+      b.className = "rb"; b.setAttribute("aria-hidden", "true");
+      i.style.width = Math.max(1, Math.round(r.n / max * 100)) + "%";
+      b.appendChild(i); li.appendChild(n); li.appendChild(v); li.appendChild(b); ol.appendChild(li);
+    });
+  }
+
+  function niceMax(m){
+    if (m <= 4) return 4;
+    var p = Math.pow(10, Math.floor(Math.log10(m))), f = m / p;
+    return (f <= 1 ? 1 : f <= 2 ? 2 : f <= 5 ? 5 : 10) * p;
+  }
+  function el(tag, attrs, parent){
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    parent.appendChild(e); return e;
+  }
+  function barPath(x, y, w, h, r){  // rounded at the data end, square on the baseline
+    r = Math.min(r, w / 2, h);
+    return "M" + x + "," + (y + h) + "V" + (y + r) + "Q" + x + "," + y + " " + (x + r) + "," + y +
+           "H" + (x + w - r) + "Q" + (x + w) + "," + y + " " + (x + w) + "," + (y + r) + "V" + (y + h) + "Z";
+  }
+
+  var lastDaily = null, resizeTimer = null;
+  window.addEventListener("resize", function(){
+    if (!lastDaily) return;
+    clearTimeout(resizeTimer); resizeTimer = setTimeout(function(){ chart(lastDaily); }, 150);
+  });
+  function chart(daily){  // drawn at the box's real width, so text stays 12px on phones too
+    lastDaily = daily;
+    var box = $("daily"); box.textContent = "";
+    var W = Math.max(280, Math.round(box.getBoundingClientRect().width)) || 700, H = 200, L = 36, R = 4, T = 12, B = 26, pw = W - L - R, ph = H - T - B;
+    var n = daily.length, band = pw / n, bw = Math.min(24, band - 2);
+    var max = niceMax(Math.max.apply(null, daily.map(function(r){ return r[1]; }).concat([1])));
+    var svg = el("svg", {viewBox: "0 0 " + W + " " + H, tabindex: "0", role: "img",
+      "aria-label": "Visitors per day for the last " + n + " days. Use the left and right arrow keys to read each day."}, box);
+    [0, max / 2, max].forEach(function(v){
+      var y = Math.round(T + ph - v / max * ph) + 0.5;
+      el("line", {x1: L, x2: W - R, y1: y, y2: y, "class": "grid"}, svg);
+      el("text", {x: L - 8, y: y + 4, "text-anchor": "end"}, svg).textContent = fmt(v);
+    });
+    var bars = daily.map(function(r, i){
+      var hgt = r[1] ? Math.max(2, r[1] / max * ph) : 0, x = L + i * band + (band - bw) / 2;
+      return {x: x + bw / 2, top: T + ph - hgt, el: hgt ? el("path", {"class": "bar", d: barPath(x, T + ph - hgt, bw, hgt, 4)}, svg) : null};
+    });
+    [0, Math.floor((n - 1) / 2), n - 1].forEach(function(i){
+      el("text", {x: L + i * band + band / 2, y: H - 6, "text-anchor": "middle"}, svg).textContent = dShort.format(day(daily[i][0]));
+    });
+    var tip = document.createElement("div"); tip.className = "tip"; tip.hidden = true; box.appendChild(tip);
+    var cur = -1;
+    function show(i){
+      if (cur >= 0 && bars[cur].el) bars[cur].el.classList.remove("on");
+      cur = Math.max(0, Math.min(n - 1, i));
+      if (bars[cur].el) bars[cur].el.classList.add("on");
+      var k = svg.clientWidth / W, v = daily[cur][1];
+      tip.textContent = "";
+      var b = document.createElement("b"); b.textContent = fmt(v) + (v === 1 ? " visitor" : " visitors");
+      tip.appendChild(b); tip.appendChild(document.createTextNode(dLong.format(day(daily[cur][0]))));
+      tip.style.left = Math.min(Math.max(bars[cur].x * k, 60), svg.clientWidth - 60) + "px";
+      tip.style.top = (Math.min(bars[cur].top, T + ph - 2) * k) + "px";
+      tip.hidden = false;
+    }
+    function hide(){ tip.hidden = true; if (cur >= 0 && bars[cur].el) bars[cur].el.classList.remove("on"); }
+    svg.addEventListener("pointermove", function(e){
+      var r = svg.getBoundingClientRect(), x = (e.clientX - r.left) / r.width * W;
+      show(Math.floor((x - L) / band));
+    });
+    svg.addEventListener("pointerleave", function(){ if (document.activeElement !== svg) hide(); });
+    svg.addEventListener("focus", function(){ show(cur < 0 ? n - 1 : cur); });
+    svg.addEventListener("blur", hide);
+    svg.addEventListener("keydown", function(e){
+      var m = {ArrowLeft: cur - 1, ArrowRight: cur + 1, Home: 0, End: n - 1};
+      if (e.key in m) { e.preventDefault(); show(m[e.key]); }
+    });
+    var tb = $("daily-tbl").tBodies[0]; tb.textContent = "";
+    daily.forEach(function(r){
+      var tr = tb.insertRow(); tr.insertCell().textContent = dLong.format(day(r[0])); tr.insertCell().textContent = fmt(r[1]);
+    });
+  }
+
+  $("daily-tv").addEventListener("click", function(){
+    var t = $("daily-tbl"), open = t.hidden;
+    t.hidden = !open; this.setAttribute("aria-expanded", String(open));
+    this.textContent = open ? "Hide table" : "Show as table";
+  });
+
+  function render(s){
+    var daily = s.daily || [], total = s.total || 0, prev = s.previous || 0;
+    $("k-total").textContent = fmt(total);
+    $("k-delta").textContent = prev > 0
+      ? (total >= prev ? "▲ " : "▼ ") + Math.abs(Math.round((total - prev) / prev * 100)) + "% vs the 30 days before"
+      : (total > 0 ? "The first 30 days counted" : "No visits counted yet");
+    $("k-week").textContent = fmt(daily.slice(-7).reduce(function(a, r){ return a + r[1]; }, 0));
+    var cv = (s.clicks || []).filter(function(c){ return c.path === "click/cv"; })[0];
+    $("k-cv").textContent = fmt(cv ? cv.n : 0);
+    $("k-country").textContent = (s.countries && s.countries[0]) ? s.countries[0].name : "None yet";
+    if (daily.length) chart(daily); else say("No visits counted yet.");
+    list("l-countries", s.countries);
+    list("l-sources", s.sources, function(r){ return r.name && r.name !== "(no data)" ? r.name : "Typed the address, or unknown"; });
+    list("l-clicks", s.clicks);
+    list("l-devices", s.devices);
+    var when = new Intl.DateTimeFormat("en-US", {dateStyle: "medium", timeStyle: "short"}).format(new Date(s.updated));
+    $("v-updated").textContent = "Updated " + when + ". Totals only; nothing about individual visitors is kept.";
+  }
+
+  var viz = $("viz"); viz.setAttribute("aria-busy", "true");
+  fetch("data/config.json", {cache: "no-store"}).then(function(r){ return r.json(); }).then(function(c){
+    if (!c.goatcounter) { say("Visitor stats are not set up yet. See README, step 7."); return null; }
+    return fetch(SRC, {cache: "no-store"}).then(function(r){ if (!r.ok) throw r.status; return r.json(); }).then(render);
+  }).catch(function(){
+    say("No numbers yet. They arrive within six hours of setup, or press Refresh now below.");
+  }).then(function(){ viz.removeAttribute("aria-busy"); });
 })();
 </script>
 </body>

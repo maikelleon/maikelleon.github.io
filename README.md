@@ -11,7 +11,7 @@ Personal academic website of Maikel Leon, PhD.
 4. **Turn on the website.** Go to **Settings → Pages**. Under *Build and deployment*, set *Source* to **Deploy from a branch**, the branch to **main**, the folder to **/ (root)**, and click **Save**. The site appears at `https://maikelleon.github.io` within a few minutes.
 5. **Allow the update buttons to save changes.** Go to **Settings → Actions → General**, scroll to *Workflow permissions*, choose **Read and write permissions**, and click **Save**.
 6. **Bookmark the controls page:** `https://maikelleon.github.io/admin.html`. It is not linked from the site and search engines are told to ignore it.
-7. **Visitor stats (optional, free):** sign up at goatcounter.com and choose a code such as `maikelleon`. Then open **Edit journals and impact factors** on the controls page, find `"goatcounter": ""`, type your code between the quotes, and commit. The Visitor stats button starts working and counting begins. GoatCounter sets no cookies, so the site needs no cookie banner.
+7. **Visitor stats (done):** counting runs through GoatCounter (account `maikelleon`, free, no cookies, so no cookie banner). The **Visitors** dashboard at the top of the controls page is refreshed every six hours by the **Visitor stats** workflow, which reads GoatCounter with the read-only key saved in GitHub as the secret `GOATCOUNTER_TOKEN`. If you ever replace that key, create a new one in GoatCounter (your name in the top menu, then **API**, permission **Read statistics** only) and update the secret under **Settings → Secrets and variables → Actions**. To stop counting your own visits, use **Stop counting my visits in this browser** on the controls page once in each browser you use.
 
 ## The controls page (admin.html)
 
@@ -36,7 +36,7 @@ Spanish fields are optional. When left blank, the English text shows on the Span
 |---|---|
 | Update publications and citations | Pulls papers from ORCID and OpenAlex, citations from Google Scholar, and newly reviewed journals from ORCID. Also runs on the 1st of each month |
 | Check for broken links | Tests every outside link. Runs on the 2nd of each month; if a link is dead you get an email (a GitHub issue) listing it |
-| Visitor stats | Opens your GoatCounter dashboard (step 7 above) |
+| Visitor stats | Opens the live GoatCounter dashboard. The **Visitors** section at the top of the controls page shows the last 30 days (visitors per day, countries, where visitors came from, clicks such as CV downloads, and screen types), refreshed every six hours; **Refresh now** updates it at once (step 7 above) |
 | Download a backup | The whole site as a zip |
 
 Each run shows a short report: open the **Actions** tab and click the latest run.
@@ -74,6 +74,7 @@ Every update is saved as a separate entry in the repository history (**commits**
 - `.github/ISSUE_TEMPLATE/`: the forms.
 - `assets/`: headshot and CV.
 - `data/config.json`: ORCID iD, Scholar ID, journal list, corrections, saved metrics, GoatCounter code.
-- `scripts/`: the update and upload scripts.
+- `scripts/`: the update and upload scripts; `scripts/stats.py` reads the visitor totals from GoatCounter.
+- `stats` branch: holds only `stats.json`, the visitor totals the dashboard reads. It is rewritten every six hours and never touches the site itself.
 - `.github/workflows/`: the automation behind the buttons.
 - `uploads/`: drop zone for a new headshot or CV.

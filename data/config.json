@@ -173,7 +173,7 @@
   },
   "_metrics_help": "Google Scholar numbers. The update tries to refresh them from your Scholar profile; if Google blocks it, these values stay as they are. You can also edit them by hand.",
   "metrics": {
-    "citations": 1129,
+    "citations": 1133,
     "h_index": 20,
     "i10_index": 26,
     "source": "Google Scholar",
@@ -181,7 +181,7 @@
   },
   "since_year": 2015,
   "_goatcounter_help": "Visitor stats: after creating a free GoatCounter account, put its code here (for maikelleon.goatcounter.com, the code is maikelleon). Leave empty for no analytics.",
-  "goatcounter": "",
+  "goatcounter": "maikelleon",
   "_students_help": "Papers you co-authored with these students are listed under Teaching > Undergraduate research, newest first. Add a student's name as it appears on the paper. Badges and code links go in student_extras, keyed by DOI.",
   "students": [
     "Hanna DeSimone",

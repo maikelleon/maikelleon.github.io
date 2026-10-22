@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maikelleon.github.io/sitemap.xml

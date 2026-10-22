@@ -1,0 +1,40 @@
+name: Visitor stats
+
+# Copies visitor totals from GoatCounter into stats.json on the "stats" branch,
+# which the dashboard on the controls page reads. The branch keeps one commit,
+# so the site's history and its publishing are untouched.
+
+on:
+  workflow_dispatch:          # the "Run workflow" button
+  schedule:
+    - cron: "23 */6 * * *"    # every six hours
+
+permissions:
+  contents: write
+
+concurrency:
+  group: visitor-stats
+  cancel-in-progress: false
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Read the totals from GoatCounter
+        env:
+          GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
+        run: python scripts/stats.py --out "$RUNNER_TEMP/stats.json" | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Save them on the stats branch
+        run: |
+          if [ ! -f "$RUNNER_TEMP/stats.json" ]; then exit 0; fi
+          git config user.name "site-updater"
+          git config user.email "site-updater@users.noreply.github.com"
+          git switch --orphan stats
+          cp "$RUNNER_TEMP/stats.json" stats.json
+          git add stats.json
+          git commit -q -m "Visitor stats"
+          git push -q --force origin stats

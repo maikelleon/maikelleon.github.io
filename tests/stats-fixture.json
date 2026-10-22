@@ -1,0 +1,289 @@
+{
+ "_note": "Made-up numbers in GoatCounter's API format, for testing scripts/stats.py and the dashboard offline.",
+ "start": "2026-09-23T00:00:00",
+ "hits": {
+  "hits": [
+   {
+    "path": "/",
+    "title": "Maikel Leon, PhD",
+    "event": false,
+    "count": 233,
+    "stats": [
+     {
+      "day": "2026-09-23",
+      "daily": 4
+     },
+     {
+      "day": "2026-09-24",
+      "daily": 8
+     },
+     {
+      "day": "2026-09-25",
+      "daily": 9
+     },
+     {
+      "day": "2026-09-26",
+      "daily": 3
+     },
+     {
+      "day": "2026-09-27",
+      "daily": 5
+     },
+     {
+      "day": "2026-09-28",
+      "daily": 7
+     },
+     {
+      "day": "2026-09-29",
+      "daily": 6
+     },
+     {
+      "day": "2026-09-30",
+      "daily": 5
+     },
+     {
+      "day": "2026-10-01",
+      "daily": 3
+     },
+     {
+      "day": "2026-10-02",
+      "daily": 4
+     },
+     {
+      "day": "2026-10-03",
+      "daily": 8
+     },
+     {
+      "day": "2026-10-04",
+      "daily": 13
+     },
+     {
+      "day": "2026-10-05",
+      "daily": 5
+     },
+     {
+      "day": "2026-10-06",
+      "daily": 7
+     },
+     {
+      "day": "2026-10-07",
+      "daily": 11
+     },
+     {
+      "day": "2026-10-08",
+      "daily": 11
+     },
+     {
+      "day": "2026-10-09",
+      "daily": 7
+     },
+     {
+      "day": "2026-10-10",
+      "daily": 14
+     },
+     {
+      "day": "2026-10-11",
+      "daily": 8
+     },
+     {
+      "day": "2026-10-12",
+      "daily": 10
+     },
+     {
+      "day": "2026-10-13",
+      "daily": 12
+     },
+     {
+      "day": "2026-10-14",
+      "daily": 6
+     },
+     {
+      "day": "2026-10-15",
+      "daily": 5
+     },
+     {
+      "day": "2026-10-16",
+      "daily": 8
+     },
+     {
+      "day": "2026-10-17",
+      "daily": 16
+     },
+     {
+      "day": "2026-10-18",
+      "daily": 6
+     },
+     {
+      "day": "2026-10-19",
+      "daily": 7
+     },
+     {
+      "day": "2026-10-20",
+      "daily": 6
+     },
+     {
+      "day": "2026-10-21",
+      "daily": 6
+     },
+     {
+      "day": "2026-10-22",
+      "daily": 13
+     }
+    ]
+   },
+   {
+    "path": "click/cv",
+    "title": "Download CV",
+    "event": true,
+    "count": 21,
+    "stats": []
+   },
+   {
+    "path": "click/profile/google-scholar",
+    "title": "Google Scholar profile",
+    "event": true,
+    "count": 14,
+    "stats": []
+   },
+   {
+    "path": "click/profile/linkedin",
+    "title": "LinkedIn profile",
+    "event": true,
+    "count": 11,
+    "stats": []
+   },
+   {
+    "path": "click/paper-pdf",
+    "title": "Opened a paper PDF",
+    "event": true,
+    "count": 9,
+    "stats": []
+   },
+   {
+    "path": "click/copy-email",
+    "title": "Copied maikelleon@gmail.com",
+    "event": true,
+    "count": 4,
+    "stats": []
+   }
+  ],
+  "more": false
+ },
+ "previous": {
+  "hits": [
+   {
+    "path": "/",
+    "title": "Maikel Leon, PhD",
+    "event": false,
+    "count": 160
+   }
+  ]
+ },
+ "lists": {
+  "locations": {
+   "stats": [
+    {
+     "id": "US",
+     "name": "United States",
+     "count": 120
+    },
+    {
+     "id": "ES",
+     "name": "Spain",
+     "count": 22
+    },
+    {
+     "id": "MX",
+     "name": "Mexico",
+     "count": 17
+    },
+    {
+     "id": "BE",
+     "name": "Belgium",
+     "count": 9
+    },
+    {
+     "id": "CO",
+     "name": "Colombia",
+     "count": 8
+    },
+    {
+     "id": "",
+     "name": "(unknown)",
+     "count": 3
+    }
+   ]
+  },
+  "toprefs": {
+   "stats": [
+    {
+     "name": "www.linkedin.com",
+     "count": 58
+    },
+    {
+     "name": "Google",
+     "count": 41
+    },
+    {
+     "name": "",
+     "count": 36
+    },
+    {
+     "name": "scholar.google.com",
+     "count": 12
+    },
+    {
+     "name": "miami.edu",
+     "count": 6
+    }
+   ]
+  },
+  "sizes": {
+   "stats": [
+    {
+     "id": "phone",
+     "name": "Phones",
+     "count": 96
+    },
+    {
+     "id": "computer",
+     "name": "Computer monitors",
+     "count": 71
+    },
+    {
+     "id": "tablet",
+     "name": "Tablets and small laptops",
+     "count": 12
+    }
+   ]
+  },
+  "systems": {
+   "stats": [
+    {
+     "name": "iOS",
+     "count": 70
+    },
+    {
+     "name": "macOS",
+     "count": 48
+    },
+    {
+     "name": "Windows",
+     "count": 40
+    }
+   ]
+  },
+  "browsers": {
+   "stats": [
+    {
+     "name": "Safari",
+     "count": 90
+    },
+    {
+     "name": "Chrome",
+     "count": 70
+    }
+   ]
+  }
+ }
+}

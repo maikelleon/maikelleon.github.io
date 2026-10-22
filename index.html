@@ -9,13 +9,14 @@
 <meta property="og:title" content="Maikel Leon, PhD">
 <meta property="og:description" content="AI researcher, consultant, educator, and bilingual media commentator.">
 <meta property="og:url" content="https://maikelleon.github.io/">
+<link rel="canonical" href="https://maikelleon.github.io/">
 <meta property="og:image" content="https://maikelleon.github.io/assets/photo.jpg">
 <meta name="twitter:card" content="summary">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Maikel Leon","honorificSuffix":"PhD",
  "description":"AI researcher, consultant, educator, and bilingual media commentator.",
  "url":"https://maikelleon.github.io/","image":"https://maikelleon.github.io/assets/photo.jpg",
- "jobTitle":"Associate Professor of Practice in Business Technology",
+ "jobTitle":["Associate Professor of Professional Practice, Business Technology","AI Fellow, Intelligent Computer Systems Research Institute"],
  "worksFor":[{"@type":"CollegeOrUniversity","name":"University of Miami"},{"@type":"Organization","name":"ML Education & Consulting LLC"}],
  "alumniOf":{"@type":"CollegeOrUniversity","name":"Hasselt University"},
  "knowsLanguage":["en","es"],
@@ -417,7 +418,7 @@ footer .wrap{max-width:var(--col)}
         </ul>
         <!-- METRICS:START -->
         <div class="facts">
-          <span><strong>1,129</strong><span class="en">citations</span><span class="es">citas</span></span>
+          <span><strong>1,133</strong><span class="en">citations</span><span class="es">citas</span></span>
           <span><strong>20</strong><span class="en">h-index</span><span class="es">índice h</span></span>
         </div>
         <p class="src"><a class="ext" href="https://scholar.google.com/citations?user=1hocwokAAAAJ" target="_blank" rel="noopener">Google Scholar</a></p>
@@ -1502,8 +1503,8 @@ footer .wrap{max-width:var(--col)}
     <div>
       <h2><span class="en">Teaching at the University of Miami</span><span class="es">Docencia en la Universidad de Miami</span></h2>
       <div class="intro">
-        <p class="en">Since 2015, Maikel Leon has taught at the University of Miami Business School, where he is an Associate Professor of Practice in Business Technology and an AI Institute Fellow of the Intelligent Computer Systems Research Institute. He previously directed the institute (<span class="nw">2025–2026</span>) and the Master of Science in Business Technology program (<span class="nw">2024–2025</span>).</p>
-        <p class="es">Desde 2015, Maikel Leon enseña en la Escuela de Negocios de la Universidad de Miami, donde es Profesor Asociado de Práctica en Tecnología de Negocios y AI Institute Fellow del Intelligent Computer Systems Research Institute. Antes dirigió el instituto (<span class="nw">2025–2026</span>) y la Maestría en Ciencias en Tecnología de Negocios (<span class="nw">2024–2025</span>).</p>
+        <p class="en">Since 2015, Maikel Leon has taught at the University of Miami Business School, where he is an Associate Professor of Professional Practice in the Department of Business Technology and an AI Fellow of the Intelligent Computer Systems Research Institute. He previously served as Associate Director of the institute (<span class="nw">2025–2026</span>) and directed the Master of Science in Business Technology program (<span class="nw">2024–2025</span>).</p>
+        <p class="es">Desde 2015, Maikel Leon enseña en la Escuela de Negocios de la Universidad de Miami, donde es Profesor Asociado de Práctica Profesional en el Departamento de Tecnología de Negocios y AI Fellow del Intelligent Computer Systems Research Institute. Antes fue Director Asociado del instituto (<span class="nw">2025–2026</span>) y dirigió la Maestría en Ciencias en Tecnología de Negocios (<span class="nw">2024–2025</span>).</p>
         <p class="muted small"><span class="dot">●</span> <span class="en">Course content creator</span><span class="es">Creador del contenido del curso</span></p>
       </div>
       <details class="fold">
@@ -1813,6 +1814,23 @@ footer .wrap{max-width:var(--col)}
     if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,save);}else{save();}
   });
 
+  // Visitor stats: count clicks on the CV, emails, profiles, papers, and media links as GoatCounter events.
+  var gcEvent=function(path,title){var g=window.goatcounter;if(g&&g.count)g.count({path:path,title:title,event:true});};
+  var slug=function(t){return (t||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');};
+  document.addEventListener('click',function(ev){
+    var t=ev.target.closest&&ev.target.closest('a[href],button.copy,button.bib');if(!t)return;
+    var href=t.getAttribute('href')||'', label=(t.textContent||'').replace(/\s+/g,' ').trim();
+    if(t.matches('button.copy'))return gcEvent('click/copy-email','Copied '+t.getAttribute('data-copy'));
+    if(t.matches('button.bib'))return gcEvent('click/bibtex','Copied a BibTeX citation');
+    if(/assets\/cv\.pdf/.test(href))return gcEvent('click/cv','Download CV');
+    if(href.indexOf('mailto:')===0)return gcEvent('click/email','Email link: '+href.slice(7));
+    if(t.matches('.pbtn'))return gcEvent('click/profile/'+slug(label),label+' profile');
+    if(t.matches('a.tool'))return gcEvent('click/paper-pdf','Opened a paper PDF');
+    if(t.matches('a.doi'))return gcEvent('click/doi','Opened a paper (DOI)');
+    var li=t.closest('.media li');if(li){var o=li.querySelector('.outlet'),n=o?o.textContent.trim():label;return gcEvent('click/media/'+slug(n),'Media: '+n);}
+    if(/^https?:/.test(href)&&t.hostname!==location.hostname)return gcEvent('click/link/'+t.hostname,'Link: '+t.hostname);
+  });
+
   var links=[].slice.call(document.querySelectorAll('#gn-menu a'));
   var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a;});
   if('IntersectionObserver' in window){
@@ -1823,6 +1841,7 @@ footer .wrap{max-width:var(--col)}
 </script>
 
 <!-- ANALYTICS:START -->
+<script data-goatcounter="https://maikelleon.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <!-- ANALYTICS:END -->
 </body>
 </html>

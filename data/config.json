@@ -173,7 +173,7 @@
   },
   "_metrics_help": "Google Scholar numbers. The update tries to refresh them from your Scholar profile; if Google blocks it, these values stay as they are. You can also edit them by hand.",
   "metrics": {
-    "citations": 1133,
+    "citations": 1131,
     "h_index": 20,
     "i10_index": 26,
     "source": "Google Scholar",

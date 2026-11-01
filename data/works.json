@@ -604,7 +604,7 @@
    "pdf": "https://link.springer.com/content/pdf/10.1007/s44564-026-00003-4.pdf",
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s44564-026-00003-4.pdf",
    "publisher": "",
-   "src_type": "article"
+   "src_type": "editorial"
   },
   {
    "doi": "10.32473/flairs.39.1.141593",
@@ -657,7 +657,7 @@
    "title": "Auditing Abliteration: Normalization Placement, Edit Budget, and Transfer in Single-Direction Refusal Removal",
    "year": 2026,
    "type": "conference-paper",
-   "journal_raw": "2026 IEEE Opportunity Research Scholars Symposium (ORSS)",
+   "journal_raw": "IEEE Opportunity Research Scholars Symposium (ORSS)",
    "volume": "",
    "issue": "",
    "pages": "1–5",
@@ -672,7 +672,7 @@
    "date": "2026-04-01",
    "pdf": "",
    "oa_url": "",
-   "publisher": "IEEE",
+   "publisher": "Institute of Electrical and Electronics Engineers",
    "src_type": "conference-paper"
   },
   {
@@ -680,7 +680,7 @@
    "title": "Non-Stationary Spectral Decomposition Network: Adaptive Spectral Emission Heads and Frequency Modulation",
    "year": 2026,
    "type": "conference-paper",
-   "journal_raw": "2026 IEEE Opportunity Research Scholars Symposium (ORSS)",
+   "journal_raw": "IEEE Opportunity Research Scholars Symposium (ORSS)",
    "volume": "",
    "issue": "",
    "pages": "1–5",
@@ -695,7 +695,7 @@
    "date": "2026-04-01",
    "pdf": "",
    "oa_url": "",
-   "publisher": "IEEE",
+   "publisher": "Institute of Electrical and Electronics Engineers",
    "src_type": "conference-paper"
   },
   {
@@ -1158,8 +1158,8 @@
     "Maikel Leon"
    ],
    "date": "2025-03-01",
-   "pdf": "",
-   "oa_url": "https://doi.org/10.25046/aj100201",
+   "pdf": "https://www.astesj.com/?sdm_process_download=1&download_id=84434",
+   "oa_url": "https://www.astesj.com/?sdm_process_download=1&download_id=84434",
    "publisher": "Advances in Science, Technology and Engineering Systems Journal (ASTESJ)",
    "src_type": "article"
   },
@@ -1358,7 +1358,7 @@
     "Maikel Leon"
    ],
    "date": "2024-08-16",
-   "pdf": "",
+   "pdf": "https://doi.org/10.5121/ijcseit.2024.14401",
    "oa_url": "https://doi.org/10.5121/ijcseit.2024.14401",
    "publisher": "",
    "src_type": "article"
@@ -1421,7 +1421,7 @@
     "Maikel Leon"
    ],
    "date": "2024-07-18",
-   "pdf": "",
+   "pdf": "https://doi.org/10.5121/ijci.2024.130406",
    "oa_url": "https://doi.org/10.5121/ijci.2024.130406",
    "publisher": "",
    "src_type": "article"
@@ -1456,7 +1456,7 @@
    "title": "Leveraging Explainable AI in Business and Further",
    "year": 2024,
    "type": "conference-paper",
-   "journal_raw": "2024 IEEE Opportunity Research Scholars Symposium (ORSS)",
+   "journal_raw": "IEEE Opportunity Research Scholars Symposium (ORSS)",
    "volume": "",
    "issue": "",
    "pages": "1–6",
@@ -1471,7 +1471,7 @@
    "date": "2024-04-15",
    "pdf": "",
    "oa_url": "",
-   "publisher": "IEEE",
+   "publisher": "Institute of Electrical and Electronics Engineers",
    "src_type": "conference-paper"
   },
   {
@@ -1523,7 +1523,7 @@
    "title": "Business Technology and Innovation Through Problem-Based Learning",
    "year": 2023,
    "type": "book-chapter",
-   "journal_raw": "Canada International Conference on Education (CICE-2023) and World Congress on Education (WCE-2023)",
+   "journal_raw": "Canada International Conference on Education and World Congress on Education (CICE/WCE)",
    "volume": "",
    "issue": "",
    "pages": "124–128",
@@ -1536,7 +1536,7 @@
    "date": "2023-07-01",
    "pdf": "",
    "oa_url": "",
-   "publisher": "Infonomics Society",
+   "publisher": "",
    "src_type": "conference-paper"
   },
   {
@@ -2331,7 +2331,7 @@
    "title": "CONSIDERING ARTIFICIAL INTELLIGENCE TECHNIQUES TO PERFORM ADAPTABLE KNOWLEDGE STRUCTURES",
    "year": 2009,
    "type": "book-chapter",
-   "journal_raw": "Intelligent Decision Making Systems",
+   "journal_raw": "International Conference on Intelligent Systems and Knowledge Engineering (ISKE)",
    "volume": "",
    "issue": "",
    "pages": "88–93",
@@ -2348,7 +2348,7 @@
    "date": "2009-10-01",
    "pdf": "",
    "oa_url": "",
-   "publisher": "WORLD SCIENTIFIC",
+   "publisher": "",
    "src_type": "conference-paper"
   },
   {
@@ -2485,7 +2485,7 @@
    "title": "Two Approaches to Generate Intelligent Teaching-Learning Systems Using Artificial Intelligence Techniques",
    "year": 2007,
    "type": "conference-paper",
-   "journal_raw": "2007 Sixth Mexican International Conference on Artificial Intelligence, Special Session (MICAI)",
+   "journal_raw": "Mexican International Conference on Artificial Intelligence",
    "volume": "",
    "issue": "",
    "pages": "333–341",
@@ -2504,7 +2504,7 @@
    "date": "2007-11-01",
    "pdf": "",
    "oa_url": "",
-   "publisher": "IEEE",
+   "publisher": "",
    "src_type": "conference-paper"
   },
   {

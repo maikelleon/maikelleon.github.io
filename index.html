@@ -175,6 +175,7 @@ p{text-wrap:pretty}
 #about p{max-width:none}
 #executive > div:last-child{text-align:center}
 #executive p{margin-left:auto;margin-right:auto;max-width:640px}
+#executive p.fine{max-width:560px;margin-top:20px;margin-bottom:0;font-size:var(--t-small);line-height:1.43;color:var(--muted)}
 
 
 /* four sides (About) */
@@ -272,6 +273,10 @@ p{text-wrap:pretty}
 .copy:hover{filter:brightness(1.08)}
 .contact .note{font-size:var(--t-small);color:var(--muted);margin:8px 0 0}
 .contact > .wide{grid-column:1 / -1}
+.contact > div{scroll-margin-top:120px}
+.contact > div:target{animation:ring 3s ease-out both}
+@keyframes ring{0%,45%{box-shadow:0 0 0 2px var(--accent)}100%{box-shadow:0 0 0 2px transparent}}
+@media (prefers-reduced-motion: reduce){.contact > div:target{animation:none;box-shadow:0 0 0 2px var(--accent)}}
 .plinks{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
 .pbtn{display:inline-flex;align-items:center;padding:9px 16px;border-radius:980px;background:var(--chip-in);color:var(--ink);font-size:var(--t-small);font-weight:500;text-decoration:none!important;transition:background .2s}
 .pbtn .ico-s{color:var(--accent);margin-right:8px}
@@ -284,6 +289,7 @@ footer .wrap{max-width:var(--col)}
 .foot-nav{display:flex;flex-wrap:wrap;gap:6px 22px;padding-bottom:16px;margin-bottom:14px;border-bottom:1px solid #d2d2d7}
 .foot-nav a{color:#424245}
 .foot-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 18px}
+.foot-note{margin:10px 0 0;max-width:none}
 </style>
 <link rel="icon" href="assets/photo.jpg">
 </head>
@@ -321,9 +327,9 @@ footer .wrap{max-width:var(--col)}
         <li><a href="#about"><span class="en">About</span><span class="es">Perfil</span></a></li>
         <li><a href="#research"><span class="en">Research</span><span class="es">Investigación</span></a></li>
         <li><a href="#publications"><span class="en">Publications</span><span class="es">Publicaciones</span></a></li>
-        <li data-toggle="consulting"><a href="#executive"><span class="en">Consulting</span><span class="es">Consultoría</span></a></li>
         <li><a href="#teaching"><span class="en">Teaching</span><span class="es">Docencia</span></a></li>
         <li><a href="#media"><span class="en">Media</span><span class="es">Medios</span></a></li>
+        <li data-toggle="consulting"><a href="#executive"><span class="en">Consulting</span><span class="es">Consultoría</span></a></li>
         <li><a href="#honors"><span class="en">Honors</span><span class="es">Premios</span></a></li>
         <li><a href="#contact"><span class="en">Contact</span><span class="es">Contacto</span></a></li>
       </ul>
@@ -378,9 +384,9 @@ footer .wrap{max-width:var(--col)}
       </div>
       <ul class="sides">
         <li><a href="#research"><svg class="ico" aria-hidden="true"><use href="#i-nodes"/></svg><span class="sk"><span class="en">Research</span><span class="es">Investigación</span></span><span class="sd"><span class="en">Agentic AI, AI governance, and language models</span><span class="es">IA agéntica, gobernanza de la IA y modelos de lenguaje</span></span></a></li>
-        <li data-toggle="consulting"><a href="#executive"><svg class="ico" aria-hidden="true"><use href="#i-briefcase"/></svg><span class="sk"><span class="en">Consulting</span><span class="es">Consultoría</span></span><span class="sd">ML Education &amp; Consulting LLC</span></a></li>
         <li><a href="#teaching"><svg class="ico" aria-hidden="true"><use href="#i-cap"/></svg><span class="sk"><span class="en">Teaching</span><span class="es">Docencia</span></span><span class="sd"><span class="en">University of Miami Business School</span><span class="es">Escuela de Negocios de la Universidad de Miami</span></span></a></li>
         <li><a href="#media"><svg class="ico" aria-hidden="true"><use href="#i-tv"/></svg><span class="sk"><span class="en">Media</span><span class="es">Medios</span></span><span class="sd"><span class="en">CNN en Español and Univision</span><span class="es">CNN en Español y Univision</span></span></a></li>
+        <li data-toggle="consulting"><a href="#executive"><svg class="ico" aria-hidden="true"><use href="#i-briefcase"/></svg><span class="sk"><span class="en">Consulting</span><span class="es">Consultoría</span></span><span class="sd">ML Education &amp; Consulting LLC</span></a></li>
       </ul>
       <details class="fold" id="skills" data-toggle="skills">
         <summary><h3><span class="en">Skills</span><span class="es">Competencias</span></h3></summary>
@@ -1491,17 +1497,7 @@ footer .wrap{max-width:var(--col)}
     </div>
   </section>
 
-  <section id="executive" class="t-white" data-toggle="consulting">
-    <div class="label"><svg class="ico" aria-hidden="true"><use href="#i-briefcase"/></svg><span class="en">Consulting</span><span class="es">Consultoría</span></div>
-    <div>
-      <h2>ML Education &amp; Consulting LLC</h2>
-      <p class="en">Through his firm, ML Education &amp; Consulting LLC, Maikel Leon delivers education and consulting on artificial intelligence and business technology, in English or Spanish. Clients have included leading publishers, universities, insurance companies, and banks. Organizations interested in a program or advisory work for their teams are welcome to get in touch.</p>
-      <p class="es">A través de su empresa, ML Education &amp; Consulting LLC, Maikel Leon ofrece educación y consultoría en inteligencia artificial y tecnología de negocios, en inglés o en español. Entre sus clientes figuran grandes editoriales, universidades, aseguradoras y bancos. Las organizaciones interesadas en un programa o asesoría para sus equipos pueden escribirle.</p>
-      <p class="more"><a class="btn" href="#contact"><span class="en">Get in touch</span><span class="es">Contacto</span></a></p>
-    </div>
-  </section>
-
-  <section id="teaching" class="t-black">
+  <section id="teaching" class="t-white">
     <div class="label"><svg class="ico" aria-hidden="true"><use href="#i-cap"/></svg><span class="en">Teaching</span><span class="es">Docencia</span></div>
     <div>
       <h2><span class="en">Teaching at the University of Miami</span><span class="es">Docencia en la Universidad de Miami</span></h2>
@@ -1632,7 +1628,7 @@ footer .wrap{max-width:var(--col)}
     </div>
   </section>
 
-  <section id="media" class="t-white">
+  <section id="media" class="t-black">
     <div class="label"><svg class="ico" aria-hidden="true"><use href="#i-tv"/></svg><span class="en">Media</span><span class="es">Medios</span></div>
     <div>
       <h2><span class="en">Media and talks</span><span class="es">Medios y conferencias</span></h2>
@@ -1699,6 +1695,18 @@ footer .wrap{max-width:var(--col)}
     </div>
   </section>
 
+  <section id="executive" class="t-white" data-toggle="consulting">
+    <div class="label"><svg class="ico" aria-hidden="true"><use href="#i-briefcase"/></svg><span class="en">Consulting</span><span class="es">Consultoría</span></div>
+    <div>
+      <h2>ML Education &amp; Consulting LLC</h2>
+      <p class="en">Through his firm, ML Education &amp; Consulting LLC, Maikel Leon delivers education and consulting on artificial intelligence and business technology, in English or Spanish. Clients have included leading publishers, universities, insurance companies, and banks. Organizations interested in a program or advisory work for their teams are welcome to get in touch.</p>
+      <p class="es">A través de su empresa, ML Education &amp; Consulting LLC, Maikel Leon ofrece educación y consultoría en inteligencia artificial y tecnología de negocios, en inglés o en español. Entre sus clientes figuran grandes editoriales, universidades, aseguradoras y bancos. Las organizaciones interesadas en un programa o asesoría para sus equipos pueden escribirle.</p>
+      <p class="more"><a class="btn" href="#contact-llc"><span class="en">Get in touch</span><span class="es">Contacto</span></a></p>
+      <p class="fine en">ML Education &amp; Consulting LLC is Maikel Leon’s independent firm. Its services are provided in a personal capacity, separate from his University of Miami appointment, and are not offered, sponsored, or endorsed by the University of Miami.</p>
+      <p class="fine es">ML Education &amp; Consulting LLC es la empresa independiente de Maikel Leon. Sus servicios se prestan a título personal, de forma separada de su cargo en la Universidad de Miami, y no son ofrecidos, patrocinados ni respaldados por la Universidad de Miami.</p>
+    </div>
+  </section>
+
   <section id="honors" class="t-black">
     <div class="label"><svg class="ico" aria-hidden="true"><use href="#i-medal"/></svg><span class="en">Honors</span><span class="es">Premios</span></div>
     <div>
@@ -1753,7 +1761,7 @@ footer .wrap{max-width:var(--col)}
     <div>
       <h2><span class="en">Get in touch</span><span class="es">Escríbame</span></h2>
       <div class="contact">
-        <div><svg class="ico" aria-hidden="true"><use href="#i-briefcase"/></svg><div class="k">ML Education &amp; Consulting LLC</div><div class="v"><a class="em" href="mailto:maikelleon@gmail.com">maikelleon@gmail.com</a><button type="button" class="copy" data-copy="maikelleon@gmail.com"><span class="en">Copy</span><span class="es">Copiar</span></button></div><p class="note"><span class="en">Consulting and education</span><span class="es">Consultoría y educación</span></p></div>
+        <div id="contact-llc"><svg class="ico" aria-hidden="true"><use href="#i-briefcase"/></svg><div class="k">ML Education &amp; Consulting LLC</div><div class="v"><a class="em" href="mailto:maikelleon@gmail.com">maikelleon@gmail.com</a><button type="button" class="copy" data-copy="maikelleon@gmail.com"><span class="en">Copy</span><span class="es">Copiar</span></button></div><p class="note"><span class="en">Consulting and education</span><span class="es">Consultoría y educación</span></p></div>
         <div><svg class="ico" aria-hidden="true"><use href="#i-building"/></svg><div class="k"><span class="en">University of Miami</span><span class="es">Universidad de Miami</span></div><div class="v"><a class="em" href="mailto:mleon@miami.edu">mleon@miami.edu</a><button type="button" class="copy" data-copy="mleon@miami.edu"><span class="en">Copy</span><span class="es">Copiar</span></button></div><p class="note"><span class="en">Teaching, students, research, and media requests</span><span class="es">Docencia, estudiantes, investigación y solicitudes de medios</span></p></div>
         <div class="wide"><svg class="ico" aria-hidden="true"><use href="#i-globe"/></svg><div class="k"><span class="en">Profiles</span><span class="es">Perfiles</span></div><ul class="plinks"><li><a class="pbtn" href="https://www.linkedin.com/in/maikelleon/" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-card"/></svg>LinkedIn</a></li><li><a class="pbtn" href="https://scholar.google.com/citations?user=1hocwokAAAAJ" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-quote"/></svg>Google Scholar</a></li><li><a class="pbtn" href="https://www.semanticscholar.org/author/Maikel-Leon/66618042?sort=pub-date" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-sparkle"/></svg>Semantic Scholar</a></li><li><a class="pbtn" href="https://orcid.org/0000-0002-8849-4521" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-badge"/></svg>ORCID</a></li><li><a class="pbtn" href="https://www.researchgate.net/profile/Maikel-Leon" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-people"/></svg>ResearchGate</a></li><li><a class="pbtn" href="https://app.dimensions.ai/discover/publication?search_mode=content&amp;and_facet_researcher=ur.015527277731.48&amp;order=date" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-bars"/></svg>Dimensions</a></li><li><a class="pbtn" href="https://scholargps.com/scholars/49121140777133/maikel-leon" target="_blank" rel="noopener"><svg class="ico-s" aria-hidden="true"><use href="#i-compass"/></svg>ScholarGPS</a></li></ul></div>
       </div>
@@ -1767,9 +1775,9 @@ footer .wrap{max-width:var(--col)}
       <a href="#about"><span class="en">About</span><span class="es">Perfil</span></a>
       <a href="#research"><span class="en">Research</span><span class="es">Investigación</span></a>
       <a href="#publications"><span class="en">Publications</span><span class="es">Publicaciones</span></a>
-      <a href="#executive" data-toggle="consulting"><span class="en">Consulting</span><span class="es">Consultoría</span></a>
       <a href="#teaching"><span class="en">Teaching</span><span class="es">Docencia</span></a>
       <a href="#media"><span class="en">Media</span><span class="es">Medios</span></a>
+      <a href="#executive" data-toggle="consulting"><span class="en">Consulting</span><span class="es">Consultoría</span></a>
       <a href="#honors"><span class="en">Honors</span><span class="es">Premios</span></a>
       <a href="#contact"><span class="en">Contact</span><span class="es">Contacto</span></a>
     </nav>
@@ -1777,6 +1785,7 @@ footer .wrap{max-width:var(--col)}
       <span>© 2026 Maikel Leon · <!-- UPDATED:START --><span class="en">Updated November 2026</span><span class="es">Actualizado en noviembre de 2026</span><!-- UPDATED:END --></span>
       <span>Miami, Florida · English · Español</span>
     </div>
+    <p class="foot-note"><span class="en">Personal website. Views expressed here are his own and do not represent the University of Miami.</span><span class="es">Sitio web personal. Las opiniones expresadas aquí son exclusivamente suyas y no representan a la Universidad de Miami.</span></p>
   </div>
 </footer>
 </div>
